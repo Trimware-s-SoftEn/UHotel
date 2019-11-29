@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2019 at 05:39 PM
+-- Generation Time: Nov 29, 2019 at 11:36 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -59,6 +59,32 @@ CREATE TABLE `department` (
   `departmentName` text COLLATE utf8_unicode_ci NOT NULL,
   `description` text COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `department`
+--
+
+INSERT INTO `department` (`departmentID`, `departmentName`, `description`) VALUES
+(1, 'Accounting', 'The accounting department is responsible for recording and reporting the cash flow transactions of a company. This department has some key roles and responsibilities, including accounts receivable, accounts payable, payroll, financial reporting, and maintaining financial controls.'),
+(2, 'Administration', 'Administration department is backbone of an organization. An effective administrator is an asset to an organization. He or she is the link between an organization\'s various departments and ensures the smooth flow of information from one part to the other. Thus without an effective administration, an organization would not run professionally and smoothly.'),
+(3, 'Banquet', 'Employed by a catering service or a hotel, banquet servers are roaming non-standard waiters and waitresses. In a typical restaurant setting, the wait staff will have tables they are assigned to cover, but banquet servers are responsible for accommodating all guests at a function while circulating the room.'),
+(4, 'Catering Sales', 'The sales manager solicits new catering customers through traditional and non-traditional sales techniques. Other important duties include booking, selling, planning and coordinating all special social events while assuring the highest level of customer service.'),
+(5, 'Engineering', 'Engineers work in a variety of fields to analyze, develop and evaluate large-scale, complex systems. This can mean and improve and maintaining current systems or creating brand new projects. Engineers will design and draft blueprints, visit systems in the field and manage projects.'),
+(6, 'Executive Office', 'A successful Administrative Officer will act as the point of contact for all employees, providing administrative support and managing their queries. Main duties include managing office stock, preparing regular reports (e.g. expenses and office budgets) and organizing company records.'),
+(7, 'Finance', 'Financial Officers are in charge of overseeing the financial transactions of a company. Also known as Chief Financial Officers, these professionals are tasked with developing budgets, monitoring transactions, and preparing financial reports. They possess strong accounting and analytical skills.'),
+(8, 'Food & Beverage', 'Food and Beverage Servers are customer service professionals that work for restaurants, cocktail bars and other establishments. In addition to serving food and drinks, Food and beverage Servers perform tasks, such as setting up tables, removing used dishes and preparing simple dishes.'),
+(9, 'Front Office', 'Responsible for handling front office reception and administration duties, including greeting guests and offering them a beverage, answering phones, handling company inquiries, and sorting and distributing mail. Mail also schedule meetings and travel for executives.'),
+(10, 'Housekeeping', 'In general, housekeeping departments are in charge of keeping buildings clean. They sweep, mop, dust, vacuum and clean the bathrooms. Housekeeping staff also clean windows and public areas, and they often remove trash and deposit it in the building\'s dumpsters.'),
+(11, 'Human resources', 'Human resources specialists are responsible for recruiting, screening, interviewing and placing workers. They may also handle employee relations, payroll, benefits, and training. Human resources managers plan, direct and coordinate the administrative functions of an organization.'),
+(12, 'Information Technology', 'Overseeing all technology operations and evaluating them according to established goals. Devising and establishing IT policies and systems to support the implementation of strategies set by upper management. Analyzing the business requirements of all departments to determine their technology needs.'),
+(13, 'In-Room Dining', 'Assist in the organizing, management and administration and all operational aspects for the In Room dining department. Maintain high quality products and service levels.'),
+(14, 'Laundry', 'In general, a Laundry Attendant\'s duties include washing, drying and folding clothes and linens. Laundry Attendants employed in the hospitality industry, for example, often are responsible for washing towels and sheets, as well as the personal items of guests.'),
+(15, 'Marketing', 'Contributing in the implementation of marketing strategies. Supporting the marketing manager in overseeing the department\'s operations. Organizing and attending marketing activities or events to raise brand awareness.'),
+(16, 'Public Relations', 'planning publicity strategies and campaigns. writing and producing presentations and press releases. dealing with enquiries from the public, the press, and related organisations. organizing and attending promotional events such as press conferences, open days, exhibitions, tours and visits.'),
+(17, 'Reservations', 'Fulfill reservation requests by determining the rooms available to meet customer desires. They verify customer information and payment options, assign rooms and respond to customers with confirmation emails or letters.'),
+(18, 'Residences', 'Developing educational, social and personal growth programs, group advising, promoting the safety and welfare of all residents, and individual counseling.'),
+(19, 'Rooms', 'Performs routine duties in cleaning and servicing of guest rooms. Room attendant promotes a positive image of the property to guests and must be pleasant, honest, friendly and should also able to address guest requests and problems.'),
+(20, 'Security', 'Periodically patrols buildings and grounds. Requires a high school diploma or its equivalent and 0-2 years of experience in the field or in a related area. Familiar with standard concepts, practices and procedures within a particular field. Rely on limited experience and judgment to plan and accomplish goals. Perform a variety of tasks. Work under general supervision; typically reports to a supervisor or manager. A certain degree of creativity and latitude is expected.');
 
 -- --------------------------------------------------------
 
@@ -350,7 +376,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `department`
 --
 ALTER TABLE `department`
-  MODIFY `departmentID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `departmentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `event`
