@@ -151,6 +151,18 @@ cursor: pointer;
 	cursor: pointer;
 }
 
+#Not_have_account{
+  top: 220px;
+	left: 50px;
+	width: 39px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 12px;
+	text-align: left;
+  color:#646464;
+  position: relative;
+}
+
 .rectangle_Login2{
   top: 150px;
   left: 770px;
@@ -164,6 +176,94 @@ cursor: pointer;
   background: rgba(245, 244, 239, 255);
   position: absolute;
 } 
+
+#hotel_sign_hotel_svgrepo_com {
+	top: 0px;
+	left: 5px;
+	width: 186.0322265625px;
+  height: 202.92858886719px;
+  position: relative;
+}
+
+#path_58 {
+	top: 81px;
+	left: 262px;
+	width: 28.86669921875px;
+  height: 31.488830566406px;
+  position: relative;
+}
+
+#group_366 {
+	top: 7px;
+	left: 0px;
+	width: 163.580078125px;
+  height: 195.93115234375px;
+  position: relative;
+}
+
+#path_59 {
+	top: 50px;
+	left: 105px;
+	width: 159.60302734375px;
+  height: 17.493835449219px;
+  position: relative;
+}
+
+
+#path_60 {
+	top: 76px;
+	left: 102px;
+	width: 163.580078125px;
+  height: 153.94592285156px;
+  position: relative;
+}
+
+
+#path_61 {
+	top: -80px;
+	left: 140px;
+	width: 89.80810546875px;
+  height: 125.95568847656px;
+  position: relative;
+}
+
+#group_367 {
+	top: 24px;
+	left: 26px;
+	width: 115.46826171875px;
+  height: 24.491333007812px;
+  position: relative;
+}
+
+#path_62 {
+	top: -270px;
+	left: 100px;
+	width: 6.41455078125px;
+  height: 24.491394042969px;
+  position: absolute;
+}
+
+
+#path_63 {
+	top: -270px;
+	left: 200px;
+	width: 6.4150390625px;
+  height: 24.491394042969px;
+  position: absolute;
+}
+
+
+#up_to_30__off_with_uhotel__insider_deals__prices_drop__the_moment_you_sign_in_ {
+	top: 100px;
+	left: 100px;
+	width: 200px;
+	height: 70px;
+	font-family: Poppins;
+	font-size: 15px;
+	text-align: left;
+  color:#333333;
+  position: relative;
+}
 
 /*______________________END LOGIN_________________________*/
 
