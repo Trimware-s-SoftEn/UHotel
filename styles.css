@@ -82,6 +82,7 @@ img{
   display:inline-block;
   background-color: #bf9f68;
   color: white;
+  box-shadow: 3px 3px 10px #222222;
 }
 
 .topnav a.book:hover {
@@ -208,17 +209,17 @@ img{
   width: 100%;
   max-height: auto;
   display: inline-block;
-  opacity: 80%;
 }
-.topnav {
-  background-image: linear-gradient(to right, #000000, #666666);
-  position: fixed;
-  top: 0;
-  width: 100%;
+.reserveProcessBar {
+  background-color: #white;
+  box-shadow: 3px 3px 10px #666666;
+  top: -20px;
+  width: 900px;
   height: 78px;
+  margin:0 auto;
 }
 
-.topnav a {
+.reserveProcessBar a {
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
@@ -226,17 +227,17 @@ img{
   font-family: Poppins;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 /* Add a color to the active/current link */
-.topnav a.active {
+.reserveProcessBar a.pass {
   background-color: #4CAF50;
   float: left;
   color: white;
+}
+
+/* Change the color of links on hover */
+.reserveProcessBar a.pass:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 .topnav a.icon {
