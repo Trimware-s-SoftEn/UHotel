@@ -190,12 +190,59 @@ img{
 }
 /* ________________________________________ End dropdown ___________________________________ */
 
-/* ________________________________________ Start right button ___________________________________ */
-
-/* ________________________________________ End right button ___________________________________ */
-
 /* Content part */
 .main {
-  padding: 16px;
-  margin-top: 30px;
+  padding: 0px;
+  width: 100%;
+  margin-top: 78px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
+
+/* ################################################################################################################*/
+
+/* ________________________________________ Moth Start Reservation CSS button ___________________________________ */
+
+/* Picture of reserva */
+.ReserveTopPic {
+  width: 100%;
+  max-height: auto;
+  display: inline-block;
+  opacity: 80%;
+}
+.topnav {
+  background-image: linear-gradient(to right, #000000, #666666);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 78px;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Poppins;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  float: left;
+  color: white;
+}
+
+.topnav a.icon {
+  padding: 2px 34px;
+  float: left;
+  display:inline-block;
+}
+
+/* ________________________________________ End Reservation CSS button ___________________________________ */
