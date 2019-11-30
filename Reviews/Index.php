@@ -403,10 +403,10 @@
 
 				</div>
 
-				<div id="left"  >
+				<!-- <div id="left"  >
 					<div id="path_10_ek1"  ></div>
 
-				</div>
+				</div> -->
 
 			</div>
 
