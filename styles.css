@@ -344,6 +344,7 @@ cursor: pointer;
   top: 0;
   width: 100%;
   height: 78px;
+  z-index: 100; /* Always show in front of every thing */
 }
 
 /* Style the links inside the navigation bar */
@@ -393,6 +394,7 @@ cursor: pointer;
   display:inline-block;
   background-color: #bf9f68;
   color: white;
+  box-shadow: 3px 3px 10px #222222;
 }
 
 .topnav a.book:hover {
@@ -501,12 +503,111 @@ cursor: pointer;
 }
 /* ________________________________________ End dropdown ___________________________________ */
 
-/* ________________________________________ Start right button ___________________________________ */
-
-/* ________________________________________ End right button ___________________________________ */
-
 /* Content part */
 .main {
-  padding: 16px;
-  margin-top: 30px;
+  padding: 0px;
+  font-family: Poppins;
+  width: 100%;
+  margin-top: 78px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
+
+/* ################################################################################################################*/
+
+/* ________________________________________ Moth Start Reservation CSS button ___________________________________ */
+
+/* Picture of reserva */
+.ReserveTopPic {
+  width: 100%;
+  max-height: auto;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+
+.reserveProcessBar {
+  background-color: white;
+  box-shadow: 3px 3px 10px #666666;
+  top: -40px;
+  width: 1000px;
+  height: 65px;
+  margin:0 auto;
+  position: relative;
+  z-index: 3;
+  display: block;
+}
+
+.reserveProcessBar a {
+  color: #black;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Poppins;
+  width: 25%;
+  padding: 20px 0px;
+}
+
+/* Add a color to the active/current link */
+.reserveProcessBar a.pass {
+  background-color: black;
+  color: white;
+}
+
+.reserveProcessBar a.now {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.reserveProcessBar a.pass:hover {
+  background-color: #;
+  color: white;
+}
+
+/* Change the color of links on hover */
+.reserveProcessBar a.pass:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Head */
+.reserveHead {
+  margin-left: 13%;
+}
+
+.reserveBlockUnderline {
+  margin-top: -20px;
+  height: 15px;
+  width: 70px;
+  background-color: black;
+}
+
+/* Table in first page */
+.stayColumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px;
+}
+
+.stayRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stayColumnHead {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 60px;
+}
+
+.stayRowHead:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ________________________________________ End Reservation CSS button ___________________________________ */
