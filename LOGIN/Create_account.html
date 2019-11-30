@@ -1,52 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css">
 </head>
+
+<style>
+    body {
+        background-image: url("../picture/image_4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
 <body>
+    <div class="topnav">
+        <a class="icon" href="#home"><img src="../picture/Logo_Transparent.png" ; id="icon"></a>
+        <div class="dropdownL">
+            <button class="dropbtn">About</button>
+            <div class="dropdown-content">
+                <a href="#about">About us</a>
+                <a href="#contact">Contact</a>
+                <a href="#map">Map</a>
+                <a href="#map">Career</a>
+            </div>
+        </div>
+        <div class="dropdownL">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#room">Rooms</a>
+                <a href="#facilities">Facilities</a>
+            </div>
+        </div>
+        <!--<a class="menu" href="#services">Services</a>-->
+        <a class="menu" href="#events">Events</a>
+        <a class="menu" href="#offers">Offers</a>
+        <a class="menu" href="#reviews">Reviews</a>
+        <a class="menu" href="#gallery">Gallery</a>
 
-<div class="topnav">
-  <a class="icon" href="#home"><img src="picture/Logo_Transparent.png"; id="icon"></a>
-  <div class="dropdownL">
-    <button class="dropbtn">About</button>
-    <div class="dropdown-content">
-      <a href="#about">About us</a>
-      <a href="#contact">Contact</a>
-      <a href="#map">Map</a>
-      <a href="#map">Career</a>
+        <!-- Right part -->
+        <div class="dropdownR">
+            <button class="dropbtn">User Name</button>
+            <div class="dropdown-content">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+        <img src="../picture/UserIcon.png" ; id="userIcon">
+        <img src="../picture/lineInNav.png" ; id="lineInNav">
+        <a class="book" href="../Reservation/your_stay.html">BOOK NOW</a>
     </div>
-  </div>
-  <div class="dropdownL">
-    <button class="dropbtn">Services</button>
-    <div class="dropdown-content">
-      <a href="#room">Rooms</a>
-      <a href="#facilities">Facilities</a>
-    </div>
-  </div>
-  <!--<a class="menu" href="#services">Services</a>-->
-  <a class="menu" href="#events">Events</a>
-  <a class="menu" href="#offers">Offers</a>
-  <a class="menu" href="#reviews">Reviews</a>
-  <a class="menu" href="#gallery">Gallery</a>
 
-  <!-- Right part -->
-  <div class="dropdownR">
-    <button class="dropbtn">User Name</button>
-    <div class="dropdown-content">
-      <a href="#profile">Profile</a>
-      <a href="#logout">Logout</a>
-    </div>
-  </div>
-  <img src="picture/UserIcon.png"; id="userIcon">
-  <img src="picture/lineInNav.png"; id="lineInNav">
-  <a class="book" href="Reservation/your_stay.html">BOOK NOW</a>
-</div>
 
+    <div class="rectangle_for_Create_Account">
+        <div id="Sign-in">
+            SIGN_UP
+        </div>
+
+        <form action="../LOGIN/Create_account.php">
+            <br>
+            <div id="email">EMAIL</div>
+            <input type="text" id="Email_create" name="Email">
+            <div id="password">PASSWORD</div>
+
+            <input type="text" id="Password_create" name="Password">
+            <br>
+            <div id="fname">FirstName</div>
+            <input type="text" id="Fname" name="First Name">
+            <br>
+            <div id="lname">LastName</div>
+            <input type="text" id="Lname" name="Last Name">
+            <br>
+            <div id="phone">Phone</div>
+            <input type="text" id="Phone" name="Phone">
+            <br>
+            <input type="submit" value="Sign-up">
+        </form>
+
+        <div id="Not_have_account">Already_have_account?</div>
+
+        <form>
+            <button id="rectangle_create_account" type="submit" formaction="file:///E:/University/3/1/CPE327/project/LAST_NEW/UHotel/LOGIN/Login.html">
+                Sign-in
+            </button>
+        </form>
+
+    </div>
+
+    <div class="rectangle_Login2_create">
+        <div id="hotel_sign_hotel_svgrepo_com">
+            <img src="../picture/path_58.png" id="path_58" />
+
+            <div id="group_366">
+                <img src="../picture/path_59.png" id="path_59" />
+                <img src="../picture/path_60.png" id="path_60" />
+
+            </div>
+            <img src="../picture/path_61.png" id="path_61" />
+
+            <div id="group_367">
+                <img src="../picture/path_62.png" id="path_62" />
+                <img src="../picture/path_63.png" id="path_63" />
+            </div>
+
+        </div>
+        <div id="up_to_30__off_with_uhotel__insider_deals__prices_drop__the_moment_you_sign_in_">
+            Up to 30% OFF with Uhotel <br />Insider Deals! Prices drop <br />the moment you sign in.
+        </div>
+    </div>
 
 
 
 
 
 </body>
+
 </html>

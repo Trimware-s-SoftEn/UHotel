@@ -265,6 +265,72 @@ cursor: pointer;
   position: relative;
 }
 
+/*_______________For Create account________*/
+.rectangle_for_Create_Account{
+  top: 150px;
+  left: 400px;
+  width: 371px;
+  height: 700px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 255);
+  position: relative;
+}
+
+.rectangle_Login2_create{
+  top: 150px;
+  left: 770px;
+  width: 371px;
+  height: 700px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: rgba(245, 244, 239, 255);
+  position: absolute;
+} 
+
+#fname {
+	top: 100px;
+	left: 50px;
+	width: 39px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 12px;
+	text-align: left;
+  color:#646464;
+  position: relative;
+}
+
+#lname {
+	top: 100px;
+	left: 50px;
+	width: 39px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 12px;
+	text-align: left;
+  color:#646464;
+  position: relative;
+}
+
+#phone {
+	top: 100px;
+	left: 50px;
+	width: 39px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 12px;
+	text-align: left;
+  color:#646464;
+  position: relative;
+}
+
+
 /*______________________END LOGIN_________________________*/
 
 /* __________________________________________End Main__________________________________*/
