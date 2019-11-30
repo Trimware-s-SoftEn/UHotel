@@ -34,7 +34,7 @@ img{
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  background: rgba(245, 244, 239, 255);
+  background: rgba(255, 255, 255, 255);
   position: relative;
 }
 
@@ -81,7 +81,7 @@ cursor: pointer;
 }
 
 #Sign-in {
-	top: 25px;
+	top: 70px;
 	left: 30px;
 	width: 63px;
 	height: 26px;
@@ -115,6 +115,55 @@ cursor: pointer;
   color:#646464;
   position: relative;
 }
+
+#forgotpassword{
+  top: 70px;
+	left: 50px;
+	width: 119px;
+	height: 17px;
+	font-family: Poppins;
+	font-size: 10px;
+	text-align: left;
+  color:#9a7057;
+  position: relative;
+  cursor: pointer;
+}
+
+#rectangle_create_account {
+	top: 190px;
+	left: 220px;
+	width: 136px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 12px;
+	text-align: center;
+	line-height: 12px;
+	color:#9a7057;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #d7ba45;
+  background:rgba(255,255,255,0);
+  position: relative;
+	cursor: pointer;
+}
+
+.rectangle_Login2{
+  top: 150px;
+  left: 770px;
+  width: 371px;
+  height: 473px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: rgba(245, 244, 239, 255);
+  position: absolute;
+} 
 
 /*______________________END LOGIN_________________________*/
 
