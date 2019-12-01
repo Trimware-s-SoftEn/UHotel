@@ -53,6 +53,38 @@ select {
   background: rgba(255, 255, 255, 255);
   position: relative;
 }
+/*
+input[type=password],
+select
+{
+  top: 100px;
+  left: 50px;
+  width: 262px;
+  height: 41px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: rgba(255, 255, 255, 255);
+  position: relative;
+}*/
+/*
+.box_password{
+  top: 100px;
+  left: 50px;
+  width: 262px;
+  height: 41px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: rgba(255, 255, 255, 255);
+  position: relative;
+}*/
 
 input[type=submit] {
 top: 140px;
@@ -327,6 +359,20 @@ cursor: pointer;
 	font-size: 12px;
 	text-align: left;
   color:#646464;
+  position: relative;
+}
+
+/*________________FOR_______PROFILE_____________________*/
+
+#user_details {
+	top: 113px;
+	left: 400px;
+	width: 145px;
+	height: 38px;
+	font-family: Poppins;
+	font-size: 24px;
+	text-align: center;
+	color:#2a2a2e;
   position: relative;
 }
 
