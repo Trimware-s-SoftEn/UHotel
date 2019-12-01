@@ -110,9 +110,14 @@
                $description = $row['description'];
                $pictureID = $row['pictureID'];
                $numberofBed = $row['numberofBed'];
+
+               $resultPic = mysqli_query($con,"SELECT *
+                                           FROM picturegallery
+                                           WHERE pictureID LIKE $pictureID");
+               $rowPic = mysqli_fetch_array($result);
                echo "
                  <div class=\"roomColumn\">
-                   <img class=\"".ReserveTopPic."\" src='../picture/ReservationTopPic.png'>
+                   <img class=\"\" src='../picture/".$rowPic["picture"]."'>
                    <p>Check in: ".$_SESSION["CHECKIN"]."</p>
                  </div>
                ";
