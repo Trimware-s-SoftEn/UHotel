@@ -8,33 +8,35 @@
 		<meta name="description" content="" >
 		<link rel="StyleSheet" href="css\styles.css" />
 		<link rel="StyleSheet" href="css\bootstrap.min.css" />
+		
 		<link rel="StyleSheet" href="css\botton.css" />
 		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
 		<script src="js\jquery-3.4.1.min.js"></script>
 		<script src="js\bootstrap.bundle.min.js"></script>
 		<script src="js\bootstrap.min.js"></script>
+		
+		<!-- Add your custom HEAD content here -->
 	<script>
-	$(document ).ready(function() {
-		$("#_2,#superior_sky_room,#path_10").click(function(){
+	$(document ).ready(function() {		
+		$("#_2,#superior_sky_room,#path_10").click(function(){			
 			$("#content-container").html('');
 			$("#content-container").load('superiorskyroom.php');
-		});
+			
+		});		
 	});
 	</script>
-
-	<style>
-	.btn-secondary {
-		color: #fff;
-		background-color: #DDDDDD;
-		border-color: #DDDDDD;
-	}
-	.dropdown-toggle::after{
-		color:#1E1E1E;
-	}
-	</style>
+<style>
+.btn-secondary {
+    color: #fff;
+    background-color: #DDDDDD;
+    border-color: #DDDDDD;
+}
+.dropdown-toggle::after{
+	color:#1E1E1E;
+}
+</style>	
 	</head>
-
-	<body>
+	<body>	
 		<div id="content-container" >
 		<link rel="StyleSheet" href="css\reviewssuperiorroom.css" />
 			<div id="topreviews"  >
@@ -94,7 +96,7 @@
 				<div id="facebook"  ></div>
 				<div id="facebook_ek1"  ></div>
 				<div id="facebook_ek2"  ></div>
-				<div id="facebook_ek3"  ></div>
+				<div id="facebook_ek3"  ></div>				
 				<div id="rectangle_1"  ></div>
 				<div id="enter_your_email" >
 					Enter your email
@@ -372,13 +374,14 @@
 				</div>
 
 			</div>
+			
 			<div id="how_was_your_stay_" >
 				How was your stay?
 			</div>
 
 			<div id="button" class="btn-grad"  >
 				<a href="writereviews.php">
-					<div id="rectangle_1091"  ></div>
+					<div id="rectangle_1091"  ></div>				
 					<div id="write_reviews" style="margin-top: 4px;"  >
 						<span>
 						Write reviews
@@ -428,6 +431,7 @@
 
 			</div>
 
-		</div>
+		</div>	
+	
 	</body>
 </html>
