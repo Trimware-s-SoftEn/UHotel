@@ -46,7 +46,7 @@
     </div>
 
     <div class="main">
-        <div class="header_career">
+        <div class="header_positions">
             <div class="header_menu">
                 <a href="career.html">
                     <h1>Career</h1>

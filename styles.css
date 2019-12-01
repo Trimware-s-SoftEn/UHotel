@@ -623,7 +623,26 @@ cursor: pointer;
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/career.png);
+  background: url(Career/skins/career.png) no-repeat;
+}
+
+.header_positions {
+  position: absolute;
+  font-family: Poppins;
+  top: 75px;
+  height: 580px;
+  width: 100%;
+  background: url(Career/skins/positions.png) no-repeat;
+
+}
+
+.header_family {
+  position: absolute;
+  font-family: Poppins;
+  top: 75px;
+  height: 580px;
+  width: 100%;
+  background: url(Career/skins/family.png) no-repeat;
 }
 
 /* head menu */
@@ -725,6 +744,8 @@ cursor: pointer;
   width: 70%;
   height: 40px;
   top: 50%;
+  left: 49%;
+  transform: translate(-49%, 0);
 }
 
 .header_search_selectDe {
@@ -734,10 +755,32 @@ cursor: pointer;
   width: 70%;
   height: 40px;
   top: 67%;
+  left: 49%;
+  transform: translate(-49%, 0);
 }
 
+.content_top{
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background-color: #4CAF50;
+  top: 650px;
+}
 
+.content_topic {
+  color: #B0A073;
+  position: absolute;
+  top: 15px;
+  left: 5%;
+}
 
+.content_content {
+  position: absolute;
+  top: 800px;
+  width: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 
 
 
