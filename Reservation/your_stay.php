@@ -9,6 +9,11 @@ session_start();
 	echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
 
+	$result = mysqli_query($con,"SELECT *
+															FROM user
+															WHERE userID LIKE $id");
+  $row = mysqli_fetch_array($result);
+
 //  $sql = "SELECT branchName FROM branch";
 //  $result = mysqli_query($con,$sql);
 ?>
@@ -46,7 +51,7 @@ session_start();
 
   <!-- Right part -->
   <div class="dropdownR">
-    <button class="dropbtn">User Name</button>
+    <button class="dropbtn"><?php echo $row["fName"]." ".$row["lName"] ?></button>
     <div class="dropdown-content">
       <a href="#profile">Profile</a>
       <a href="#logout">Logout</a>
@@ -66,7 +71,7 @@ session_start();
     <a>4.Payment</a>
   </div>
 
-	<form action="reservationController.php" method="post" id="staffForm">
+	<form action="reservationController.php" method="post" id="stayForm">
 	  <div class="reserveHead">
 	    <h1>Choose your stay</h1>
 	    <div class="reserveBlockUnderline"></div>
@@ -80,8 +85,8 @@ session_start();
 	        <div class="stayColumnHead">
 	          <p>Check out</p>
 	        </div>
-	        <div class="stayColumnHead">
-	          <p>Guest Number</p>
+					<div class="stayColumnHead">
+	          <p>Room Numbers</p>
 	        </div>
 	      </div>
 	      <div class="stayRow">
@@ -92,16 +97,14 @@ session_start();
 	          <input type="Date" name="checkOut" id="checkOut">
 	        </div>
 	        <div class="stayColumn">
-	          <input type="number" name="guess" id="guess" min="1" max="10">
+	          <input type="number" name="room" id="room" min="1" max="10">
 	        </div>
 	      </div>
 	    </div>
 	    <!-- End Table -->
-			<div class="stayAddButton">
-				<button type="submit" name="Submit" value="add">Add more</button>
-			</div>
+
 			<div class="stayFrameButton">
-				<button type="submit" name="Submit" value="check">Check Room</button>
+				<button type="submit" name="submit" value="checkRoom">Check Room</button>
 			</div>
 	  </div>
 	</form>
