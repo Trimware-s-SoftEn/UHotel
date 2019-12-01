@@ -673,9 +673,7 @@ cursor: pointer;
   margin-left: 6%;
   margin-right: 18%;
   text-align: center;
-  border-color: grey;
-  border-style: solid;
-  border-radius:40px;
+  border-style: none;
 }
 
 .roomColumn {
@@ -685,6 +683,9 @@ cursor: pointer;
   height: 50px;
   color: black;
   font-size: 15px;
+  border-color: grey;
+  border-style: solid;
+  border-radius:3px;
 }
 
 .roomRow:after {
