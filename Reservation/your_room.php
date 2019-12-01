@@ -142,11 +142,13 @@
                    <p> Max People: ".$numberofGuest."</p>
                    <p> Room Available: ".$rowRoom['countRoom']."</p>
                    <p class='cost'> -".$price."฿</p>
+                   <div class='roomFrameButton'>
+                    <button type='submit' name='submit' value='checkRoom'>Add</button>
+                   </div>
                  </div>
                ";
             }
           ?>
-
 	      </div>
       </div>
       <!-- End Room Table -->
