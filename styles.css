@@ -824,6 +824,25 @@ img.roomIcon {
   overflow:hidden;
 }
 
+.roomFrameButton {
+  margin-left: 30%;
+  margin-bottom: 12px;
+}
+
+.roomFrameButton button {
+  padding: 12px 40px;
+  font-size: 12px;
+  display:inline-block;
+  background-color: #bf9f68;
+  color: white;
+  box-shadow: 3px 3px 3px #bbbbbb;
+}
+
+.roomFrameButton button:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
 /* ________________________________________ End Reservation CSS ___________________________________ */
 
 
