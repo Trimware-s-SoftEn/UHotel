@@ -116,10 +116,23 @@
                                            WHERE pictureID LIKE $pictureID");
                $rowPic = mysqli_fetch_array($resultPic);
 
+               $resultScore = mysqli_query($con,"SELECT
+                 AVG(reviewScore) AS Average
+                 FROM review
+                 WHERE roomTypeName LIKE '$roomTypeName'");
+
+                /*if (!$resultScore) {
+                    printf("Error: %s\n", mysqli_error($con));
+                    exit();
+                }*/
+               $rowScore = mysqli_fetch_array($resultScore);
+
                echo "
-                 <div class=\"roomColumn\" style='font-size: 12px; color: #cf3f37;'>
+                 <div class=\"roomColumn\" style='font-size: 12px;'>
                    <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
-                   <p>".$row["roomTypeName"]."</p>
+                   <p class='first'>".$roomTypeName."</p>
+                   <p> Average Score: ".$rowScore["Average"]."</p>
+                   <img src='../picture/bed_icon.png' class='roomIcon'>
                  </div>
                ";
             }
