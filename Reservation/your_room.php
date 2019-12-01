@@ -94,64 +94,71 @@
 	          <p>Check out: <?php echo $_SESSION["CHECKOUT"] ?></p>
 	        </div>
 	        <div class="stayColumnRoom">
-	          <p>Room: <?php echo "{$_SESSION["ROOM"]}" ?></p>
+	          <p>Guests: <?php echo "{$_SESSION["GUEST"]}" ?></p>
 	        </div>
 	      </div>
 	    </div>
 	    <!-- End Stay Table -->
 
       <!-- Start Room Table -->
-      <div class="roomTable">
-        <div class="roomRow">
-          <?php
-            while($row = mysqli_fetch_array($result)) {
-               $roomTypeName = $row['roomTypeName'];
-               $price = $row['price'];
-               $description = $row['description'];
-               $pictureID = $row['pictureID'];
-               $numberofBed = $row['numberofBed'];
-               $numberofGuest = $numberofBed*2;
+      <form action="reservationController.php" method="post" id="stayForm">
+        <div class="roomTable">
+          <div class="roomRow">
+            <?php
+              while($row = mysqli_fetch_array($result)) {
+                 $roomTypeName = $row['roomTypeName'];
+                 $price = $row['price'];
+                 $description = $row['description'];
+                 $pictureID = $row['pictureID'];
+                 $numberofBed = $row['numberofBed'];
+                 $numberofGuest = $numberofBed*2;
 
-               $resultPic = mysqli_query($con,"SELECT *
-                                           FROM picturegallery
-                                           WHERE pictureID LIKE $pictureID");
-               $rowPic = mysqli_fetch_array($resultPic);
+                 $resultPic = mysqli_query($con,"SELECT *
+                                             FROM picturegallery
+                                             WHERE pictureID LIKE $pictureID");
+                 $rowPic = mysqli_fetch_array($resultPic);
 
-               $resultScore = mysqli_query($con,"SELECT
-                 AVG(reviewScore) AS Average
-                 FROM review
-                 WHERE roomTypeName LIKE '$roomTypeName'");
+                 $resultScore = mysqli_query($con,"SELECT
+                   AVG(reviewScore) AS Average
+                   FROM review
+                   WHERE roomTypeName LIKE '$roomTypeName'");
 
-               $rowScore = mysqli_fetch_array($resultScore);
+                 $rowScore = mysqli_fetch_array($resultScore);
 
-               $resultRoom = mysqli_query($con,"SELECT
-                 COUNT(roomNo) AS countRoom
-                 FROM room
-                 WHERE roomTypeName LIKE '$roomTypeName'");
+                 $resultRoom = mysqli_query($con,"SELECT
+                   COUNT(roomNo) AS countRoom
+                   FROM room
+                   WHERE roomTypeName LIKE '$roomTypeName'");
 
-               $rowRoom = mysqli_fetch_array($resultRoom);
+                 $rowRoom = mysqli_fetch_array($resultRoom);
 
-               echo "
-                 <div class=\"roomColumn\" style='font-size: 12px;'>
-                   <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
-                   <p class='first'>".$roomTypeName."</p>
-                   <p style='margin-top: -15px;'> Average Score: ".$rowScore["Average"]."</p>
-                   <img src='../picture/bed_icon.png' class='roomIcon'>
-                   <p> Number of Bed: ".$numberofBed."</p>
-                   <img src='../picture/guest_icon.png' class='roomIcon'>
-                   <p> Max People: ".$numberofGuest."</p>
-                   <p> Room Available: ".$rowRoom['countRoom']."</p>
-                   <p class='cost'> -".$price."฿</p>
-                   <div class='roomFrameButton'>
-                    <button type='submit' name='submit' value='checkRoom'>Add</button>
+                 echo "
+                   <div class=\"roomColumn\" style='font-size: 12px;'>
+                     <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
+                     <p class='first'>".$roomTypeName."</p>
+                     <p style='margin-top: -15px;'> Average Score: ".$rowScore["Average"]."</p>
+                     <img src='../picture/bed_icon.png' class='roomIcon'>
+                     <p> Number of Bed: ".$numberofBed."</p>
+                     <img src='../picture/guest_icon.png' class='roomIcon'>
+                     <p> Max People: ".$numberofGuest."</p>
+                     <p> Room Available: ".$rowRoom['countRoom']."</p>
+                     <p class='cost'> -".$price."฿</p>
+                     <div class='roomFrameButton'>
+                      <button type='submit' name='reserve1Room' value='".$roomTypeName."'>Add</button>
+                     </div>
                    </div>
-                 </div>
-               ";
-            }
-          ?>
-	      </div>
-      </div>
+                 ";
+              }
+            ?>
+  	      </div>
+        </div>
+      </form>
       <!-- End Room Table -->
+
+      <!-- list of room -->
+      <div class="">
+        
+      </div>
 	  </div>
 	</form>
 </div>
