@@ -109,7 +109,7 @@ div { position: absolute; }
 	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
 	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
 	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
-	background:rgba(0,0,0,255);
+	background:#F9F9F9;
 }
 
 #grouprooms {
@@ -129,6 +129,10 @@ div { position: absolute; }
 	text-align: center;
 	color:#5a5a5a;
 }
+#junior_suite__with_lounge_access:hover{
+		cursor:pointer;
+    color: #da8236 !important
+}
 
 
 #premium_deluxe__with_lounge_access {
@@ -140,6 +144,10 @@ div { position: absolute; }
 	font-size: 14px;
 	text-align: center;
 	color:#5a5a5a;
+}
+#premium_deluxe__with_lounge_access:hover{
+		cursor:pointer;
+    color: #da8236 !important
 }
 
 
@@ -153,6 +161,10 @@ div { position: absolute; }
 	text-align: center;
 	color:#5a5a5a;
 }
+#executive_deluxe__with_lounge_access:hover{
+		cursor:pointer;
+    color: #da8236 !important
+}
 
 
 #executive_superior_sky__with_lounge_access {
@@ -164,6 +176,10 @@ div { position: absolute; }
 	font-size: 14px;
 	text-align: center;
 	color:#5a5a5a;
+}
+#executive_superior_sky__with_lounge_access:hover{
+		cursor:pointer;
+    color: #da8236 !important
 }
 
 
@@ -179,7 +195,7 @@ div { position: absolute; }
 }
 #superior_sky_room:hover{
 	cursor:pointer;
-    color: rgba(238, 238, 238, 1) !important;
+    color: #da8236 !important
 }
 
 
@@ -494,7 +510,7 @@ div { position: absolute; }
 	left: 79px;
 	width: 15.520629882812px;
 	height: 14.892395019531px;
-	background:url(../skins/icon_awesome_star_ek3.png);
+	background:url(../skins/icon_awesome_star_ek24.png);
 	background-size:cover;
 }
 
@@ -603,7 +619,7 @@ div { position: absolute; }
 	left: 0px;
 	width: 14.497924804688px;
 	height: 13.876403808594px;
-	background:url(../skins/icon_awesome_star_ek9.png);
+	background:url(../skins/icon_awesome_star_ek25.png);
 	background-size:cover;
 }
 
@@ -636,7 +652,7 @@ div { position: absolute; }
 	left: 48px;
 	width: 15.520629882812px;
 	height: 14.892395019531px;
-	background:url(../skins/icon_awesome_star_ek12.png);
+	background:url(../skins/icon_awesome_star_ek24.png);
 	background-size:cover;
 }
 
@@ -647,7 +663,7 @@ div { position: absolute; }
 	left: 64px;
 	width: 15.520629882812px;
 	height: 14.892395019531px;
-	background:url(../skins/icon_awesome_star_ek13.png);
+	background:url(../skins/icon_awesome_star_ek24.png);
 	background-size:cover;
 }
 
@@ -775,7 +791,7 @@ div { position: absolute; }
 	left: 0px;
 	width: 14.497924804688px;
 	height: 13.876403808594px;
-	background:url(../skins/icon_awesome_star_ek14.png);
+	background:url(../skins/icon_awesome_star_ek25.png);
 	background-size:cover;
 }
 
@@ -808,7 +824,7 @@ div { position: absolute; }
 	left: 48px;
 	width: 15.520629882812px;
 	height: 14.892395019531px;
-	background:url(../skins/icon_awesome_star_ek17.png);
+	background:url(../skins/icon_awesome_star_ek24.png);
 	background-size:cover;
 }
 
@@ -819,7 +835,7 @@ div { position: absolute; }
 	left: 64px;
 	width: 15.520629882812px;
 	height: 14.892395019531px;
-	background:url(../skins/icon_awesome_star_ek18.png);
+	background:url(../skins/icon_awesome_star_ek24.png);
 	background-size:cover;
 }
 
@@ -991,7 +1007,7 @@ div { position: absolute; }
 	left: 64px;
 	width: 15.520629882812px;
 	height: 14.892395019531px;
-	background:url(../skins/icon_awesome_star_ek23.png);
+	background:url(../skins/icon_awesome_star_ek24.png);
 	background-size:cover;
 }
 
@@ -1119,7 +1135,7 @@ div { position: absolute; }
 	left: 0px;
 	width: 14.497924804688px;
 	height: 13.876403808594px;
-	background:url(../skins/icon_awesome_star_ek24.png);
+	background:url(../skins/icon_awesome_star_ek25.png);
 	background-size:cover;
 }
 
@@ -1163,7 +1179,7 @@ div { position: absolute; }
 	left: 64px;
 	width: 15.520629882812px;
 	height: 14.892395019531px;
-	background:url(../skins/icon_awesome_star_ek28.png);
+	background:url(../skins/icon_awesome_star_ek24.png);
 	background-size:cover;
 }
 
@@ -1721,7 +1737,7 @@ div { position: absolute; }
 	text-align: center;
 	color:#d8d4cd;
 }
-#_2:hover{
+.navi:hover{
 	cursor:pointer;
     color: #606060 !important;
 }
