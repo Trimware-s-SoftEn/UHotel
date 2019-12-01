@@ -116,3 +116,5 @@ session_start();
 
 </body>
 </html>
+
+<?php $con->close(); ?>

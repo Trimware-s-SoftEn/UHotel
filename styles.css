@@ -101,6 +101,7 @@ select
   background: rgba(255, 255, 255, 255);
   position: relative;
 }
+
 #box_submit{
 top: 140px;
 left: 60px;
@@ -368,8 +369,8 @@ cursor: pointer;
   position: absolute;
 }
 
-#fname {
-	top: 100px;
+#fname{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -380,8 +381,8 @@ cursor: pointer;
   position: relative;
 }
 
-#lname {
-	top: 100px;
+#lname{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -392,8 +393,8 @@ cursor: pointer;
   position: relative;
 }
 
-#phone {
-	top: 100px;
+#phone{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -403,11 +404,12 @@ cursor: pointer;
   color:#646464;
   position: relative;
 }
+
 
 /*________________FOR_______PROFILE_____________________*/
 
 #user_details {
-	top: 113px;
+	top: 150px;
 	left: 400px;
 	width: 145px;
 	height: 38px;
@@ -417,6 +419,94 @@ cursor: pointer;
 	color:#2a2a2e;
   position: relative;
 }
+
+#rectangle_left {
+	top: 106px;
+	left: 50px;
+	width: 293px;
+	height: 431px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(254,253,253,255);
+  position: relative;
+}
+
+.mybook {
+  top: 120px;
+  left: 45px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.mybook:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myprofile {
+  top: 30px;
+  left: -135px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myprofile:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myhistory {
+  top: 130px;
+  left: 45px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myhistory:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myreview {
+  top: 220px;
+  left: -79px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myreview:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+
 
 
 /*______________________END LOGIN_________________________*/
@@ -795,8 +885,7 @@ cursor: pointer;
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/career.png) no-repeat fixed center;
-  background-size: 100% 80%;
+  background: url(Career/skins/career.png) no-repeat;
 }
 
 .header_positions {
@@ -929,24 +1018,9 @@ cursor: pointer;
   font-size: medium;
   width: 70%;
   height: 40px;
-  top: 68%;
+  top: 67%;
   left: 49%;
   transform: translate(-49%, 0);
-}
-
-.header_search_btn  {
-  position: absolute;
-  background-color: gray;
-  width: 80px;
-  height: 30px;
-  top: 85%;
-  left: 49%;
-  transform: translate(-49%, 0);
-  border-radius: 4px;
-  font-size: x-small;
-  box-shadow: none;
-  outline: none;
-  border: 1px solid darkgray;
 }
 
 .content_top{

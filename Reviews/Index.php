@@ -21,17 +21,19 @@
 		});
 	});
 	</script>
-<style>
-.btn-secondary {
-    color: #fff;
-    background-color: #DDDDDD;
-    border-color: #DDDDDD;
-}
-.dropdown-toggle::after{
-	color:#1E1E1E;
-}
-</style>
+
+	<style>
+	.btn-secondary {
+		color: #fff;
+		background-color: #DDDDDD;
+		border-color: #DDDDDD;
+	}
+	.dropdown-toggle::after{
+		color:#1E1E1E;
+	}
+	</style>
 	</head>
+
 	<body>
 		<div id="content-container" >
 		<link rel="StyleSheet" href="css\reviewssuperiorroom.css" />
