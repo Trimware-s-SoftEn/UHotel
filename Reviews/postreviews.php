@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 	<head>
 		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-		<title>writereviews</title>
+		<title>postreviews</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="" >
 		<link rel="StyleSheet" href="css\bootstrap.min.css" />
-		<link rel="StyleSheet" href="css/writereviews.css" />		
+		<link rel="StyleSheet" href="css/postreviews.css" />
 		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
 		<script src="js\jquery-3.4.1.min.js"></script>
 		<script src="js\bootstrap.bundle.min.js"></script>
@@ -17,13 +17,17 @@ $(document ).ready(function() {
 	$('.exampleModal').on('show.bs.modal', function (e) {
 		$(".exampleModal").html('');
 		$(".exampleModal").load('startwritereviews.php');
+	})
+	$('.Modal').on('show.bs.modal', function (e) {
+		$(".Modal").html('');
+		$(".Modal").load('Editwritereviews.php');
 	})	
 });
 </script>
 	</head>
 	<body>
 		<div id="content-container" >
-			<div id="_bg__writereviews"  ></div>
+			<div id="_bg__postreviews"  ></div>
 
 			<div id="footer"  >
 				<div id="footer_ek1"  ></div>
@@ -50,7 +54,7 @@ $(document ).ready(function() {
 
 			</div>
 
-			<div id="group_451"  >
+			<div id="navbar"  >
 				<div id="path_46"  ></div>
 				<div id="path_42"  ></div>
 				<div id="logo_ek1"  ></div>
@@ -93,26 +97,55 @@ $(document ).ready(function() {
 
 			</div>
 
-			<div id="reserve2"  >
-				<div id="rectangle_1195" class="border-green"  ></div>
-				<div id="superior_room" >
-					Superior room
-				</div>
-				<div id="___ultimate_spa_essence_offer" >
-					<span class="char">- </span> Ultimate Spa Essence Offer
-				</div>
-				<div id="_1_oct_to_7_oct" >
-					1 Oct to 7 Oct
-				</div>
+			<div id="eachreview"  >
+				<div id="rectangle_1171"  ></div>
 
-				<div id="button_primary"  >
-					<div id="rectangle_1091" class="border-green" data-toggle="modal" data-target=".exampleModal"  ></div>
-					<span id="span-review">
-						Review now
-					</span>
+				<div id="stars"  >
+					<div id="icon_awesome_star"  ></div>
+					<div id="icon_awesome_star_ek1"  ></div>
+					<div id="icon_awesome_star_ek2"  ></div>
+					<div id="icon_awesome_star_ek3"  ></div>
+					<div id="icon_awesome_star_ek4"  ></div>
 
 				</div>
+				<div id="this_was_nice_to_buy" >
+					This was nice to buy
+				</div>
+				<div id="it_is_second_time_stay_at_sea_view___food_service_both_good__only_if_u_r_not_sporty___u_have_to_take_taxi_out_of_hotel___there_are_many_monkeys_in_the_forest_of_the_hotel__but_friendly__rooms_nearby_beach_is_less_good_than_on_the_top" >
+					It is second time stay at sea view , food service both good.<br/>Only if u r not sporty , u have to take taxi out of hotel .<br/>There are many monkeys in the forest of the hotel, but friendly.<br/>Rooms nearby beach is less good than on the top
+				</div>
 
+				<div id="profile"  >
+
+					<div id="photo"  >
+						<div id="ellipse_9_ek1"  ></div>
+						<div id="m_ek1" >
+							M
+						</div>
+
+					</div>
+					<div id="mook" >
+						Mook
+					</div>
+					<div id="september_24__2018_1_month_ago" >
+						September 24, 2018<br/>1 month ago
+					</div>
+
+				</div>
+				<div class="border-green" data-toggle="modal" data-target=".Modal" data-backdrop="static" >
+					<div id="image_74"  ></div>
+					<div id="edit"  >
+						Edit
+					</div>
+				</div>
+
+			</div>
+			<div id="write_reviews" >
+				Write reviews
+			</div>
+			<div id="back"style="cursor: pointer;" onclick="window.history.back();"  ></div>
+			<div id="from_your_stay_history__reviews_of_you_can_help_other_make_decision__" >
+				From your stay history, reviews of you can help other make decision .
 			</div>
 
 			<div id="reserve3"  >
@@ -127,9 +160,31 @@ $(document ).ready(function() {
 					8 Sep to 12 Sep
 				</div>
 
+				<div id="button_primary"  >
+					<div id="rectangle_1091" class="border-green" data-toggle="modal" data-target=".exampleModal"  ></div>
+					<span id="review_now" >
+						Review now
+					</span>
+
+				</div>
+
+			</div>
+
+			<div id="reserve2"  >
+				<div id="rectangle_1195"  ></div>
+				<div id="superior_room" >
+					Superior room
+				</div>
+				<div id="___ultimate_spa_essence_offer" >
+					<span class="char">- </span> Ultimate Spa Essence Offer
+				</div>
+				<div id="_1_oct_to_7_oct" >
+					1 Oct to 7 Oct
+				</div>
+
 				<div id="button_primary_ek1"  >
 					<div id="rectangle_1091_ek1" class="border-green" data-toggle="modal" data-target=".exampleModal"  ></div>
-					<span id="span-review">
+					<span id="review_now" >
 						Review now
 					</span>
 
@@ -149,33 +204,33 @@ $(document ).ready(function() {
 					23 Oct to 24 Oct
 				</div>
 
-				<div id="button_primary_ek2"  >
-					<div id="rectangle_1091_ek2" class="border-green" data-toggle="modal" data-target=".exampleModal">
-						<span id="span-review">
-						Review now
-						</span>
-					</div>
-					<!--<div id="review_now_ek2" style="margin-top: 3px;" >
-						
-						Review now
-						
-					</div>-->
-
-				</div>
-
-			</div>
-			<div id="write_reviews" >
-				Write reviews
-			</div>
-			<div id="icon_ionic_ios_arrow_back" style="cursor: pointer;" onclick="window.history.back();"  ></div>
-			<div id="from_your_stay_history__reviews_of_you_can_help_other_make_decision__" >
-				From your stay history, reviews of you can help other make decision .
 			</div>
 
-		</div>
+		</div>		
 		<!--modal-->
 			<!-- Modal -->
 			<div class="modal fade exampleModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header" style="position: inherit;">
+					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body" style="position: inherit;">
+					...
+				  </div>
+				  <div class="modal-footer" style="position: inherit;">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		<!--modal-->
+			<!-- Modal -->
+			<div class="modal fade Modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 			  <div class="modal-dialog" role="document">
 				<div class="modal-content">
 				  <div class="modal-header" style="position: inherit;">

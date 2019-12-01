@@ -1,11 +1,4 @@
-<script>
-$(document ).ready(function() {		
-	$("#cancel").on( "click", function() {		
-		location.reload();
-	});
-});
-</script>
-<link rel="StyleSheet" href="css/startwritereviews.css" />
+<link rel="StyleSheet" href="css/editwritereviews.css" />
 <div id="popupreview"  >
 				<div id="path_50"  ></div>
 				<div id="mook_c__ek1" >
@@ -24,10 +17,11 @@ $(document ).ready(function() {
 					Your review will be posted publicly on the web.
 				</div>
 				<div id="describe_your_experience" >
-				<textarea style="    width: 100%;border: none;    background-color: #f6f6f6;" placeholder="Describe your experience"></textarea>
+				<textarea rows="4" cols="50" style="width: 100%;border: none;    background-color: #f6f6f6;">It is second time stay at sea view , food service both good.Only if u r not sporty , u have to take taxi out of hotel .There are many monkeys in the forest of the hotel, but friendly.Rooms nearby beach is less good than on the top
+				</textarea>
 				</div>
 				<div id="write_your_topic_of_comment_" >
-				<input type="text" style="    width: 100%;border: none;    background-color: #f6f6f6;" placeholder="Write your topic of comment." />
+				<input type="text" style="    width: 100%;border: none;    background-color: #f6f6f6;" value="This was nice to buy" />
 				</div>
 				<div id="ellipse_13"  ></div>
 				<div id="m_ek1" >
@@ -39,7 +33,9 @@ $(document ).ready(function() {
 				</div>
 				<div id="line_26"  ></div>
 				<div id="cancel" style="cursor: pointer;" aria-hidden="true"  >
+					<a href="postreviews.php" style="color: #bfa168;">
 					CANCEL
+					</a>
 				</div>
 				<div id="post" style="cursor: pointer;" >
 				<a href="postreviews.php" style="color: #bfa168;">

@@ -38,8 +38,7 @@ img{
   position: relative;
 }
 
-input[type=text],
-select {
+#box_text{
   top: 100px;
   left: 50px;
   width: 262px;
@@ -54,7 +53,55 @@ select {
   position: relative;
 }
 
-input[type=submit] {
+/*
+input[type=text],
+select {
+  top: 100px;
+  left: 50px;
+  width: 262px;
+  height: 41px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: rgba(255, 255, 255, 255);
+  position: relative;
+}*/
+/*
+input[type=password],
+select
+{
+  top: 100px;
+  left: 50px;
+  width: 262px;
+  height: 41px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: rgba(255, 255, 255, 255);
+  position: relative;
+}*/
+
+#box_password{
+  top: 100px;
+  left: 50px;
+  width: 262px;
+  height: 41px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: rgba(255, 255, 255, 255);
+  position: relative;
+}
+#box_submit{
 top: 140px;
 left: 60px;
 width: 223px;
@@ -79,6 +126,33 @@ background: rgba(214, 188, 69, 255);
 position: relative;
 cursor: pointer;
 }
+
+/*
+input[type=submit] {
+top: 140px;
+left: 60px;
+width: 223px;
+height: 34px;
+width: 223px;
+height: 34px;
+font-family: Poppins;
+font-size: 12px;
+text-align: center;
+color: #ffffff;
+-ms-border-radius: 7px;
+-o-border-radius: 7px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+-ms-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-o-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+background: rgba(214, 188, 69, 255);
+position: relative;
+cursor: pointer;
+}*/
 
 #Sign-in {
 	top: 70px;
@@ -327,6 +401,20 @@ cursor: pointer;
 	font-size: 12px;
 	text-align: left;
   color:#646464;
+  position: relative;
+}
+
+/*________________FOR_______PROFILE_____________________*/
+
+#user_details {
+	top: 113px;
+	left: 400px;
+	width: 145px;
+	height: 38px;
+	font-family: Poppins;
+	font-size: 24px;
+	text-align: center;
+	color:#2a2a2e;
   position: relative;
 }
 
@@ -714,7 +802,8 @@ img.roomPic {
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/career.png) no-repeat;
+  background: url(Career/skins/career.png) no-repeat fixed center;
+  background-size: 100% 80%;
 }
 
 .header_positions {
@@ -733,7 +822,7 @@ img.roomPic {
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/family.png) no-repeat;
+  background: url(Career/skins/family.png) no-repeat 0 0;
 }
 
 /* head menu */
@@ -845,9 +934,24 @@ img.roomPic {
   font-size: medium;
   width: 70%;
   height: 40px;
-  top: 67%;
+  top: 68%;
   left: 49%;
   transform: translate(-49%, 0);
+}
+
+.header_search_btn  {
+  position: absolute;
+  background-color: gray;
+  width: 80px;
+  height: 30px;
+  top: 85%;
+  left: 49%;
+  transform: translate(-49%, 0);
+  border-radius: 4px;
+  font-size: x-small;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid darkgray;
 }
 
 .content_top{
@@ -863,6 +967,13 @@ img.roomPic {
   position: absolute;
   top: 15px;
   left: 5%;
+}
+
+.content_description {
+  color: #B0A073;
+  position: absolute;
+  top: 90px;
+  left: 10%;
 }
 
 .content_content {
