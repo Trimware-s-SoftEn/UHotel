@@ -668,30 +668,37 @@ cursor: pointer;
   clear: both;
 }
 
-.roomTable {
-  margin-top: 50px;
-  margin-left: 6%;
-  margin-right: 18%;
-  text-align: center;
-  border-style: none;
-}
-
 .roomColumn {
   float: left;
-  width: 28%;
-  padding: 17px;
-  height: 50px;
+  width: 23.5%;
+  padding: 10px 10px;
+  background-color: #eeeeee;
   color: black;
-  font-size: 15px;
-  border-color: grey;
-  border-style: solid;
-  border-radius:3px;
+  border-style: hidden;
+  border-radius:10px;
+  margin-right: 10px;
+  box-shadow: 3px 3px 3px #bbbbbb;
 }
 
 .roomRow:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.roomTable {
+  margin-top: 50px;
+  margin-left: 2%;
+  margin-right: 13%;
+  text-align: left;
+}
+
+img.roomPic {
+  width: 74px;
+  height: 74px;
+  display: block;
+  float: left;
+  overflow:hidden;
 }
 
 /* ________________________________________ End Reservation CSS ___________________________________ */
