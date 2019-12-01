@@ -733,7 +733,7 @@ cursor: pointer;
 /* ############################# room page ############################ */
 .stayTableRoom {
   margin-top: 50px;
-  margin-left: 12%;
+  margin-left: 3%;
   margin-right: 18%;
   text-align: center;
   border-color: grey;
@@ -758,13 +758,14 @@ cursor: pointer;
 
 .roomColumn {
   float: left;
-  width: 23.5%;
-  padding: 10px 10px;
+  width: 280px;
+  padding: 0px 0px;
   background-color: #eeeeee;
   color: black;
   border-style: hidden;
   border-radius:10px;
   margin-right: 10px;
+  margin-bottom: 12px;
   box-shadow: 3px 3px 3px #bbbbbb;
 }
 
@@ -779,11 +780,36 @@ cursor: pointer;
   margin-left: 2%;
   margin-right: 13%;
   text-align: left;
+  width: 600px;
 }
 
 img.roomPic {
-  width: 74px;
-  height: 74px;
+  width: 280px;
+  height: 200px;
+  display: block;
+  float: left;
+  overflow:hidden;
+}
+
+.roomTable p.first {
+  color: #cf3f37;
+  margin-top: 220px;
+  font-size: 17px;
+}
+.roomTable p {
+  color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -15px;
+  text-align: left;
+}
+
+img.roomIcon {
+  width: 14px;
+  height: 14px;
+  margin-left: 18px;
+  margin-top: 0px;
+
   display: block;
   float: left;
   overflow:hidden;
