@@ -659,3 +659,177 @@ cursor: pointer;
 }
 
 /* ________________________________________ End Reservation CSS button ___________________________________ */
+
+
+/* _____________CAREER___________________________________________________ */
+
+
+/* head of page, contain menu and search box*/
+.header_career {
+  position: absolute;
+  font-family: Poppins;
+  top: 75px;
+  height: 580px;
+  width: 100%;
+  background: url(Career/skins/career.png) no-repeat;
+}
+
+.header_positions {
+  position: absolute;
+  font-family: Poppins;
+  top: 75px;
+  height: 580px;
+  width: 100%;
+  background: url(Career/skins/positions.png) no-repeat;
+
+}
+
+.header_family {
+  position: absolute;
+  font-family: Poppins;
+  top: 75px;
+  height: 580px;
+  width: 100%;
+  background: url(Career/skins/family.png) no-repeat;
+}
+
+/* head menu */
+.header_menu {
+  background-color: gray;
+  opacity: 80%;
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  width: 320px;
+  height: 360px;
+}
+/* all available menu*/
+.header_menu h1{
+  position: absolute;
+  color: white;
+  top: -10px;
+  left: 20px;
+}
+
+.header_menu #WhatWeOffer_menu{
+  position: absolute;
+  font-size: x-large;
+  color: white;
+  top: 50px;
+  left: 40px;
+}
+
+.header_menu #benefits_menu{
+  position: absolute;
+  font-size: large;
+  color: white;
+  top: 100px;
+  left: 58px;
+}
+
+.header_menu #learning_menu{
+  position: absolute;
+  font-size: large;
+  color: white;
+  top: 140px;
+  left: 58px;
+}
+
+.header_menu #graduate_menu{
+  position: absolute;
+  font-size: large;
+  color: white;
+  top: 180px;
+  left: 58px;
+}
+
+.header_menu #positions_menu{
+  position: absolute;
+  font-size: x-large;
+  color: white;
+  top: 225px;
+  left: 40px;
+}
+
+.header_menu #family_menu{
+  position: absolute;
+  font-size: x-large;
+  color: white;
+  top: 275px;
+  left: 40px;
+}
+
+/* quich search box*/
+.header_search {
+  background-color: rgb(86, 86, 86);
+  position: absolute;
+  top: 50px;
+  right: 8%;
+  width: 340px;
+  height: 420px;
+}
+
+.header_search_grid {
+  position: absolute;
+  border: 2px solid #D9B645;
+  top: 17px;
+  left: 17px;
+  width: 300px;
+  height: 380px;
+}
+
+.header_search_logo {
+  position: absolute;
+  top: 30px;
+  left: 49%;
+  transform: translate(-50%, 0);
+}
+
+.header_search_selectEm {
+  position: absolute;
+  background-color: gray;
+  font-size: medium; 
+  width: 70%;
+  height: 40px;
+  top: 50%;
+  left: 49%;
+  transform: translate(-49%, 0);
+}
+
+.header_search_selectDe {
+  position: absolute;
+  background-color: gray;
+  font-size: medium; 
+  width: 70%;
+  height: 40px;
+  top: 67%;
+  left: 49%;
+  transform: translate(-49%, 0);
+}
+
+.content_top{
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background-color: #4CAF50;
+  top: 650px;
+}
+
+.content_topic {
+  color: #B0A073;
+  position: absolute;
+  top: 15px;
+  left: 5%;
+}
+
+.content_content {
+  position: absolute;
+  top: 800px;
+  width: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+
+/* ____________END CAREER_________________________________________________*/

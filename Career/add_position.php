@@ -2,19 +2,19 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 <div class="topnav">
-  <a class="icon" href="#home"><img src="picture/Logo_Transparent.png"; id="icon"></a>
+  <a class="icon" href="#home"><img src="../picture/Logo_Transparent.png"; id="icon"></a>
   <div class="dropdownL">
     <button class="dropbtn">About</button>
     <div class="dropdown-content">
       <a href="#about">About us</a>
       <a href="#contact">Contact</a>
       <a href="#map">Map</a>
-      <a href="../Career/career.html">Career</a>
+      <a href="#map">Career</a>
     </div>
   </div>
   <div class="dropdownL">
@@ -38,23 +38,13 @@
       <a href="#logout">Logout</a>
     </div>
   </div>
-  <img src="picture/UserIcon.png"; id="userIcon">
-  <img src="picture/lineInNav.png"; id="lineInNav">
+  <img src="../picture/UserIcon.png"; id="userIcon">
+  <img src="../picture/lineInNav.png"; id="lineInNav">
   <a class="book" href="Reservation/your_stay.html">BOOK NOW</a>
 </div>
 
 <div class="main">
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
-  <p>Some content..</p>
+
 </div>
 
 <footer>
