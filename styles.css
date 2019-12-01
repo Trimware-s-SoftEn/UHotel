@@ -69,7 +69,7 @@ select {
   background: rgba(255, 255, 255, 255);
   position: relative;
 }*/
-
+/*
 input[type=password],
 select
 {
@@ -85,9 +85,9 @@ select
   border: 1px solid #707070;
   background: rgba(255, 255, 255, 255);
   position: relative;
-}
-/*
-.box_password{
+}*/
+
+#box_password{
   top: 100px;
   left: 50px;
   width: 262px;
@@ -100,8 +100,7 @@ select
   border: 1px solid #707070;
   background: rgba(255, 255, 255, 255);
   position: relative;
-}*/
-
+}
 #box_submit{
 top: 140px;
 left: 60px;
