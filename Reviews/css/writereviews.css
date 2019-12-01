@@ -1,0 +1,731 @@
+/*
+	@name writereviews
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; /*overflow-x:hidden;*/ }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: table; position: relative; width: 1024px; height: 919px; margin-left: auto; margin-right: auto;  }
+.border-green:hover
+{
+border-color: #28a745 !important;
+cursor: pointer;	
+}
+#span-review{
+	    margin-left: 30%;
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: #bfa168;
+}
+#_bg__writereviews {
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 919px;
+	background:rgba(255,255,255,255);
+}
+
+#footer {
+	top: 721px;
+	left: -5px;
+	width: 1035px;
+	height: 198px;
+}
+
+#footer_ek1 {
+	top: 0px;
+	left: 2px;
+	width: 1024px;
+	height: 150px;
+	background:rgba(255,255,255,255);
+}
+
+
+#logo {
+	top: 17px !important;
+	position: absolute !important;
+	left: 0px;
+	width: 136px;
+	height: 125px;
+	background:url(../skins/logo.png);
+	background-size:cover;
+}
+
+
+#path_1 {
+	top: 11px !important;
+	position: absolute !important;
+	left: 23px;
+	width: 974px;
+	height: 1px;
+	background:url(../skins/path_1.png);
+	background-size:cover;
+}
+
+
+#contact_us__mail__433_132_someroad_rd___10999_bankok__thailand_email__uhotel_reservation_abc_com_tel___66__0__2_231_4421 {
+	top: 21px;
+	left: 136px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+	color:#666666;
+}
+
+
+#follow_us {
+	top: 21px;
+	left: 504px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+	color:#666666;
+}
+
+
+#subscribe {
+	top: 21px;
+	left: 695px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+	color:#666666;
+}
+
+
+#facebook {
+	top: 79px !important;
+	position: absolute !important;
+	left: 507px;
+	width: 28px;
+	height: 28px;
+	background:url(../skins/facebook.png);
+	background-size:cover;
+}
+
+
+#facebook_ek1 {
+	top: 77px !important;
+	position: absolute !important;
+	left: 607px;
+	width: 31px;
+	height: 31px;
+	background:url(../skins/facebook_ek1.png);
+	background-size:cover;
+}
+
+
+#facebook_ek2 {
+	top: 69px !important;
+	position: absolute !important;
+	left: 566px;
+	width: 46px;
+	height: 46px;
+	background:url(../skins/facebook_ek2.png);
+	background-size:cover;
+}
+
+
+#facebook_ek3 {
+	top: 79px !important;
+	position: absolute !important;
+	left: 540px;
+	width: 29px;
+	height: 29px;
+	background:url(../skins/facebook_ek3.png);
+	background-size:cover;
+}
+
+
+/*#path_2 {
+	top: 104px !important;
+	position: absolute !important;
+	left: 647px;
+	width: 0px;
+	height: 0px;
+	background:url(../skins/path_2.png);
+	background-size:cover;
+}*/
+
+
+#rectangle_1 {
+	top: 72px;
+	left: 695px;
+	width: 299px;
+	height: 38px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #aeaeae;
+	background:rgba(255,255,255,255);
+}
+
+
+#enter_your_email {
+	top: 80px;
+	left: 709px;
+	width: 253px;
+	height: 27.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 13px;
+	text-align: left;
+	line-height: 13px;
+	color:#aeaeae;
+}
+
+#group_451 {
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 78px;
+}
+
+#path_46 {
+	top: 52px !important;
+	position: absolute !important;
+	left: 134px;
+	width: 18px;
+	height: 2.5px;
+	background:url(../skins/path_46.png);
+	background-size:cover;
+}
+
+
+#path_42 {
+	top: 0px !important;
+	position: absolute !important;
+	left: 0px;
+	width: 1024px;
+	height: 78px;
+	background:url(../skins/path_42.png);
+	background-size:cover;
+}
+
+
+#logo_ek1 {
+	top: 10px !important;
+	position: absolute !important;
+	left: 36px;
+	width: 63px;
+	height: 58px;
+	background:url(../skins/logo_ek1.png);
+	background-size:cover;
+}
+
+
+#about {
+	top: 26px;
+	left: 134px;
+	width: 99px;
+	height: 28px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#ffffff;
+}
+
+
+#services {
+	top: 26px;
+	left: 202px;
+	width: 99px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#ffffff;
+}
+
+
+#events {
+	top: 26px;
+	left: 293px;
+	width: 99px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#ffffff;
+}
+
+
+#offers {
+	top: 26px;
+	left: 370px;
+	width: 99px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#ffffff;
+}
+
+
+#reviews {
+	top: 26px;
+	left: 430px;
+	width: 80px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: center;
+	line-height: 14px;
+	color:#ffffff;
+}
+
+
+#gallery {
+	top: 26px;
+	left: 515px;
+	width: 72px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: center;
+	line-height: 14px;
+	color:#ffffff;
+}
+
+
+#path_46_ek1 {
+	top: 50px !important;
+	position: absolute !important;
+	left: 444px;
+	width: 18px;
+	height: 2.5px;
+	background:url(../skins/path_46_ek1.png);
+	background-size:cover;
+}
+
+#group_449 {
+	top: 13px;
+	left: 700px;
+	width: 307.33349609375px;
+	height: 52px;
+}
+
+#rectangle_1102 {
+	top: 9px;
+	left: 0px;
+	width: 152px;
+	height: 33px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(191,159,104,255);
+}
+
+
+#book_now {
+	top: 13px;
+	left: 38px;
+	width: 77px;
+	height: 22px;
+	font-family: Poppins;
+	font-size: 13px;
+	text-align: center;
+	color:#ffffff;
+}
+
+
+#ellipse_9 {
+	top: 1px;
+	left: 170px;
+	width: 48px;
+	height: 48px;
+	-ms-border-radius: 25px / 25px;
+	-o-border-radius: 25px / 25px;
+	-moz-border-radius: 25px / 25px;
+	-webkit-border-radius: 25px / 25px;
+	border-radius: 25px / 25px;
+	border: 1px solid #707070;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(239,240,240,255);
+}
+
+
+#m {
+	top: 3px;
+	left: 184px;
+	width: 27px;
+	height: 40px;
+	font-family: Poppins;
+	font-size: 25px;
+	text-align: left;
+	color:#bfa068;
+}
+
+
+#mook_c_ {
+	top: 12px;
+	left: 231px;
+	width: 60px;
+	height: 23px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#icon_material_arrow_drop_down {
+	top: 23px !important;
+	position: absolute !important;
+	left: 294px;
+	width: 13px;
+	height: 7px;
+	background:url(../skins/icon_material_arrow_drop_down.png);
+	background-size:cover;
+}
+
+
+#rectangle_1154 {
+	top: 0px;
+	left: 162px;
+	width: 0.5px;
+	height: 52px;
+	background:rgba(238,238,238,255);
+}
+
+#reserve2 {
+	top: 368px;
+	left: 168px;
+	width: 688px;
+	height: 118px;
+}
+
+#rectangle_1195 {
+	top: 0px;
+	left: 0px;
+	width: 688px;
+	height: 118px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(245,244,239,255);
+}
+
+
+#superior_room {
+	top: 13px;
+	left: 37px;
+	width: 120px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+	color:#2a2a2e;
+}
+
+
+#___ultimate_spa_essence_offer {
+	top: 36px;
+	left: 37px;
+	width: 207px;
+	height: 23px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	color:#2a2a2e;
+}
+
+
+#_1_oct_to_7_oct {
+	top: 78px;
+	left: 37px;
+	width: 95px;
+	height: 23px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	color:#cfc16c;
+}
+
+#button_primary {
+	top: 44px;
+	left: 468px;
+	width: 199px;
+	height: 33px;
+}
+
+#rectangle_1091 {
+	top: 0px;
+	left: 0px;
+	width: 196px;
+	height: 30px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1.5px solid #bfa168;
+	background:rgba(127,127,127,0);
+}
+
+
+#review_now {
+	top: 3px;
+	left: 51px;
+	width: 85px;
+	height: 19px;
+	font-family: Arial;
+	font-size: 14px;
+	text-align: center;
+	color:#bfa168;
+}
+
+#reserve3 {
+	top: 534px;
+	left: 168px;
+	width: 688px;
+	height: 118px;
+}
+
+#rectangle_1196 {
+	top: 0px;
+	left: 0px;
+	width: 688px;
+	height: 118px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(245,244,239,255);
+}
+
+
+#premium_deluxe_room_with_lounge_access_ {
+	top: 13px;
+	left: 37px;
+	width: 354px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+	color:#2a2a2e;
+}
+
+
+#___flexible_hot_deal_with_breakfast {
+	top: 36px;
+	left: 37px;
+	width: 234px;
+	height: 23px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	color:#2a2a2e;
+}
+
+
+#_8_sep_to_12_sep {
+	top: 78px;
+	left: 37px;
+	width: 108px;
+	height: 23px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	color:#cfc16c;
+}
+
+#button_primary_ek1 {
+	top: 44px;
+	left: 468px;
+	width: 199px;
+	height: 33px;
+}
+
+#rectangle_1091_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 196px;
+	height: 30px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1.5px solid #bfa168;
+	background:rgba(127,127,127,0);
+}
+
+
+#review_now_ek1 {
+	top: 3px;
+	left: 51px;
+	width: 85px;
+	height: 19px;
+	font-family: Arial;
+	font-size: 14px;
+	text-align: center;
+	color:#bfa168;
+}
+
+#reserve1 {
+	top: 202px;
+	left: 168px;
+	width: 688px;
+	height: 118px;
+}
+
+#rectangle_1152 {
+	top: 0px;
+	left: 0px;
+	width: 688px;
+	height: 118px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(245,244,239,255);
+}
+
+
+#premium_deluxe_room_with_lounge_access__ek1 {
+	top: 13px;
+	left: 37px;
+	width: 354px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+	color:#2a2a2e;
+}
+
+
+#___flexible_hot_deal_with_breakfast_ek1 {
+	top: 36px;
+	left: 37px;
+	width: 234px;
+	height: 23px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	color:#2a2a2e;
+}
+
+
+#_23_oct_to_24_oct {
+	top: 78px;
+	left: 37px;
+	width: 116px;
+	height: 23px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	color:#cfc16c;
+}
+
+#button_primary_ek2 {
+	top: 44px;
+	left: 468px;
+	width: 199px;
+	height: 33px;
+}
+
+#rectangle_1091_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 196px;
+	height: 30px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1.5px solid #bfa168;
+	background:rgba(127,127,127,0);
+}
+
+
+#review_now_ek2 {
+	top: 3px;
+	left: 51px;
+	width: 85px;
+	height: 19px;
+	font-family: Arial;
+	font-size: 14px;
+	text-align: center;
+	color:#bfa168;
+}
+
+
+#write_reviews {
+	top: 120px;
+	left: 105px;
+	width: 173px;
+	height: 40px;
+	font-family: Poppins;
+	font-size: 25px;
+	text-align: center;
+	color:#bfa068;
+}
+
+
+#icon_ionic_ios_arrow_back {
+	top: 128.00004577637px !important;
+	position: absolute !important;
+	left: 43.00048828125px;
+	width: 18px;
+	height: 31px;
+	background:url(../skins/icon_ionic_ios_arrow_back.png);
+	background-size:cover;
+}
+
+
+#from_your_stay_history__reviews_of_you_can_help_other_make_decision__ {
+	top: 130px;
+	left: 315px;
+	width: 479px;
+	height: 23px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+	color:#1e1e1e;
+}
+
+
+
+/* Add your custom CSS here */
