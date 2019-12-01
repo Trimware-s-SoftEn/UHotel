@@ -843,6 +843,13 @@ img.roomIcon {
   color: #564A22;
 }
 
+.roomList {
+  width: 200px;
+  padding: 20px 20px;
+  float: right;
+  position: absolute;
+}
+
 /* ________________________________________ End Reservation CSS ___________________________________ */
 
 
