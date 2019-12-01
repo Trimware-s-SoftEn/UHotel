@@ -21,8 +21,6 @@
 
   $result = mysqli_query($con,"SELECT *
                               FROM roomtype");
-  $result = mysqli_query($con,"SELECT *
-                              FROM roomtype");
 
 //  $sql = "SELECT branchName FROM branch";
 //  $result = mysqli_query($con,$sql);
@@ -117,9 +115,11 @@
                                            FROM picturegallery
                                            WHERE pictureID LIKE $pictureID");
                $rowPic = mysqli_fetch_array($resultPic);
+
                echo "
-                 <div class=\"roomColumn\">
-                   <p>Check in: ".$row["roomTypeName"]."</p>
+                 <div class=\"roomColumn\" style='font-size: 12px; color: #cf3f37;'>
+                   <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
+                   <p>".$row["roomTypeName"]."</p>
                  </div>
                ";
             }
