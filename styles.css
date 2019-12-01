@@ -858,6 +858,13 @@ cursor: pointer;
   left: 5%;
 }
 
+.content_description {
+  color: #B0A073;
+  position: absolute;
+  top: 90px;
+  left: 10%;
+}
+
 .content_content {
   position: absolute;
   top: 800px;
