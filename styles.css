@@ -38,6 +38,22 @@ img{
   position: relative;
 }
 
+#box_text{
+  top: 100px;
+  left: 50px;
+  width: 262px;
+  height: 41px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: rgba(255, 255, 255, 255);
+  position: relative;
+}
+
+/*
 input[type=text],
 select {
   top: 100px;
@@ -52,7 +68,7 @@ select {
   border: 1px solid #707070;
   background: rgba(255, 255, 255, 255);
   position: relative;
-}
+}*/
 /*
 input[type=password],
 select
@@ -70,8 +86,8 @@ select
   background: rgba(255, 255, 255, 255);
   position: relative;
 }*/
-/*
-.box_password{
+
+#box_password{
   top: 100px;
   left: 50px;
   width: 262px;
@@ -84,9 +100,9 @@ select
   border: 1px solid #707070;
   background: rgba(255, 255, 255, 255);
   position: relative;
-}*/
+}
 
-input[type=submit] {
+#box_submit{
 top: 140px;
 left: 60px;
 width: 223px;
@@ -111,6 +127,33 @@ background: rgba(214, 188, 69, 255);
 position: relative;
 cursor: pointer;
 }
+
+/*
+input[type=submit] {
+top: 140px;
+left: 60px;
+width: 223px;
+height: 34px;
+width: 223px;
+height: 34px;
+font-family: Poppins;
+font-size: 12px;
+text-align: center;
+color: #ffffff;
+-ms-border-radius: 7px;
+-o-border-radius: 7px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+-ms-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-o-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+background: rgba(214, 188, 69, 255);
+position: relative;
+cursor: pointer;
+}*/
 
 #Sign-in {
 	top: 70px;
@@ -326,8 +369,8 @@ cursor: pointer;
   position: absolute;
 }
 
-#fname {
-	top: 100px;
+#fname{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -338,8 +381,8 @@ cursor: pointer;
   position: relative;
 }
 
-#lname {
-	top: 100px;
+#lname{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -350,8 +393,8 @@ cursor: pointer;
   position: relative;
 }
 
-#phone {
-	top: 100px;
+#phone{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -361,11 +404,12 @@ cursor: pointer;
   color:#646464;
   position: relative;
 }
+
 
 /*________________FOR_______PROFILE_____________________*/
 
 #user_details {
-	top: 113px;
+	top: 150px;
 	left: 400px;
 	width: 145px;
 	height: 38px;
@@ -376,6 +420,211 @@ cursor: pointer;
   position: relative;
 }
 
+#rectangle_left {
+	top: 106px;
+	left: 50px;
+	width: 293px;
+	height: 431px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(254,253,253,255);
+  position: relative;
+}
+
+.mybook {
+  top: 120px;
+  left: 45px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.mybook:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myprofile {
+  top: 30px;
+  left: -135px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myprofile:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myhistory {
+  top: 130px;
+  left: 45px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myhistory:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myreview {
+  top: 220px;
+  left: -79px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myreview:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+#rectangle_right_1 {
+	top: -270px;
+	left: 400px;
+	width: 1000px;
+	height: 103px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,244,239,255);
+  position: relative;
+}
+
+
+#name {
+	top: 10px;
+	left: 50px;
+	width: 54px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: left;
+  color:#5a5b5b;
+  position: relative;
+}
+
+
+.showname {
+	top: -24px;
+	left: 200px;
+	width: 100px;
+	height: 29px;
+	font-family: Poppins;
+	font-size: 30px;
+	text-align: left;
+  color:#2a2a2e;
+  position: relative;
+}
+
+#rectangle_right_2 {
+	top: -250px;
+	left: 400px;
+	width: 1000px;
+	height: 103px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,244,239,255);
+  position: relative;
+}
+
+
+#name_email {
+	top: 10px;
+	left: 50px;
+	width: 54px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: left;
+  color:#5a5b5b;
+  position: relative;
+}
+
+#rectangle_right_3 {
+	top: -230px;
+	left: 400px;
+	width: 1000px;
+	height: 103px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,244,239,255);
+  position: relative;
+}
+
+
+#name_password {
+	top: 10px;
+	left: 50px;
+	width: 54px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: left;
+  color:#5a5b5b;
+  position: relative;
+}
+
+#rectangle_right_4 {
+	top: -210px;
+	left: 400px;
+	width: 1000px;
+	height: 103px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,244,239,255);
+  position: relative;
+}
+
+#name_phone {
+	top: 10px;
+	left: 50px;
+	width: 54px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: left;
+  color:#5a5b5b;
+  position: relative;
+}
 
 /*______________________END LOGIN_________________________*/
 

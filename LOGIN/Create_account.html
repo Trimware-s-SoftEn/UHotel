@@ -41,11 +41,11 @@
 
         <!-- Right part -->
         <div class="dropdownR">
-            <button class="dropbtn">User Name</button>
-            <div class="dropdown-content">
-                <a href="#profile">Profile</a>
-                <a href="#logout">Logout</a>
-            </div>
+            <button class="dropbtn" href="http://localhost/UHotel/LOGIN/Login.html">Login</button>
+            <!--<div class="dropdown-content">
+              <a href="#profile">Profile</a>
+              <a href="#logout">Logout</a>
+            </div>-->
         </div>
         <img src="../picture/UserIcon.png" ; id="userIcon">
         <img src="../picture/lineInNav.png" ; id="lineInNav">
@@ -61,21 +61,21 @@
         <form method="POST" action="Create_account.php">
             <br>
             <div id="email">EMAIL</div>
-            <input type="text" id="Email_create" name="Email">
+            <input type="text" id="box_text" name="Email">
             <div id="password">PASSWORD</div>
 
-            <input type="text" id="Password_create" name="Password">
+            <input type="password" id="box_password" name="Password">
             <br>
             <div id="fname">FirstName</div>
-            <input type="text" id="Fname" name="FirstName">
+            <input type="text" id="box_text" name="FirstName">
             <br>
             <div id="lname">LastName</div>
-            <input type="text" id="Lname" name="LastName">
+            <input type="text" id="box_text" name="LastName">
             <br>
             <div id="phone">Phone</div>
-            <input type="text" id="Phone" name="Phone">
+            <input type="text" id="box_text" name="Phone">
             <br>
-            <input type="submit" value="Sign-up">
+            <input type="submit" id="box_submit" value="Sign-up">
         </form>
 
         <div id="Not_have_account">Already_have_account?</div>
