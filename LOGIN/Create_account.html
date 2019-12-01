@@ -57,23 +57,49 @@
         <div id="Sign-in">
             SIGN_UP
         </div>
+        <!--
+        <script>
+            function validateForm() {
+              var name = document.forms["Create_account"]["FirstName"].value;
+              var email = document.forms["Create_account"]["Email"].value;
+              var password = document.forms["Create_account"]["Password"].value;
+              var lname = document.forms["Create_account"]["LastName"].value;
 
-        <form method="POST" action="Create_account.php">
+              if (email == "") {
+                alert("Email must be filled out");
+                return false;
+              }
+              if (password == "") {
+                alert("Password must be filled out");
+                return false;
+              }
+              if (name == "") {
+                alert("FirstName must be filled out");
+                return false;
+              }
+              if (lname == "") {
+                alert("LastName must be filled out");
+                return false;
+              }
+            }
+        </script>-->
+
+        <form method="POST" action="Create_account.php" onsubmit="return validateForm()" name="Create_account">
             <br>
             <div id="email">EMAIL</div>
-            <input type="text" id="box_text" name="Email">
+            <input type="text" id="box_text" name="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="A form with an email field that that must be in the following order: characters@characters.domain (characters followed by an @ sign, followed by more characters, and then a '.' '.' After the '.' sign, add at least 2 letters from a to z:">
             <div id="password">PASSWORD</div>
 
-            <input type="password" id="box_password" name="Password">
+            <input type="password" id="box_password" name="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
             <br>
             <div id="fname">FirstName</div>
-            <input type="text" id="box_text" name="FirstName">
+            <input type="text" id="box_text" name="FirstName" required>
             <br>
             <div id="lname">LastName</div>
-            <input type="text" id="box_text" name="LastName">
+            <input type="text" id="box_text" name="LastName" required>
             <br>
             <div id="phone">Phone</div>
-            <input type="text" id="box_text" name="Phone">
+            <input type="text" id="box_text" name="Phone" pattern=".{10}" title="10 characters">
             <br>
             <input type="submit" id="box_submit" value="Sign-up">
         </form>
