@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2019 at 06:22 PM
+-- Generation Time: Dec 01, 2019 at 07:47 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -91,6 +91,17 @@ CREATE TABLE `facilities` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `payment`
+--
+
+CREATE TABLE `payment` (
+  `paymentID` int(11) NOT NULL,
+  `promotionID` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `picturegallery`
 --
 
@@ -133,7 +144,8 @@ CREATE TABLE `position` (
   `description` text COLLATE utf8_unicode_ci NOT NULL,
   `pictureID` int(11) NOT NULL,
   `requirement` text COLLATE utf8_unicode_ci NOT NULL,
-  `employmentType` text COLLATE utf8_unicode_ci NOT NULL
+  `employmentType` text COLLATE utf8_unicode_ci NOT NULL,
+  `salary` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -177,7 +189,6 @@ CREATE TABLE `reservation` (
   `startDate` datetime NOT NULL,
   `endDate` datetime NOT NULL,
   `userID` int(11) NOT NULL,
-  `promotionID` int(11) NOT NULL,
   `reservationStatus` tinyint(4) NOT NULL COMMENT '0 notCom, 1 Com',
   `customerAmount` int(11) NOT NULL,
   `isReservationDesk` tinyint(4) NOT NULL,
@@ -185,7 +196,8 @@ CREATE TABLE `reservation` (
   `address` text COLLATE utf8_unicode_ci NOT NULL,
   `customerEmail` text COLLATE utf8_unicode_ci NOT NULL,
   `customerTel` text COLLATE utf8_unicode_ci NOT NULL,
-  `specialRequest` text COLLATE utf8_unicode_ci NOT NULL
+  `specialRequest` text COLLATE utf8_unicode_ci NOT NULL,
+  `paymentID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -325,6 +337,12 @@ ALTER TABLE `facilities`
   ADD KEY `pictureID` (`pictureID`);
 
 --
+-- Indexes for table `payment`
+--
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`paymentID`);
+
+--
 -- Indexes for table `picturegallery`
 --
 ALTER TABLE `picturegallery`
@@ -364,7 +382,7 @@ ALTER TABLE `promotion`
 ALTER TABLE `reservation`
   ADD PRIMARY KEY (`roomNo`,`reserveDateTime`),
   ADD KEY `userID` (`userID`),
-  ADD KEY `promotionID` (`promotionID`);
+  ADD KEY `reservation_ibfk_4` (`paymentID`);
 
 --
 -- Indexes for table `review`
@@ -408,6 +426,12 @@ ALTER TABLE `department`
 --
 ALTER TABLE `event`
   MODIFY `eventID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `payment`
+--
+ALTER TABLE `payment`
+  MODIFY `paymentID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `picturegallery`
@@ -480,15 +504,15 @@ ALTER TABLE `positionrequire`
 -- Constraints for table `promotion`
 --
 ALTER TABLE `promotion`
-  ADD CONSTRAINT `promotion_ibfk_1` FOREIGN KEY (`pictureID`) REFERENCES `picturegallery` (`pictureID`);
+  ADD CONSTRAINT `promotion_ibfk_1` FOREIGN KEY (`pictureID`) REFERENCES `picturegallery` (`pictureID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `reservation`
 --
 ALTER TABLE `reservation`
-  ADD CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`roomNo`) REFERENCES `room` (`roomNo`),
-  ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`),
-  ADD CONSTRAINT `reservation_ibfk_3` FOREIGN KEY (`promotionID`) REFERENCES `promotion` (`promotionID`);
+  ADD CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`roomNo`) REFERENCES `room` (`roomNo`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `reservation_ibfk_4` FOREIGN KEY (`paymentID`) REFERENCES `payment` (`paymentID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `review`
