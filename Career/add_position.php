@@ -93,7 +93,7 @@ require 'db_conn.php';
             <option value="Full time">Full time</option>
             <option value="">Temporary / Seasonal</option>
             <option value="Part time">Part time</option>
-            <option value="Casual / On-call ">Casual / On-call </option>
+            <option value="Casual / On-call">Casual / On-call</option>
             <option value="Graduate programme">Graduate programme</option>
             <option value="Internship">Internship</option>
           </select><br>
@@ -101,7 +101,8 @@ require 'db_conn.php';
           Description :
           <input name="positionDescription">
 
-          Resuipement
+          Resuipement :
+
 
         
 
