@@ -110,21 +110,45 @@
                $description = $row['description'];
                $pictureID = $row['pictureID'];
                $numberofBed = $row['numberofBed'];
+               $numberofGuest = $numberofBed*2;
 
                $resultPic = mysqli_query($con,"SELECT *
                                            FROM picturegallery
                                            WHERE pictureID LIKE $pictureID");
                $rowPic = mysqli_fetch_array($resultPic);
 
+               $resultScore = mysqli_query($con,"SELECT
+                 AVG(reviewScore) AS Average
+                 FROM review
+                 WHERE roomTypeName LIKE '$roomTypeName'");
+
+               $rowScore = mysqli_fetch_array($resultScore);
+
+               $resultRoom = mysqli_query($con,"SELECT
+                 COUNT(roomNo) AS countRoom
+                 FROM room
+                 WHERE roomTypeName LIKE '$roomTypeName'");
+
+               $rowRoom = mysqli_fetch_array($resultRoom);
+
                echo "
-                 <div class=\"roomColumn\" style='font-size: 12px; color: #cf3f37;'>
+                 <div class=\"roomColumn\" style='font-size: 12px;'>
                    <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
-                   <p>".$row["roomTypeName"]."</p>
+                   <p class='first'>".$roomTypeName."</p>
+                   <p style='margin-top: -15px;'> Average Score: ".$rowScore["Average"]."</p>
+                   <img src='../picture/bed_icon.png' class='roomIcon'>
+                   <p> Number of Bed: ".$numberofBed."</p>
+                   <img src='../picture/guest_icon.png' class='roomIcon'>
+                   <p> Max People: ".$numberofGuest."</p>
+                   <p> Room Available: ".$rowRoom['countRoom']."</p>
+                   <p class='cost'> -".$price."฿</p>
+                   <div class='roomFrameButton'>
+                    <button type='submit' name='submit' value='checkRoom'>Add</button>
+                   </div>
                  </div>
                ";
             }
           ?>
-
 	      </div>
       </div>
       <!-- End Room Table -->

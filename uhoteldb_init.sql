@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2019 at 03:07 PM
+-- Generation Time: Dec 01, 2019 at 07:47 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -91,6 +91,17 @@ CREATE TABLE `facilities` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `payment`
+--
+
+CREATE TABLE `payment` (
+  `paymentID` int(11) NOT NULL,
+  `promotionID` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `picturegallery`
 --
 
@@ -133,7 +144,8 @@ CREATE TABLE `position` (
   `description` text COLLATE utf8_unicode_ci NOT NULL,
   `pictureID` int(11) NOT NULL,
   `requirement` text COLLATE utf8_unicode_ci NOT NULL,
-  `employmentType` text COLLATE utf8_unicode_ci NOT NULL
+  `employmentType` text COLLATE utf8_unicode_ci NOT NULL,
+  `salary` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -177,7 +189,6 @@ CREATE TABLE `reservation` (
   `startDate` datetime NOT NULL,
   `endDate` datetime NOT NULL,
   `userID` int(11) NOT NULL,
-  `promotionID` int(11) NOT NULL,
   `reservationStatus` tinyint(4) NOT NULL COMMENT '0 notCom, 1 Com',
   `customerAmount` int(11) NOT NULL,
   `isReservationDesk` tinyint(4) NOT NULL,
@@ -185,7 +196,8 @@ CREATE TABLE `reservation` (
   `address` text COLLATE utf8_unicode_ci NOT NULL,
   `customerEmail` text COLLATE utf8_unicode_ci NOT NULL,
   `customerTel` text COLLATE utf8_unicode_ci NOT NULL,
-  `specialRequest` text COLLATE utf8_unicode_ci NOT NULL
+  `specialRequest` text COLLATE utf8_unicode_ci NOT NULL,
+  `paymentID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -199,8 +211,17 @@ CREATE TABLE `review` (
   `roomTypeName` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
   `review` text COLLATE utf8_unicode_ci NOT NULL,
   `reviewScore` tinyint(4) NOT NULL,
-  `dateTime` datetime NOT NULL
+  `dateTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `review`
+--
+
+INSERT INTO `review` (`userID`, `roomTypeName`, `review`, `reviewScore`, `dateTime`) VALUES
+(1, 'Deluxe Premier Room', 'Dee', 4, '2019-12-01 22:32:50'),
+(1, 'Premier Suite', 'Dee Ei Ei', 4, '2019-12-01 22:32:05'),
+(1, 'Royal Suite', 'Dee Mak Mak Luey', 5, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -224,9 +245,9 @@ INSERT INTO `room` (`roomNo`, `roomTypeName`, `status`) VALUES
 (103, 'Deluxe Premier Room', 1),
 (104, 'Deluxe Premier Room', 1),
 (105, 'Deluxe Premier Room', 1),
-(201, 'PREMIER SUITE', 1),
-(202, 'PREMIER SUITE', 1),
-(203, 'PREMIER SUITE', 1),
+(201, 'Premier Suite', 1),
+(202, 'Premier Suite', 1),
+(203, 'Premier Suite', 1),
 (301, 'Royal Suite', 1),
 (302, 'Royal Suite', 1);
 
@@ -250,7 +271,7 @@ CREATE TABLE `roomtype` (
 
 INSERT INTO `roomtype` (`roomTypeName`, `price`, `description`, `pictureID`, `numberofBed`) VALUES
 ('Deluxe Premier Room', 15800, 'Elegant bedroom with separate walk in shower & bath. Twin beds is available.  Sitting area with sofa.', 1, 2),
-('PREMIER SUITE', 55800, 'Spacious room with private dining area for 5. Private balcony also provided with seats. Have large walk-in closest.', 2, 2),
+('Premier Suite', 55800, 'Spacious room with private dining area for 5. Private balcony also provided with seats. Have large walk-in closest.', 2, 2),
 ('Royal Suite', 180000, 'Provide private dining room for 8 people. The design is opulent and give the feeling of royalty. Have large living room, separate dressing area and facilites, such as private spa & fitness rooms.', 3, 4);
 
 -- --------------------------------------------------------
@@ -316,6 +337,12 @@ ALTER TABLE `facilities`
   ADD KEY `pictureID` (`pictureID`);
 
 --
+-- Indexes for table `payment`
+--
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`paymentID`);
+
+--
 -- Indexes for table `picturegallery`
 --
 ALTER TABLE `picturegallery`
@@ -355,7 +382,7 @@ ALTER TABLE `promotion`
 ALTER TABLE `reservation`
   ADD PRIMARY KEY (`roomNo`,`reserveDateTime`),
   ADD KEY `userID` (`userID`),
-  ADD KEY `promotionID` (`promotionID`);
+  ADD KEY `reservation_ibfk_4` (`paymentID`);
 
 --
 -- Indexes for table `review`
@@ -399,6 +426,12 @@ ALTER TABLE `department`
 --
 ALTER TABLE `event`
   MODIFY `eventID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `payment`
+--
+ALTER TABLE `payment`
+  MODIFY `paymentID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `picturegallery`
@@ -471,15 +504,15 @@ ALTER TABLE `positionrequire`
 -- Constraints for table `promotion`
 --
 ALTER TABLE `promotion`
-  ADD CONSTRAINT `promotion_ibfk_1` FOREIGN KEY (`pictureID`) REFERENCES `picturegallery` (`pictureID`);
+  ADD CONSTRAINT `promotion_ibfk_1` FOREIGN KEY (`pictureID`) REFERENCES `picturegallery` (`pictureID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `reservation`
 --
 ALTER TABLE `reservation`
-  ADD CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`roomNo`) REFERENCES `room` (`roomNo`),
-  ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`),
-  ADD CONSTRAINT `reservation_ibfk_3` FOREIGN KEY (`promotionID`) REFERENCES `promotion` (`promotionID`);
+  ADD CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`roomNo`) REFERENCES `room` (`roomNo`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `reservation_ibfk_4` FOREIGN KEY (`paymentID`) REFERENCES `payment` (`paymentID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `review`
@@ -492,7 +525,7 @@ ALTER TABLE `review`
 -- Constraints for table `room`
 --
 ALTER TABLE `room`
-  ADD CONSTRAINT `room_ibfk_1` FOREIGN KEY (`roomTypeName`) REFERENCES `roomtype` (`roomTypeName`);
+  ADD CONSTRAINT `room_ibfk_1` FOREIGN KEY (`roomTypeName`) REFERENCES `roomtype` (`roomTypeName`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `roomtype`
