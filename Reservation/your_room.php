@@ -5,7 +5,9 @@
   $password = "";
   $dbname = "uhoteldb";
 
-  $conn = new mysqli($servername, $username, $password, $dbname);
+  $con = new mysqli($servername, $username, $password, $dbname);
+  $id = $_SESSION["ID"];
+
 	// Check connection
 	if (mysqli_connect_errno())
 	{
@@ -59,7 +61,7 @@
 
   <!-- Right part -->
   <div class="dropdownR">
-    <button class="dropbtn"><?php echo $row["fName"]." ".$row["lName"] ?></button>
+    <button class="dropbtn"><?php echo $rowNav["fName"]." ".$rowNav["lName"] ?></button>
     <div class="dropdown-content">
       <a href="#profile">Profile</a>
       <a href="#logout">Logout</a>
@@ -105,7 +107,7 @@
         <div class="roomRow">
           <?php
             while($row = mysqli_fetch_array($result)) {
-               $roomTypeName = $row['staffName'];
+               $roomTypeName = $row['roomTypeName'];
                $price = $row['price'];
                $description = $row['description'];
                $pictureID = $row['pictureID'];
@@ -114,11 +116,10 @@
                $resultPic = mysqli_query($con,"SELECT *
                                            FROM picturegallery
                                            WHERE pictureID LIKE $pictureID");
-               $rowPic = mysqli_fetch_array($result);
+               $rowPic = mysqli_fetch_array($resultPic);
                echo "
                  <div class=\"roomColumn\">
-                   <img class=\"\" src='../picture/".$rowPic["picture"]."'>
-                   <p>Check in: ".$_SESSION["CHECKIN"]."</p>
+                   <p>Check in: ".$row["roomTypeName"]."</p>
                  </div>
                ";
             }
@@ -138,4 +139,4 @@
 </body>
 </html>
 
-<?php $conn->close(); ?>
+<?php $con->close(); ?>
