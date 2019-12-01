@@ -7,14 +7,6 @@ body {
   flex-direction:column;
 }
 
-.main {
-  display: block;
-  min-height: 100%; /* real browsers */
-  height: auto !important; /* real browsers */
-  height: 100%; /* IE6 bug */
-  margin-bottom: -20px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
-}
-
 /* Footer part */
 footer{
   margin-top:auto;
@@ -22,8 +14,6 @@ footer{
   left: 0px;
   width: 1035px;
   height: 198px;
-  display: block;
-  text-align: center;
 }
 
 /* Image property */
@@ -379,6 +369,41 @@ cursor: pointer;
   position: absolute;
 }
 
+#fname{
+  top: 100px;
+	left: 50px;
+	width: 39px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 12px;
+	text-align: left;
+  color:#646464;
+  position: relative;
+}
+
+#lname{
+  top: 100px;
+	left: 50px;
+	width: 39px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 12px;
+	text-align: left;
+  color:#646464;
+  position: relative;
+}
+
+#phone{
+  top: 100px;
+	left: 50px;
+	width: 39px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 12px;
+	text-align: left;
+  color:#646464;
+  position: relative;
+}
 
 
 /*________________FOR_______PROFILE_____________________*/
@@ -821,37 +846,30 @@ cursor: pointer;
   clear: both;
 }
 
+.roomTable {
+  margin-top: 50px;
+  margin-left: 6%;
+  margin-right: 18%;
+  text-align: center;
+  border-style: none;
+}
+
 .roomColumn {
   float: left;
-  width: 23.5%;
-  padding: 10px 10px;
-  background-color: #eeeeee;
+  width: 28%;
+  padding: 17px;
+  height: 50px;
   color: black;
-  border-style: hidden;
-  border-radius:10px;
-  margin-right: 10px;
-  box-shadow: 3px 3px 3px #bbbbbb;
+  font-size: 15px;
+  border-color: grey;
+  border-style: solid;
+  border-radius:3px;
 }
 
 .roomRow:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.roomTable {
-  margin-top: 50px;
-  margin-left: 2%;
-  margin-right: 13%;
-  text-align: left;
-}
-
-img.roomPic {
-  width: 74px;
-  height: 74px;
-  display: block;
-  float: left;
-  overflow:hidden;
 }
 
 /* ________________________________________ End Reservation CSS ___________________________________ */
