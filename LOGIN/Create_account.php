@@ -23,6 +23,7 @@ if(!mysqli_query($con,$sql))
 echo " successful";
 mysqli_close($con);
 
+header("Location: http://localhost/UHotel/LOGIN/Login.html?");
 
 
 /*
