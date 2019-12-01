@@ -167,7 +167,7 @@ $(document ).ready(function() {
 			<div id="write_reviews" >
 				Write reviews
 			</div>
-			<div id="icon_ionic_ios_arrow_back"  ></div>
+			<div id="icon_ionic_ios_arrow_back" style="cursor: pointer;" onclick="window.history.back();"  ></div>
 			<div id="from_your_stay_history__reviews_of_you_can_help_other_make_decision__" >
 				From your stay history, reviews of you can help other make decision .
 			</div>

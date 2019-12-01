@@ -101,7 +101,6 @@ select
   background: rgba(255, 255, 255, 255);
   position: relative;
 }
-
 #box_submit{
 top: 140px;
 left: 60px;
@@ -127,6 +126,33 @@ background: rgba(214, 188, 69, 255);
 position: relative;
 cursor: pointer;
 }
+
+/*
+input[type=submit] {
+top: 140px;
+left: 60px;
+width: 223px;
+height: 34px;
+width: 223px;
+height: 34px;
+font-family: Poppins;
+font-size: 12px;
+text-align: center;
+color: #ffffff;
+-ms-border-radius: 7px;
+-o-border-radius: 7px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+-ms-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-o-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+background: rgba(214, 188, 69, 255);
+position: relative;
+cursor: pointer;
+}*/
 
 /*
 input[type=submit] {
@@ -940,7 +966,7 @@ cursor: pointer;
 /* ############################# room page ############################ */
 .stayTableRoom {
   margin-top: 50px;
-  margin-left: 12%;
+  margin-left: 3%;
   margin-right: 18%;
   text-align: center;
   border-color: grey;
@@ -963,30 +989,98 @@ cursor: pointer;
   clear: both;
 }
 
-.roomTable {
-  margin-top: 50px;
-  margin-left: 6%;
-  margin-right: 18%;
-  text-align: center;
-  border-style: none;
-}
-
 .roomColumn {
   float: left;
-  width: 28%;
-  padding: 17px;
-  height: 50px;
+  width: 280px;
+  padding: 0px 0px;
+  background-color: #eeeeee;
   color: black;
-  font-size: 15px;
-  border-color: grey;
-  border-style: solid;
-  border-radius:3px;
+  border-style: hidden;
+  border-radius:10px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  box-shadow: 3px 3px 3px #bbbbbb;
 }
 
 .roomRow:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.roomTable {
+  margin-top: 50px;
+  margin-left: 2%;
+  margin-right: 13%;
+  text-align: left;
+  width: 600px;
+}
+
+img.roomPic {
+  width: 280px;
+  height: 200px;
+  display: block;
+  float: left;
+  overflow:hidden;
+}
+
+.roomTable p.first {
+  color: #cf3f37;
+  margin-top: 220px;
+  font-size: 17px;
+}
+
+.roomTable p {
+  color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -3px;
+  text-align: left;
+}
+
+.roomTable p.cost {
+  color: #cf3f37;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -3px;
+  text-align: right;
+}
+
+img.roomIcon {
+  width: 12px;
+  height: 12px;
+  margin-left: 18px;
+  margin-top: 0px;
+  margin-right: 6px;
+  display: block;
+  float: left;
+  overflow:hidden;
+}
+
+.roomFrameButton {
+  margin-left: 30%;
+  margin-bottom: 12px;
+}
+
+.roomFrameButton button {
+  padding: 12px 40px;
+  font-size: 12px;
+  display:inline-block;
+  background-color: #bf9f68;
+  color: white;
+  box-shadow: 3px 3px 3px #bbbbbb;
+}
+
+.roomFrameButton button:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.roomList {
+  width: 200px;
+  padding: 20px 20px;
+  float: right;
+  position: absolute;
 }
 
 /* ________________________________________ End Reservation CSS ___________________________________ */
@@ -1002,7 +1096,8 @@ cursor: pointer;
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/career.png) no-repeat;
+  background: url(Career/skins/career.png) no-repeat fixed center;
+  background-size: 100% 80%;
 }
 
 .header_positions {
@@ -1021,7 +1116,7 @@ cursor: pointer;
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/family.png) no-repeat;
+  background: url(Career/skins/family.png) no-repeat 0 0;
 }
 
 /* head menu */
@@ -1116,7 +1211,7 @@ cursor: pointer;
   transform: translate(-50%, 0);
 }
 
-.header_search_selectEm {
+.header_search_selectDe {
   position: absolute;
   background-color: gray;
   font-size: medium;
@@ -1127,15 +1222,30 @@ cursor: pointer;
   transform: translate(-49%, 0);
 }
 
-.header_search_selectDe {
+.header_search_selectEm {
   position: absolute;
   background-color: gray;
   font-size: medium;
   width: 70%;
   height: 40px;
-  top: 67%;
+  top: 68%;
   left: 49%;
   transform: translate(-49%, 0);
+}
+
+.header_search_btn  {
+  position: absolute;
+  background-color: gray;
+  width: 80px;
+  height: 30px;
+  top: 85%;
+  left: 49%;
+  transform: translate(-49%, 0);
+  border-radius: 4px;
+  font-size: x-small;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid darkgray;
 }
 
 .content_top{
@@ -1148,12 +1258,30 @@ cursor: pointer;
 
 .content_topic {
   color: #B0A073;
-  position: absolute;
-  top: 15px;
-  left: 5%;
+  display: flex ;
 }
 
-.content_description {
+.content_top .content_topic h1{
+  position: absolute;
+  color: #B0A073;
+  top: 5%;
+  left: 15%;
+}
+
+.content_top .content_topic h2{
+  position: absolute;
+  color: #B0A073;
+  top: 11%;
+  left: 33%
+}
+
+.content_top .content_topic #addPosition {
+  position: absolute;
+  top: 11%;
+  left: 28%
+}
+
+.content_top .content_description {
   color: #B0A073;
   position: absolute;
   top: 90px;
@@ -1166,6 +1294,35 @@ cursor: pointer;
   width: 75%;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.top_addPosition {
+  background-color: paleturquoise;
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+.top_addPosition h1 {
+  position: absolute;
+  left: 10%;
+  color: black;
+}
+
+.top_addPosition h2 {
+  position: absolute;
+  left: 23%;
+  top: 12%;
+}
+
+.top_addPosition .content_description {
+  position: absolute;
+  top: 23%;
+  left: 15%;
+}
+
+.content_addPosition {
+  background-color: orange;
 }
 
 
