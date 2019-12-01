@@ -64,10 +64,10 @@
                     <h3 id="graduate_menu">Graduate Opportunities</h3>
                 </a>
                 <a href="positions.php">
-                    <h2 id="positions_menu" style ="text-decoration: underline;";>Positions</h2>
+                    <h2 id="positions_menu" style="text-decoration: underline;" ;>Positions</h2>
                 </a>
                 <a href="family.html">
-                    <h2 id="family_menu" style="text-decoration: underline;" ;>Become our family</h2>
+                    <h2 id="family_menu" ;>Become our family</h2>
                 </a>
 
             </div>
@@ -108,15 +108,21 @@
                             <option value="19">Rooms</option>
                             <option value="20">Security</option>
                         </select>
-                        <input type="submit" name="submit" value="SEARCH" style=" position: absolute; background-color: gray; color: black; top:84%; width:90px;left: 50%; transform: translate(-50%, 0);" ;>
+                        <input type="submit" name="search_btn" value="SEARCH" class="header_search_btn">
                     </form>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer>
-            <h1>Footer Content</h1>
-        </footer>
+    <div class = "content_top">
+            <div class="content_topic" ><h1>Positions</h1> <h2></h2></div>
+            <div class="content_description">Feel free to find your right position</div>
+    </div>
+
+    <footer>
+        <h1>Footer Content</h1>
+    </footer>
 
 </body>
 
