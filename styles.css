@@ -654,6 +654,168 @@ cursor: pointer;
 
 /*______________________END LOGIN_________________________*/
 
+/*______________________START EVENTS________________________*/
+
+#rectangle_main {
+	top: 200px;
+	left: 240px;
+	width: 950px;
+	height: 400px;
+  background:rgba(129,129,129,255);
+  position: relative;
+}
+
+#events {
+	top: 30px;
+	left: 80px;
+	width: 133px;
+	height: 64px;
+	font-family: Poppins;
+	font-size: 40px;
+	text-align: center;
+  color:#ffffff;
+  position: relative;
+}
+
+#let_our_journey_begin {
+	top: 50px;
+	left: 80px;
+	width: 194px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+#enjoy {
+	top: -60px;
+	left: 350px;
+	width: 456px;
+	height: 86px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+#rectangle_circle {
+	top: 10px;
+	left: 50px;
+	width: 250px;
+	height: 150px;
+	-ms-border-radius: 64px;
+	-o-border-radius: 64px;
+	-moz-border-radius: 64px;
+	-webkit-border-radius: 64px;
+	border-radius: 64px;
+  background:rgba(155,155,155,255);
+  position: relative;
+}
+
+#wedding {
+	top: -110px;
+	left: 100px;
+	width: 79px;
+	height: 51px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#efefef;
+  position: relative;
+  cursor: pointer;
+}
+
+#meeting {
+	top: -50px;
+	left: 100px;
+	width: 71px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#efefef;
+  position: relative;
+  cursor: pointer;
+}
+
+/*wedding*/
+#group_538 {
+	top: 126px;
+	left: 45.5px;
+	width: 909px;
+  height: 48px;
+  position: relative;
+}
+
+#wedding {
+	top: 30px;
+	left: 41px;
+	width: 141px;
+	height: 49px;
+	font-family: Poppins;
+	font-size: 30px;
+	text-align: center;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#rectangle_13 {
+	top: 43px;
+	left: 98px;
+	width: 33px;
+	height: 5px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(0,0,0,255);
+}
+
+
+#line_13 {
+	top: 22px !important;
+	position: absolute !important;
+	left: 0px;
+	width: 40px;
+	height: 4px;
+	background:url(../UHotel/picture/line_13.png);
+	background-size:cover;
+}
+
+
+#line_18 {
+	top: 22px !important;
+	position: absolute !important;
+	left: 594px;
+	width: 315px;
+	height: 4px;
+	background:url(../UHotel/picture/line_18.png);
+	background-size:cover;
+}
+
+
+#line_19 {
+	top: 22px !important;
+	position: absolute !important;
+	left: 193px;
+	width: 401px;
+	height: 4px;
+	background:url(../UHotel/picture/line_19.png);
+	background-size:cover;
+}
+
+/*meeting*/
+
+
+/*______________________END EVENTS_________________________*/
+
+
+
 /* __________________________________________End Main__________________________________*/
 
 /* __________________________________________Start Nav Bar__________________________________*/
