@@ -1,8 +1,7 @@
 /*.btn-grad {background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%)}*/
-.btn-grad:hover {
-    background-image: radial-gradient(to right, #f7eade 0%, #f5c89c 100%);
-    -webkit-box-shadow: 4px 10px 10px -5px rgba(240,200,139,1);
-    -moz-box-shadow: 4px 10px 10px -5px rgba(240,200,139,1);
-    box-shadow: 4px 10px 10px -5px rgba(240,200,139,1);
-    background-position: center right; 
-}
+.btn-grad:hover { 
+    background-image: linear-gradient(to right, #f7eade 0%, #f5c89c 100%);
+-webkit-box-shadow: 4px 10px 10px -5px rgba(240,200,139,1);
+-moz-box-shadow: 4px 10px 10px -5px rgba(240,200,139,1);
+box-shadow: 4px 10px 10px -5px rgba(240,200,139,1);
+background-position: center right; }
