@@ -86,7 +86,7 @@ session_start();
 	          <p>Check out</p>
 	        </div>
 					<div class="stayColumnHead">
-	          <p>Room Numbers</p>
+	          <p>Guest Numbers</p>
 	        </div>
 	      </div>
 	      <div class="stayRow">
@@ -97,14 +97,14 @@ session_start();
 	          <input type="Date" name="checkOut" id="checkOut">
 	        </div>
 	        <div class="stayColumn">
-	          <input type="number" name="room" id="room" min="1" max="10">
+	          <input type="number" name="guest" id="guest" min="1" max="10">
 	        </div>
 	      </div>
 	    </div>
 	    <!-- End Table -->
 
 			<div class="stayFrameButton">
-				<button type="submit" name="submit" value="checkRoom">Check Room</button>
+				<button type="submit" name="submitCheck" value="checkRoom">Check Room</button>
 			</div>
 	  </div>
 	</form>
