@@ -110,6 +110,7 @@
                $description = $row['description'];
                $pictureID = $row['pictureID'];
                $numberofBed = $row['numberofBed'];
+               $numberofGuest = $numberofBed*2;
 
                $resultPic = mysqli_query($con,"SELECT *
                                            FROM picturegallery
@@ -121,18 +122,26 @@
                  FROM review
                  WHERE roomTypeName LIKE '$roomTypeName'");
 
-                /*if (!$resultScore) {
-                    printf("Error: %s\n", mysqli_error($con));
-                    exit();
-                }*/
                $rowScore = mysqli_fetch_array($resultScore);
+
+               $resultRoom = mysqli_query($con,"SELECT
+                 COUNT(roomNo) AS countRoom
+                 FROM room
+                 WHERE roomTypeName LIKE '$roomTypeName'");
+
+               $rowRoom = mysqli_fetch_array($resultRoom);
 
                echo "
                  <div class=\"roomColumn\" style='font-size: 12px;'>
                    <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
                    <p class='first'>".$roomTypeName."</p>
-                   <p> Average Score: ".$rowScore["Average"]."</p>
+                   <p style='margin-top: -15px;'> Average Score: ".$rowScore["Average"]."</p>
                    <img src='../picture/bed_icon.png' class='roomIcon'>
+                   <p> Number of Bed: ".$numberofBed."</p>
+                   <img src='../picture/guest_icon.png' class='roomIcon'>
+                   <p> Max People: ".$numberofGuest."</p>
+                   <p> Room Available: ".$rowRoom['countRoom']."</p>
+                   <p class='cost'> -".$price."฿</p>
                  </div>
                ";
             }
