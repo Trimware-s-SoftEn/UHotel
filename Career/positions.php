@@ -1,3 +1,7 @@
+<?php
+    require 'db_conn.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -83,7 +87,6 @@
                             <option value="Casual / On-call ">Casual / On-call </option>
                             <option value="Graduate programme">Graduate programme</option>
                             <option value="Internship">Internship</option>
-
                         </select>
                         <select id="select_De" class="header_search_selectDe">
                             <option style="color: rgb(50, 50, 50)" ; disabled selected>Select Department</option>
@@ -119,6 +122,12 @@
             <div class="content_topic" ><h1>Positions</h1> <h2></h2></div>
             <div class="content_description">Feel free to find your right position</div>
     </div>
+
+    <?php
+        $sql = "SELECT * FROM position";
+        $result = mysqli_query($conn, $sql);
+    ?>
+
 
     <footer>
         <h1>Footer Content</h1>
