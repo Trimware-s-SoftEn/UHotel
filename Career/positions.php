@@ -1,7 +1,3 @@
-<?php
-    require 'db_conn.php';
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -68,10 +64,10 @@
                     <h3 id="graduate_menu">Graduate Opportunities</h3>
                 </a>
                 <a href="positions.php">
-                    <h2 id="positions_menu" style="text-decoration: underline;" ;>Positions</h2>
+                    <h2 id="positions_menu" style ="text-decoration: underline;";>Positions</h2>
                 </a>
                 <a href="family.html">
-                    <h2 id="family_menu" ;>Become our family</h2>
+                    <h2 id="family_menu"erline;">Become our family</h2>
                 </a>
 
             </div>
@@ -82,11 +78,12 @@
                         <select id="select_Em" class="header_search_selectEm">
                             <option style="color: rgb(50, 50, 50)" ; disabled selected>Select Employment Type</option>
                             <option value="Full time">Full time</option>
-                            <option value="">Temporary / Seasonal</option>
+                            <option value="Temporary / Seasonal">Temporary / Seasonal</option>
                             <option value="Part time">Part time</option>
-                            <option value="Casual / On-call">Casual / On-call</option>
+                            <option value="Casual / On-call ">Casual / On-call </option>
                             <option value="Graduate programme">Graduate programme</option>
                             <option value="Internship">Internship</option>
+
                         </select>
                         <select id="select_De" class="header_search_selectDe">
                             <option style="color: rgb(50, 50, 50)" ; disabled selected>Select Department</option>
@@ -111,27 +108,16 @@
                             <option value="19">Rooms</option>
                             <option value="20">Security</option>
                         </select>
-                        <input type="submit" name="search_btn" value="SEARCH" class="header_search_btn">
-                    </form>
+                        <input type="submit" name="submit" value="SEARCH" class="header_search_btn"> </form>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class = "content_top">
-            <div class="content_topic" ><h1>Positions</h1> <h2></h2></div>
-            <div class="content_description">Feel free to find your right position</div>
-    </div>
-
-    <?php
-        $sql = "SELECT * FROM position";
-        $result = mysqli_query($conn, $sql);
-    ?>
+        <footer>
+            <h1>Footer Content</h1>
+        </footer>
 
 
-    <footer>
-        <h1>Footer Content</h1>
-    </footer>
 
 </body>
 

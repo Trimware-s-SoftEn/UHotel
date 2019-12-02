@@ -193,7 +193,7 @@ cursor: pointer;
   position: relative;
 }
 
-#email {
+#email_login {
 	top: 100px;
 	left: 50px;
 	width: 39px;
@@ -653,6 +653,58 @@ cursor: pointer;
 }
 
 /*______________________END LOGIN_________________________*/
+
+/*______________________START Homepage____________________*/
+#a_stunning_hotel {
+	top: 270px;
+	left: 500px;
+	width: 528px;
+	height: 88px;
+	font-family: Poppins;
+	font-size: 55px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+
+#welcome_to_uhotel {
+	top: 110px;
+	left: 570px;
+	width: 400px;
+	height: 100px;
+	font-family: Poppins;
+	font-size: 40px;
+	text-align: left;
+  color:#d8b845;
+  position: relative;
+}
+
+
+#rectangle_1098 {
+	top: 200px;
+	left: 590px;
+	width: 338px;
+	height: 2px;
+	border: 1px solid #707070;
+  background:rgba(255,255,255,255);
+  position: relative;
+}
+
+
+#uhotel_comes_with_a_collection_of_six_astounding_and_filly_customizable_homepage_layouts_suitable_for_various_purposes_ {
+	top: 250px;
+	left: 400px;
+	width: 709px;
+	height: 62px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: center;
+  color:#ffffff;
+  position: relative;
+}
+
+/*______________________End HOMPAGE_______________________*/
 
 /*______________________START EVENTS________________________*/
 
@@ -1481,6 +1533,7 @@ cursor: pointer;
   background-color: inherit;
   font-family: Poppins;
   margin: 0;
+  cursor: pointer;
 }
 
 .dropdownL:hover .dropbtn {
@@ -1491,6 +1544,7 @@ cursor: pointer;
 .dropdownR:hover .dropbtn {
   background-color: #inherit;
   color: #C9A52E;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -1777,10 +1831,36 @@ img.roomIcon {
 }
 
 .roomList {
-  width: 200px;
+  width: 280px;
   padding: 20px 20px;
-  float: right;
   position: absolute;
+  margin-left: 620px;
+  margin-top: 50px;
+  background-color: #eeeeee;
+}
+
+.roomListColumn {
+  float: left;
+  width: 260px;
+  padding: 0px 0px;
+  background-color: #ffffff;
+  border-style: hidden;
+  border-radius:10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 3px #bbbbbb;
+}
+
+.roomListColumn p {
+  float: left;
+  font-size: 14px;
+  color: #cf3f37;
+}
+
+.roomListRow:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* ________________________________________ End Reservation CSS ___________________________________ */
@@ -1806,8 +1886,8 @@ img.roomIcon {
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/positions.png) no-repeat;
-
+  background: url(Career/skins/position.png) no-repeat fixed center;
+  background-size: 100% 80%;
 }
 
 .header_family {
@@ -1816,7 +1896,8 @@ img.roomIcon {
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/family.png) no-repeat 0 0;
+  background: url(Career/skins/fam.png) no-repeat fixed center;
+  background-size: 100% 80%;
 }
 
 /* head menu */
@@ -1997,22 +2078,23 @@ img.roomIcon {
 }
 
 .top_addPosition {
-  background-color: paleturquoise;
+  background-color: lightyellow;
   width: 100%;
   height: 150px;
   display: flex;
 }
 
-.top_addPosition h1 {
+.top_addPosition .content_topic h1 {
   position: absolute;
   left: 10%;
-  color: black;
+  color: #444444;
 }
 
-.top_addPosition h2 {
+.top_addPosition .content_topic h2 {
   position: absolute;
   left: 23%;
-  top: 12%;
+  top: 12.2%;
+  color: #444444;
 }
 
 .top_addPosition .content_description {
@@ -2022,9 +2104,93 @@ img.roomIcon {
 }
 
 .content_addPosition {
-  background-color: orange;
+  position: absolute;
+  background-color: rgb(255, 210, 128);
+  width: 100%;
+  height: 400px;
 }
 
+.content_addPosition h1 {
+  position: absolute;
+  left: 15%;
+  width: 100%;
+  height: 100%;;
+}
 
+.content_addPosition .content_addPosition_form{
+  background-color: ;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  left: 20%;
+  top: 30%;
+}
+
+#departmentSelect{
+  position: absolute;
+  width: 240px;
+  height: 30px;
+  border-radius: 4px ;
+  color: black;
+  left: 190px;
+  top: 8%;
+}
+
+#h2_select_position {
+  position: absolute;
+  top: 17%;
+}
+
+#positionSelect {
+  position: absolute;
+  width: 290px;
+  height: 30px;
+  border-radius: 4px ;
+  color: black;
+  left: 140px;
+  top: 25%;
+}
+
+#h2_select_em {
+  position: absolute;
+  top: 33%;
+}
+
+#employmentSelect {
+  position: absolute;
+  width: 160px;
+  height: 30px;
+  border-radius: 4px ;
+  color: black;
+  left: 270px;
+  top: 41%;
+}
+
+#h2_select_close{
+    position: absolute;
+    top: 50%;
+}
+
+#select_close_date {
+  position: absolute;
+  width: 245px;
+  height: 28px;
+  border-radius: 4px ;
+  color: black;
+  top: 58%;
+  left: 180px;
+  font-size: larger;
+}
+
+#select_btn {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px ;
+  color: black;
+  top: 80%;
+  left: 180px;
+  font-size: larger;
+}
 
 /* ____________END CAREER_________________________________________________*/

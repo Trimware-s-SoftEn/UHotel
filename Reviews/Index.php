@@ -8,35 +8,22 @@
 		<meta name="description" content="" >
 		<link rel="StyleSheet" href="css\styles.css" />
 		<link rel="StyleSheet" href="css\bootstrap.min.css" />
-		
 		<link rel="StyleSheet" href="css\botton.css" />
 		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
 		<script src="js\jquery-3.4.1.min.js"></script>
 		<script src="js\bootstrap.bundle.min.js"></script>
 		<script src="js\bootstrap.min.js"></script>
-		
-		<!-- Add your custom HEAD content here -->
+
 	<script>
-	$(document ).ready(function() {		
-		$("#_2,#superior_sky_room,#path_10").click(function(){			
+	$(document ).ready(function() {
+		$("#_2,#superior_sky_room").click(function(){
 			$("#content-container").html('');
 			$("#content-container").load('superiorskyroom.php');
-			
-		});		
+		});
 	});
 	</script>
-<style>
-.btn-secondary {
-    color: #fff;
-    background-color: #DDDDDD;
-    border-color: #DDDDDD;
-}
-.dropdown-toggle::after{
-	color:#1E1E1E;
-}
-</style>	
 	</head>
-	<body>	
+	<body>
 		<div id="content-container" >
 		<link rel="StyleSheet" href="css\reviewssuperiorroom.css" />
 			<div id="topreviews"  >
@@ -96,7 +83,7 @@
 				<div id="facebook"  ></div>
 				<div id="facebook_ek1"  ></div>
 				<div id="facebook_ek2"  ></div>
-				<div id="facebook_ek3"  ></div>				
+				<div id="facebook_ek3"  ></div>
 				<div id="rectangle_1"  ></div>
 				<div id="enter_your_email" >
 					Enter your email
@@ -330,8 +317,6 @@
 					<a class="dropdown-item" href="#">Recently visited</a>   
 				  </div>
 				</div>
-				
-
 			</div>
 <div id="navbar"  >
 				<div id="bgnav"  ></div>
@@ -372,16 +357,14 @@
 					<div id="rectangle_1154"  ></div>
 
 				</div>
-
 			</div>
-			
 			<div id="how_was_your_stay_" >
 				How was your stay?
 			</div>
 
 			<div id="button" class="btn-grad"  >
 				<a href="writereviews.php">
-					<div id="rectangle_1091"  ></div>				
+					<div id="rectangle_1091"  ></div>
 					<div id="write_reviews" style="margin-top: 4px;"  >
 						<span>
 						Write reviews
@@ -392,31 +375,31 @@
 			</div>
 
 			<div id="navnum"  >
-				<div id="_1" class="navi" >
+				<div id="_1" >
 					1
 				</div>
-				<div id="_2" class="navi" >
+				<div id="_2" >
 					2
 				</div>
-				<div id="_3" class="navi" >
+				<div id="_3" >
 					3
 				</div>
-				<div id="_4" class="navi" >
+				<div id="_4" >
 					4
 				</div>
-				<div id="_5" class="navi" >
+				<div id="_5" >
 					5
 				</div>
 
-				<div id="right" class="navi"  >
+				<div id="right"  >
 					<div id="path_10"  ></div>
 
 				</div>
 
-				<div id="left"   >
-					<div id="path_10_ek1" class="navi"  ></div>
+				<!-- <div id="left"  >
+					<div id="path_10_ek1"  ></div>
 
-				</div>
+				</div> -->
 
 			</div>
 
@@ -428,10 +411,7 @@
 				<div id="thank_you_for_your_comments_" >
 					Thank you for your comments!
 				</div>
-
 			</div>
-
-		</div>	
-	
+		</div>
 	</body>
 </html>
