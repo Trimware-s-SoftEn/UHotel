@@ -61,6 +61,18 @@
         <a class="book" href="Reservation/your_stay.html">BOOK NOW</a>
     </div>
 
+    <div id="a_stunning_hotel">
+        A STUNNING HOTEL
+    </div>
+    <div id="welcome_to_uhotel">
+        Welcome to Uhotel
+    </div>
+    <div id="rectangle_1098"></div>
+    <div
+        id="uhotel_comes_with_a_collection_of_six_astounding_and_filly_customizable_homepage_layouts_suitable_for_various_purposes_">
+        Uhotel comes with a collection of six astounding and filly customizable<br />Homepage layouts suitable for
+        various purposes.
+    </div>
 
 
 

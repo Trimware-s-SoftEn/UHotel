@@ -67,7 +67,7 @@
                     <h2 id="positions_menu" style ="text-decoration: underline;";>Positions</h2>
                 </a>
                 <a href="family.html">
-                    <h2 id="family_menu" style="text-decoration: underline;" ;>Become our family</h2>
+                    <h2 id="family_menu"erline;">Become our family</h2>
                 </a>
 
             </div>
@@ -78,7 +78,7 @@
                         <select id="select_Em" class="header_search_selectEm">
                             <option style="color: rgb(50, 50, 50)" ; disabled selected>Select Employment Type</option>
                             <option value="Full time">Full time</option>
-                            <option value="">Temporary / Seasonal</option>
+                            <option value="Temporary / Seasonal">Temporary / Seasonal</option>
                             <option value="Part time">Part time</option>
                             <option value="Casual / On-call ">Casual / On-call </option>
                             <option value="Graduate programme">Graduate programme</option>
@@ -108,8 +108,7 @@
                             <option value="19">Rooms</option>
                             <option value="20">Security</option>
                         </select>
-                        <input type="submit" name="submit" value="SEARCH" style=" position: absolute; background-color: gray; color: black; top:84%; width:90px;left: 50%; transform: translate(-50%, 0);" ;>
-                    </form>
+                        <input type="submit" name="submit" value="SEARCH" class="header_search_btn"> </form>
                 </div>
             </div>
         </div>
@@ -117,6 +116,8 @@
         <footer>
             <h1>Footer Content</h1>
         </footer>
+
+
 
 </body>
 
