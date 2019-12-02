@@ -8,6 +8,8 @@
   $con = new mysqli($servername, $username, $password, $dbname);
   $id = $_SESSION["ID"];
   $paymentId = $_SESSION["PAYMENTID"];
+  $checkIn = $_SESSION["CHECKIN"];
+  $checkOut = $_SESSION["CHECKOUT"];
 
 	// Check connection
 	if (mysqli_connect_errno())
@@ -21,7 +23,18 @@
   $rowNav = mysqli_fetch_array($result);
 
   $result = mysqli_query($con,"SELECT *
-                              FROM roomtype");
+    FROM roomtype INNER JOIN
+    (SELECT roomTypeName, COUNT(roomNo) AS countRoom
+    FROM room
+    WHERE roomNo NOT IN
+    (SELECT roomNo
+    FROM reservation
+    WHERE (startDate <= '$checkIn' AND endDate >= '$checkIn')
+    OR (startDate <= '$checkOut' AND endDate >= '$checkOut')
+    OR (startDate >= '$checkIn' AND endDate <= '$checkOut'))
+    GROUP BY roomTypeName) AS temp
+    ON temp.roomTypeName = roomtype.roomTypeName"
+  );
 
 //  $sql = "SELECT branchName FROM branch";
 //  $result = mysqli_query($con,$sql);
