@@ -131,10 +131,13 @@
     <div class="content_content">
         <div class="content_category">
             <div class="content_topic_filter">
-                Filter
+                <h3>Filter</h3>
             </div>
             <div class="content_topic_list">
-                
+                <div class="content_list_icon"><h3>Picture</h3></div>
+                <div class="content_list_poisition"><h3>Positions</h3></div>
+                <div class="content_list_department"><h3>Department</h3></div>
+                <div class="content_list_employment"><h3>Employment Type</h3></div>
             </div>
         </div>
         <div class="content_search_engine">
