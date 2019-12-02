@@ -76,7 +76,7 @@
   <img class="ReserveTopPic" src='../picture/ReservationTopPic.png'>
   <div class="reserveProcessBar">
     <a class="pass" href="../Reservation/your_stay.php">1.Your stay</a>
-    <a class="pass">2.Your room</a>
+    <a class="pass" href="../Reservation/your_room.php">2.Your room</a>
     <a class="now">3.Your detail</a>
     <a>4.Payment</a>
   </div>
@@ -93,6 +93,32 @@
     <div class="guestDetailBox">
       <h3>Contact Information</h3>
       <div class="reserveInfoBoxUnderline"></div>
+
+      <form action="reservationController.php" method="post" id="detailForm">
+        <div class='guestDetailRow'>
+          <div class='guestDetailColumn'>
+            <p> Full Name :</p>
+            <input class="guestDetailInput" type="text" name="fname" value="fname">
+          </div>
+          <div class='guestDetailColumn'>
+            <p> Address :</p>
+            <input class="guestDetailInput" type="text" name="address" value="address">
+          </div>
+          <div class='guestDetailColumn'>
+            <p> Email :</p>
+            <input class="guestDetailInput" type="text" name="email" value="email">
+          </div>
+          <div class='guestDetailColumn'>
+            <p> Telephone :</p>
+            <input class="guestDetailInput" type="text" name="telephone" value="telephone">
+          </div>
+          <div class='guestDetailColumn'>
+            <div class="guessDetailButton">
+              <button type="submit" class="roomFrameButton"  name="submitDetail" value="submitDetail"> submit </button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
       <!-- End  -->
 
@@ -114,6 +140,7 @@
           WHERE paymentID LIKE $paymentId"
         );
 
+
         while($row = mysqli_fetch_array($result2)) {
            $roomTypeName = $row['roomTypeName'];
            $price = $row['price'];
@@ -121,17 +148,32 @@
            $roomNo = $row['roomNo'];
 
            echo "
-             <div class='roomListColumn'>
-               <p class='head'>".$roomTypeName."</p>
-               <p class='detail'> Number of Guest: ".$numberofGuest."</p>
-               <p class='detail'> -".$price."฿</p>
-               <div class='roomFrameButton'>
-                <button type='submit' name='remove1Room' style='margin-top: -15px; margin-left: 60px; padding:10px 20px;' value='".$roomNo."'>Remove</button>
-               </div>
+             <div class='reserveInfoRoomListColumn'>
+               <p class='head'> Room ".$roomNo.": ".$roomTypeName."</p><br><br>
+               <p class='detail'> Number of Guest: ".$numberofGuest."</p><br>
+               <p class='price'> -".$price."฿</p>
              </div>
            ";
         }
       ?>
+
+      <?php $resultCost = mysqli_query($con,"SELECT SUM(price) as sum
+        FROM reservation
+        INNER JOIN room
+        ON room.roomNo = reservation.roomNo
+        INNER JOIN roomtype
+        ON roomtype.roomTypeName = room.roomTypeName
+        WHERE paymentID LIKE $paymentId
+        GROUP BY paymentID"
+      );
+
+      $cost = mysqli_fetch_array($resultCost);
+      $_SESSION['COST'] = $cost['sum'];
+    //  echo "Error: " . "<br>" . $con->error;
+      ?>
+
+      <h5 class="Summation"> Summation is</h5>
+      <h5 class="Summation" style="margin-left: 260px;"> -<?php echo $cost['sum'] ?>฿ </h5>
     </div>
       <!-- End Room Table -->
   </div>

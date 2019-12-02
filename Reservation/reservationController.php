@@ -14,10 +14,38 @@ if ($conn->connect_error) {
 }
 
 
-if (isset($_POST['reserveRoom'])) {
+if(isset($_POST['submitDetail'])) {
+  //_______________________________________Enter contact__________________________________________________________________
+  $fname = mysqli_real_escape_string($conn, $_REQUEST['fname']);
+  $address = mysqli_real_escape_string($conn, $_REQUEST['address']);
+  $email = mysqli_real_escape_string($conn, $_REQUEST['email']);
+  $telephone = mysqli_real_escape_string($conn, $_REQUEST['telephone']);
+  $paymentId = $_SESSION["PAYMENTID"];
+
+  $sql = "UPDATE reservation
+    SET customerName = '$fname', address = '$address', customerEmail = '$email', customerTel = '$telephone'
+    WHERE paymentID LIKE $paymentId";
+
+    if ($conn->query($sql) === TRUE)
+      {
+        //unset($_SESSION['STARTDATE']);
+
+        echo "Update successfully";
+        header('Location: ../Reservation/payment.php');
+    }
+    else
+    {
+        echo "Fail to insert database, try again later";
+        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "<a href=\"javascript:history.go(-1)\">GO BACK</a>";
+    }
+}
+else if (isset($_POST['reserveRoom'])) {
+  //___________________________________finish reserve__________________________________________________________________
   header('Location: ../Reservation/your_detail.php');
 }
 else if (isset($_POST['remove1Room'])) {
+  //_______________________________________room remove____________________________________________________________________
   $roomNo = $_POST["remove1Room"];
   $checkIn = $_SESSION["CHECKIN"];
 

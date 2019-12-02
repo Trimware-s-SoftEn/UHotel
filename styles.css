@@ -1919,6 +1919,15 @@ img.roomIcon {
   text-align: left;
 }
 
+.reserveInfoBox h5.Summation {
+  margin-left: 35px;
+  text-align: left;
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #cf3f37;
+  display: inline-block;
+}
+
 .reserveInfoBoxUnderline {
   margin-top: -14px;
   margin-left: 10px;
@@ -1927,16 +1936,55 @@ img.roomIcon {
   background-color: black;
 }
 
+.lineReserve {
+  width: 600px;
+  height: 10px;
+  display: block;
+  position: relative;
+  background-color: grey;
+}
+
 .reserveInfoRoomList {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .reserveInfoRoomListColumn {
   float: left;
+  width: 520px;
+  height: 100px;
   color: black;
   padding: 10px 20px;
-  margin-top: -20px;
+  margin-bottom: 20px;
   box-shadow: 0px 3px 3px #bbbbbb;
+}
+
+.reserveInfoRoomListColumn p.head {
+  float: left;
+  color: black;
+  margin-top: 10px;
+  font-size: 14px;
+  margin-right:  70px;
+}
+
+.reserveInfoRoomListColumn p {
+  margin-top: 35px;
+  margin-right:  10px;
+}
+
+.reserveInfoRoomListColumn p.detail {
+  float: left;
+  color: black;
+  margin-top: 10px;
+  margin-right:  70px;
+  font-size: 11px;
+}
+
+.reserveInfoRoomListColumn p.price {
+  float: right;
+  color: #B0A073;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .reserveInfoRoomRow:after {
@@ -1954,8 +2002,88 @@ img.roomIcon {
   background-color: hidden;
 }
 
+.guestDetailColumn {
+  float: left;
+  color: black;
+  margin-top: 10px;
+  width: 260px;
+  margin-left: 10px;
+}
+
+.guestDetailRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.guestDetailInput {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.guessDetailButton button {
+  padding: 12px 40px;
+  font-size: 12px;
+  display:inline-block;
+  background-color: #bf9f68;
+  color: white;
+  box-shadow: 3px 3px 3px #bbbbbb;
+}
+
+.guessDetailButton button:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
 
 /* ____________________________ End Your detail _______________________________ */
+
+/* ______________________________ Start Payment _______________________________*/
+.totalCostBar {
+  margin-top: 40px;
+  background-color: #DEDEDE;
+  width: 600px;
+  height: 70px;
+  padding: 15px 20px;;
+  margin-left: 300px;
+  text-align: center;
+}
+
+.PaymentTableFrame{
+  margin-left: 100px;
+}
+
+.bigPaymentColumn {
+  float: left;
+  margin-top: 10px;
+  width: 500px;
+  margin-left: 10px;
+  background-color: hidden;
+}
+
+.bigPaymentRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.smallPaymentColumn {
+  float: left;
+  color: black;
+  margin-top: 10px;
+  width: 260px;
+  margin-left: 10px;
+}
+
+.smallPaymentRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 
 /* ________________________________________ End Reservation CSS ___________________________________ */
