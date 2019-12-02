@@ -98,19 +98,19 @@
         <div class='guestDetailRow'>
           <div class='guestDetailColumn'>
             <p> Full Name :</p>
-            <input class="guestDetailInput" type="text" name="fname" value="fname">
+            <input class="guestDetailInput" type="text" name="fname" value="fname" required>
           </div>
           <div class='guestDetailColumn'>
             <p> Address :</p>
-            <input class="guestDetailInput" type="text" name="address" value="address">
+            <input class="guestDetailInput" type="text" name="address" value="address" required>
           </div>
           <div class='guestDetailColumn'>
             <p> Email :</p>
-            <input class="guestDetailInput" type="text" name="email" value="email">
+            <input class="guestDetailInput" type="text" name="email" value="email" required>
           </div>
           <div class='guestDetailColumn'>
             <p> Telephone :</p>
-            <input class="guestDetailInput" type="text" name="telephone" value="telephone">
+            <input class="guestDetailInput" type="text" name="telephone" value="telephone" required>
           </div>
           <div class='guestDetailColumn'>
             <div class="guessDetailButton">
