@@ -120,36 +120,43 @@
       <!-- list of room -->
       <div class="roomList">
         <h4>Your Room</h4>
-        <div class="roomListRow">
-            <?php
-              $result2 = mysqli_query($con,"SELECT *
-                FROM reservation
-                INNER JOIN room
-                ON room.roomNo = reservation.roomNo
-                INNER JOIN roomtype
-                ON roomtype.roomTypeName = room.roomTypeName
-                WHERE paymentID LIKE $paymentId"
-              );
+        <form action='reservationController.php' method='post' id='alreadyReserveForm'>
+          <div class="roomListRow">
+              <?php
+                $result2 = mysqli_query($con,"SELECT *
+                  FROM reservation
+                  INNER JOIN room
+                  ON room.roomNo = reservation.roomNo
+                  INNER JOIN roomtype
+                  ON roomtype.roomTypeName = room.roomTypeName
+                  WHERE paymentID LIKE $paymentId"
+                );
 
-              while($row = mysqli_fetch_array($result2)) {
-                 $roomTypeName = $row['roomTypeName'];
-                 $price = $row['price'];
-                 $numberofGuest = $row['customerAmount'];
+                while($row = mysqli_fetch_array($result2)) {
+                   $roomTypeName = $row['roomTypeName'];
+                   $price = $row['price'];
+                   $numberofGuest = $row['customerAmount'];
+                   $roomNo = $row['roomNo'];
 
-                 echo "
-                 <form action='reservationController.php' method='post' id='roomForm'>
-                   <div class='roomListColumn'>
-                     <p class='head'>".$roomTypeName."</p>
-                     <p> Number of Guest: ".$numberofGuest."</p>
-                     <p class='cost'> -".$price."฿</p>
-                   </div>
-                  </form>
-                 ";
-              }
-            ?>
+                   echo "
+                     <div class='roomListColumn'>
+                       <p class='head'>".$roomTypeName."</p>
+                       <p class='detail'> Number of Guest: ".$numberofGuest."</p>
+                       <p class='detail'> -".$price."฿</p>
+                       <div class='roomFrameButton'>
+                        <button type='submit' name='remove1Room' style='margin-top: -15px; margin-left: 60px; padding:10px 20px;' value='".$roomNo."'>Remove</button>
+                       </div>
+                     </div>
+                   ";
+                }
+              ?>
+            </div>
+            <div class='roomFrameButton'>
+             <button type='submit' name='reserveRoom' value='reserveRoom'>confirm</button>
+            </div>
+           </form>
 	        </div>
 	      </div>
-      </div>
 
       <!-- Start Room Table -->
         <div class="roomTable">
@@ -203,13 +210,12 @@
       <!-- End Room Table -->
 	  </div>
 	</form>
-</div>
 
-<footer>
-    <h1>Footer Content</h1>
-</footer>
+  <footer>
+      <h1>Footer Content</h1>
+  </footer>
 
-</body>
+  </body>
 </html>
 
 <?php $con->close(); ?>
