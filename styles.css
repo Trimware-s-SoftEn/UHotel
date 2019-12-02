@@ -2053,7 +2053,7 @@ img.roomIcon {
 }
 
 .PaymentTableFrame{
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 .bigPaymentColumn {
@@ -2074,7 +2074,7 @@ img.roomIcon {
   float: left;
   color: black;
   margin-top: 10px;
-  width: 260px;
+  width: 400px;
   margin-left: 10px;
 }
 
