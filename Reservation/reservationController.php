@@ -13,8 +13,28 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+if(isset($_POST['payment']))
+{
+  $paymentId = $_SESSION["PAYMENTID"];
+  $sql = "UPDATE reservation
+    SET reservationStatus = 1
+    WHERE paymentID LIKE $paymentId";
 
-if(isset($_POST['submitDetail'])) {
+    if ($conn->query($sql) === TRUE)
+      {
+        //unset($_SESSION['STARTDATE']);
+
+        echo "Update successfully";
+        header('Location: ../Reservation/complete.html');
+    }
+    else
+    {
+        echo "Fail to insert database, try again later";
+        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "<a href=\"javascript:history.go(-1)\">GO BACK</a>";
+    }
+}
+else if(isset($_POST['submitDetail'])) {
   //_______________________________________Enter contact__________________________________________________________________
   $fname = mysqli_real_escape_string($conn, $_REQUEST['fname']);
   $address = mysqli_real_escape_string($conn, $_REQUEST['address']);
