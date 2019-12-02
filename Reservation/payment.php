@@ -90,18 +90,43 @@
     <p><?php echo "Payment ID: ".$_SESSION['PAYMENTID']."<br>Total Cost: -".$_SESSION['COST']."฿"; ?></p>
   </div>
 
+  <form action="reservationController.php" method="post" id="paymentForm">
+
   <div class="PaymentTableFrame">
     <div class="bigPaymentRow">
       <div class="bigPaymentColumn">
-        <img style="margin-left:80px;" src="../picture/creditCard.png">
+        <div class="smallPaymentRow">
+          <div class="smallPaymentColumn">
+            <img style="margin-top: 30px; width: 320px; height: 230px;" src="../picture/credit_card.png">
+            <p>Credit Card Number</p>
+            <input class="guestDetailInput" type="text" name="creditcard" required placeholder="---- ---- ---- ----">
+          </div>
+        </div>
       </div>
       <div class="bigPaymentColumn">
-        <p>dsafasfdsafsf</p>
+        <div class="smallPaymentRow">
+          <div class="smallPaymentColumn">
+            <p style="margin-top:56px;">Redeem Code</p>
+            <input class="guestDetailInput" type="text" name="code" required placeholder="------">
+          </div>
+          <div class="smallPaymentColumn">
+            <p>Card Holder Name</p>
+            <input class="guestDetailInput" type="text" name="code" required placeholder="FName LName">
+          </div>
+          <div class="smallPaymentColumn">
+            <p>CVV</p>
+            <input class="guestDetailInput" type="text" name="code" required placeholder="123">
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="guessDetailButton">
+      <button style="margin-top: 30px;margin-left: 350px;" type="submit" name="payment" id="payment">Complete the reservation</button>
     </div>
   </div>
 
-
+  </form>
 
     <!-- Start Guest Detail -->
 
