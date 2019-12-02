@@ -654,6 +654,58 @@ cursor: pointer;
 
 /*______________________END LOGIN_________________________*/
 
+/*______________________START Homepage____________________*/
+#a_stunning_hotel {
+	top: 270px;
+	left: 500px;
+	width: 528px;
+	height: 88px;
+	font-family: Poppins;
+	font-size: 55px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+
+#welcome_to_uhotel {
+	top: 110px;
+	left: 570px;
+	width: 400px;
+	height: 100px;
+	font-family: Poppins;
+	font-size: 40px;
+	text-align: left;
+  color:#d8b845;
+  position: relative;
+}
+
+
+#rectangle_1098 {
+	top: 200px;
+	left: 590px;
+	width: 338px;
+	height: 2px;
+	border: 1px solid #707070;
+  background:rgba(255,255,255,255);
+  position: relative;
+}
+
+
+#uhotel_comes_with_a_collection_of_six_astounding_and_filly_customizable_homepage_layouts_suitable_for_various_purposes_ {
+	top: 250px;
+	left: 400px;
+	width: 709px;
+	height: 62px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: center;
+  color:#ffffff;
+  position: relative;
+}
+
+/*______________________End HOMPAGE_______________________*/
+
 /*______________________START EVENTS________________________*/
 
 #rectangle_main {
