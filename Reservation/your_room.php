@@ -179,13 +179,6 @@
 
                  $rowScore = mysqli_fetch_array($resultScore);
 
-                 $resultRoom = mysqli_query($con,"SELECT
-                   COUNT(roomNo) AS countRoom
-                   FROM room
-                   WHERE roomTypeName LIKE '$roomTypeName'");
-
-                 $rowRoom = mysqli_fetch_array($resultRoom);
-
                  echo "
                    <div class=\"roomColumn\" style='font-size: 12px;'>
                     <form action='reservationController.php' method='post' id='roomForm'>
@@ -196,7 +189,7 @@
                        <p> Number of Bed: ".$numberofBed."</p>
                        <img src='../picture/guest_icon.png' class='roomIcon'>
                        <p> Max People: ".$numberofGuest."</p>
-                       <p> Room Available: ".$rowRoom['countRoom']."</p>
+                       <p> Room Available: ".$row['countRoom']."</p>
                        <p> Number of guest: </p>
                        <input type='number' style='margin-left: 30px;margin-bottom: 10px;' name='guest' id='guest' min='1' max='".$numberofGuest."'>
                        <p class='cost'> -".$price."฿</p>
