@@ -1,0 +1,84 @@
+#rectangle_main {
+	top: 200px;
+	left: 240px;
+	width: 950px;
+	height: 400px;
+  background:rgba(129,129,129,255);
+  position: relative;
+}
+
+#events {
+	top: 30px;
+	left: 80px;
+	width: 133px;
+	height: 64px;
+	font-family: Poppins;
+	font-size: 40px;
+	text-align: center;
+  color:#ffffff;
+  position: relative;
+}
+
+#let_our_journey_begin {
+	top: 50px;
+	left: 80px;
+	width: 194px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+#enjoy {
+	top: -60px;
+	left: 350px;
+	width: 456px;
+	height: 86px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+#rectangle_circle {
+	top: 10px;
+	left: 50px;
+	width: 250px;
+	height: 150px;
+	-ms-border-radius: 64px;
+	-o-border-radius: 64px;
+	-moz-border-radius: 64px;
+	-webkit-border-radius: 64px;
+	border-radius: 64px;
+  background:rgba(155,155,155,255);
+  position: relative;
+}
+
+#wedding {
+	top: -110px;
+	left: 100px;
+	width: 79px;
+	height: 51px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#efefef;
+  position: relative;
+  cursor: pointer;
+}
+
+#meeting {
+	top: -50px;
+	left: 100px;
+	width: 71px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#efefef;
+  position: relative;
+  cursor: pointer;
+}
