@@ -154,6 +154,33 @@ position: relative;
 cursor: pointer;
 }*/
 
+/*
+input[type=submit] {
+top: 140px;
+left: 60px;
+width: 223px;
+height: 34px;
+width: 223px;
+height: 34px;
+font-family: Poppins;
+font-size: 12px;
+text-align: center;
+color: #ffffff;
+-ms-border-radius: 7px;
+-o-border-radius: 7px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+-ms-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-o-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+-moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+background: rgba(214, 188, 69, 255);
+position: relative;
+cursor: pointer;
+}*/
+
 #Sign-in {
 	top: 70px;
 	left: 30px;
@@ -166,7 +193,7 @@ cursor: pointer;
   position: relative;
 }
 
-#email {
+#email_login {
 	top: 100px;
 	left: 50px;
 	width: 39px;
@@ -368,8 +395,8 @@ cursor: pointer;
   position: absolute;
 }
 
-#fname {
-	top: 100px;
+#fname{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -380,8 +407,8 @@ cursor: pointer;
   position: relative;
 }
 
-#lname {
-	top: 100px;
+#lname{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -392,8 +419,8 @@ cursor: pointer;
   position: relative;
 }
 
-#phone {
-	top: 100px;
+#phone{
+  top: 100px;
 	left: 50px;
 	width: 39px;
 	height: 19px;
@@ -403,11 +430,12 @@ cursor: pointer;
   color:#646464;
   position: relative;
 }
+
 
 /*________________FOR_______PROFILE_____________________*/
 
 #user_details {
-	top: 113px;
+	top: 150px;
 	left: 400px;
 	width: 145px;
 	height: 38px;
@@ -418,8 +446,764 @@ cursor: pointer;
   position: relative;
 }
 
+#rectangle_left {
+	top: 106px;
+	left: 50px;
+	width: 293px;
+	height: 431px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(254,253,253,255);
+  position: relative;
+}
+
+.mybook {
+  top: 120px;
+  left: 45px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.mybook:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myprofile {
+  top: 30px;
+  left: -135px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myprofile:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myhistory {
+  top: 130px;
+  left: 45px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myhistory:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+.myreview {
+  top: 220px;
+  left: -79px;
+  margin-top: 18px;
+  padding: 12px 26px;
+  font-size: 20px;
+  display:inline-block;
+  background-color: #eec26f;
+  color: rgba(254,253,253,255);
+  position: relative;
+  cursor: pointer;
+}
+
+.myreview:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+#rectangle_right_1 {
+	top: -270px;
+	left: 400px;
+	width: 1000px;
+	height: 103px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,244,239,255);
+  position: relative;
+}
+
+
+#name {
+	top: 10px;
+	left: 50px;
+	width: 54px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: left;
+  color:#5a5b5b;
+  position: relative;
+}
+
+
+.showname {
+	top: -24px;
+	left: 200px;
+	width: 100px;
+	height: 29px;
+	font-family: Poppins;
+	font-size: 30px;
+	text-align: left;
+  color:#2a2a2e;
+  position: relative;
+}
+
+#rectangle_right_2 {
+	top: -250px;
+	left: 400px;
+	width: 1000px;
+	height: 103px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,244,239,255);
+  position: relative;
+}
+
+
+#name_email {
+	top: 10px;
+	left: 50px;
+	width: 54px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: left;
+  color:#5a5b5b;
+  position: relative;
+}
+
+#rectangle_right_3 {
+	top: -230px;
+	left: 400px;
+	width: 1000px;
+	height: 103px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,244,239,255);
+  position: relative;
+}
+
+
+#name_password {
+	top: 10px;
+	left: 50px;
+	width: 54px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: left;
+  color:#5a5b5b;
+  position: relative;
+}
+
+#rectangle_right_4 {
+	top: -210px;
+	left: 400px;
+	width: 1000px;
+	height: 103px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,244,239,255);
+  position: relative;
+}
+
+#name_phone {
+	top: 10px;
+	left: 50px;
+	width: 54px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: left;
+  color:#5a5b5b;
+  position: relative;
+}
 
 /*______________________END LOGIN_________________________*/
+
+/*______________________START Homepage____________________*/
+#a_stunning_hotel {
+	top: 270px;
+	left: 500px;
+	width: 528px;
+	height: 88px;
+	font-family: Poppins;
+	font-size: 55px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+
+#welcome_to_uhotel {
+	top: 110px;
+	left: 570px;
+	width: 400px;
+	height: 100px;
+	font-family: Poppins;
+	font-size: 40px;
+	text-align: left;
+  color:#d8b845;
+  position: relative;
+}
+
+
+#rectangle_1098 {
+	top: 200px;
+	left: 590px;
+	width: 338px;
+	height: 2px;
+	border: 1px solid #707070;
+  background:rgba(255,255,255,255);
+  position: relative;
+}
+
+
+#uhotel_comes_with_a_collection_of_six_astounding_and_filly_customizable_homepage_layouts_suitable_for_various_purposes_ {
+	top: 250px;
+	left: 400px;
+	width: 709px;
+	height: 62px;
+	font-family: Poppins;
+	font-size: 20px;
+	text-align: center;
+  color:#ffffff;
+  position: relative;
+}
+
+/*______________________End HOMPAGE_______________________*/
+
+/*______________________START EVENTS________________________*/
+
+#rectangle_main {
+	top: 200px;
+	left: 240px;
+	width: 950px;
+	height: 400px;
+  background:rgba(129,129,129,255);
+  position: relative;
+}
+
+#events {
+	top: 30px;
+	left: 80px;
+	width: 133px;
+	height: 64px;
+	font-family: Poppins;
+	font-size: 40px;
+	text-align: center;
+  color:#ffffff;
+  position: relative;
+}
+
+#let_our_journey_begin {
+	top: 50px;
+	left: 80px;
+	width: 194px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+#enjoy {
+	top: 20px;
+	left: 420px;
+	width: 456px;
+	height: 86px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+  color:#ffffff;
+  position: relative;
+}
+
+#rectangle_circle {
+	top: 10px;
+	left: 50px;
+	width: 250px;
+	height: 150px;
+	-ms-border-radius: 64px;
+	-o-border-radius: 64px;
+	-moz-border-radius: 64px;
+	-webkit-border-radius: 64px;
+	border-radius: 64px;
+  background:rgba(155,155,155,255);
+  position: relative;
+}
+
+#weddingF {
+	top: -105px;
+	left: 100px;
+	width: 79px;
+	height: 51px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#efefef;
+  position: relative;
+  cursor: pointer;
+}
+
+#meeting {
+	top: -55px;
+	left: 100px;
+	width: 71px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#efefef;
+  position: relative;
+  cursor: pointer;
+}
+
+/*wedding*/
+#group_538 {
+	top: 126px;
+	left: 45.5px;
+	width: 909px;
+  height: 48px;
+  position: absolute;
+}
+
+#wedding {
+	top: 0px;
+	left: 41px;
+	width: 141px;
+	height: 49px;
+	font-family: Poppins;
+	font-size: 30px;
+	text-align: center;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#rectangle_13 {
+	top: 0px;
+	left: 90px;
+	width: 33px;
+	height: 5px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(0,0,0,255);
+  position: relative;
+}
+
+
+#line_13 {
+	top: 22px !important;
+	position: absolute !important;
+	left: 0px;
+	width: 40px;
+	height: 4px;
+	background:url(../UHotel/picture/line_13.png);
+	background-size:cover;
+}
+
+
+#line_18 {
+	top: 22px !important;
+	position: absolute !important;
+	left: 594px;
+	width: 750px;
+	height: 4px;
+	background:url(../UHotel/picture/line_18.png);
+	background-size:cover;
+}
+
+
+#line_19 {
+	top: 22px !important;
+	position: absolute !important;
+	left: 193px;
+	width: 401px;
+	height: 4px;
+	background:url(../UHotel/picture/line_19.png);
+	background-size:cover;
+}
+
+#image_68 {
+	top: 230px !important;
+	position: absolute !important;
+	left: 60px;
+	width: 383px;
+	height: 281px;
+	background:url(../UHotel/picture/image_68.png);
+	background-size:cover;
+}
+
+.group_5423 {
+	top: 40px;
+	left: -10px;
+	width: 226px;
+  height: 79px;
+  position: relative;
+}
+
+#contact {
+	top: 200px;
+	left: 550px;
+	width: 214px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#call {
+	top: 200px;
+	left: 550px;
+	width: 133px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#email {
+	top: 200px;
+	left: 550px;
+	width: 231px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+#let_our_team {
+	top: 220px;
+	left: 550px;
+	width: 482px;
+	height: 126px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+/* #button_pack {
+	top: 472px;
+	left: 764px;
+	width: 180px;
+	height: 30px;
+} */
+
+#rectangle_1091 {
+	top: 370px;
+	left: 1100px;
+	width: 177px;
+	height: 27px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1.5px solid #bfa168;
+  background:rgba(127,127,127,0);
+  position: relative;
+}
+
+#view_package {
+	top: 343px;
+	left: 1070px;
+	width: 250px;
+	height: 30px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: center;
+  color:#bfa168;
+  position: relative;
+  cursor: pointer;
+}
+
+#mask_group_8 {
+	top: 100px !important;
+	/* position: absolute !important; */
+	left: -1000px;
+	width: 1300px;
+	height: 382px;
+	background:url(../UHotel/picture/weddingPic/mask_group_8.png);
+  background-size:cover;
+  position: relative;
+}
+
+/*meeting*/
+#image_70 {
+	top: 220px !important;
+	position: absolute !important;
+	left: 56px;
+	width: 381px;
+	height: 286px;
+	background:url(../UHotel/picture/meetingPic/image_70.png);
+  background-size:cover;
+  position: relative;
+}
+
+/* .group_542 {
+	top: 1000px;
+	left: 60px;
+	width: 300px;
+  height: 79px;
+  position: relative;
+} */
+
+#contactM {
+  top: 530px;
+	left: 60px;
+	width: 250px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#callM {
+	top: 530px;
+	left: 60px;
+	width: 200px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#emailM {
+	top: 530px;
+	left: 60px;
+	width: 300px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+#rectangle_1161 {
+	opacity:0.59813302755356;
+	top: 145px;
+	left: 500px;
+	width: 600px;
+	height: 400px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,245,239,255);
+  position: relative;
+}
+
+#public_meeting {
+	top: 270px;
+	left: 560px;
+	width: 139px;
+	height: 29px;
+	font-family: Poppins;
+	font-size: 18px;
+	text-align: center;
+  color:#bfa068;
+  position: absolute;
+}
+
+#ourball {
+	top: 320px;
+	left: 560px;
+	width: 452px;
+	height: 185px;
+	font-family: Poppins;
+	font-size: 15px;
+	text-align: left;
+  color:#1e1e1e;
+  position: absolute;
+}
+
+#viewPlan {
+	top: 60px;
+	left: 930px;
+	width: 120px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: center;
+  color:#976b51;
+  position: relative;
+  /* position: absolute; */
+}
+#viewPlan2 {
+	top: -70px;
+	left: 480px;
+	width: 120px;
+	height: 19px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: center;
+  color:#976b51;
+  position: relative;
+  /* position: absolute; */
+}
+
+#rectangle_1188 {
+	opacity:0.59813302755356;
+	top: 210px;
+	left: 56px;
+	width: 600px;
+	height: 414px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,245,239,255);
+  position: relative;
+}
+
+#private_meeting {
+	top: -150px;
+	left: 110px;
+	width: 148px;
+	height: 29px;
+	font-family: Poppins;
+	font-size: 18px;
+	text-align: left;
+  color:#bfa068;
+  position: relative;
+}
+
+#wehave {
+	top: -130px;
+	left: 110px;
+	width: 454px;
+	height: 162px;
+	font-family: Poppins;
+	font-size: 15px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+#image_69 {
+	top: 710px !important;
+	position: absolute !important;
+	left: 720px;
+	width: 381px;
+	height: 286px;
+	background:url(../UHotel/picture/meetingPic/image_69.png);
+	background-size:cover;
+}
+
+/* .positionText {
+  top: 10px;
+  left: 720px;
+  position: relative;
+} */
+
+#contactM2 {
+  top: -100px;
+	left: 730px;
+	width: 250px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#callM2 {
+	top: -100px;
+	left: 730px;
+	width: 200px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#emailM2 {
+	top: -100px;
+	left: 730px;
+	width: 300px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+/*______________________END EVENTS_________________________*/
+
+
 
 /* __________________________________________End Main__________________________________*/
 
@@ -548,6 +1332,7 @@ cursor: pointer;
   background-color: inherit;
   font-family: Poppins;
   margin: 0;
+  cursor: pointer;
 }
 
 .dropdownL:hover .dropbtn {
@@ -558,6 +1343,7 @@ cursor: pointer;
 .dropdownR:hover .dropbtn {
   background-color: #inherit;
   color: #C9A52E;
+  cursor: pointer;
 }
 
 .dropdown-content {

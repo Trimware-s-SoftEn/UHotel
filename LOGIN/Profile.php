@@ -1,3 +1,11 @@
+<?php
+    include('Login.php');
+    if(!isset($_SESSION['User']))
+    {
+        header("Location : http://localhost/UHotel/LOGIN/Login.html ");
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +16,7 @@
 
 <body>
     <div class="topnav">
-        <a class="icon" href="#home"><img src="../picture/Logo_Transparent.png" ; id="icon"></a>
+        <a class="icon" href="http://localhost/UHotel/homepage2.php"><img src="../picture/Logo_Transparent.png" ; id="icon"></a>
         <div class="dropdownL">
             <button class="dropbtn">About</button>
             <div class="dropdown-content">
@@ -33,10 +41,14 @@
 
         <!-- Right part -->
         <div class="dropdownR">
-            <button class="dropbtn">User Name</button>
+            <button class="dropbtn">
+                <?php
+                echo $_SESSION['fName'];
+                ?>
+            </button>
             <div class="dropdown-content">
-                <a href="http://localhost/UHotel/LOGIN/Profile.html">Profile</a>
-                <a href="#logout">Logout</a>
+                <a href="http://localhost/UHotel/LOGIN/Profile.php">Profile</a>
+                <a href="http://localhost/UHotel/LOGIN/logout.php">Logout</a>
             </div>
         </div>
         <img src="../picture/UserIcon.png" ; id="userIcon">
@@ -57,8 +69,41 @@
         </div>
     </div>
 
-    
+    <div id="rectangle_right_1">
+        <div id="name">NAME:</div>
+        <div class="showname" style="width:400px;";>
+        <?php
+            echo $_SESSION['fName']." ".$_SESSION['lName'];
+        ?>
+        </div>
+    </div>
 
+    <div id="rectangle_right_2">
+        <div id="name_email">Email:</div>
+        <div class="showname" style="width:400px;";>
+        <?php
+            echo $_SESSION['Email'];
+        ?>
+        </div>
+    </div>
+
+    <div id="rectangle_right_3">
+        <div id="name_password">PASSWORD:</div>
+        <div class="showname" style="width:400px;";>
+        <?php
+            echo $_SESSION['Password'];
+        ?>
+        </div>
+    </div>
+
+    <div id="rectangle_right_4">
+        <div id="name_phone">PHONE:</div>
+        <div class="showname" style="width:400px;";>
+        <?php
+            echo $_SESSION['Phone'];
+        ?>
+        </div>
+    </div>
 </body>
 
 </html>

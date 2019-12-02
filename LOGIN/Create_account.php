@@ -14,17 +14,18 @@ $firstname = mysqli_real_escape_string($con,$_POST['FirstName']);
 $lastname = mysqli_real_escape_string($con,$_POST['LastName']);
 $phone = mysqli_real_escape_string($con,$_POST['Phone']);
 
+
+
 $sql = "Insert into user(email, password, fName, lName, phoneNo)
 VALUES('$email','$password','$firstname','$lastname','$phone')";
 if(!mysqli_query($con,$sql))
 {
     die('Error: '.mysqli_error($con));
 }
-echo " successful";
+
 mysqli_close($con);
 
 header("Location: http://localhost/UHotel/LOGIN/Login.html?");
-
 
 /*
 $conn = new mysqli('localhost','root','','uhotel');

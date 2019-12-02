@@ -16,7 +16,8 @@
 
 <body>
     <div class="topnav">
-        <a class="icon" href="#home"><img src="../picture/Logo_Transparent.png" ; id="icon"></a>
+        <a class="icon" href="http://localhost/UHotel/homepage.html"><img src="../picture/Logo_Transparent.png" ;
+                id="icon"></a>
         <div class="dropdownL">
             <button class="dropbtn">About</button>
             <div class="dropdown-content">
@@ -41,11 +42,13 @@
 
         <!-- Right part -->
         <div class="dropdownR">
-            <button class="dropbtn">User Name</button>
-            <div class="dropdown-content">
-                <a href="http://localhost/UHotel/LOGIN/Profile.html">Profile</a>
-                <a href="#logout">Logout</a>
-            </div>
+            <form action="http://localhost/UHotel/LOGIN/Login.html">
+                <input type="submit" class="dropbtn" value="Login">
+            </form>
+            <!--<div class="dropdown-content">
+                  <a href="#profile">Profile</a>
+                  <a href="#logout">Logout</a>
+                </div>-->
         </div>
         <img src="../picture/UserIcon.png" ; id="userIcon">
         <img src="../picture/lineInNav.png" ; id="lineInNav">
@@ -59,21 +62,22 @@
         </div>
 
         <form method="post" action="../LOGIN/Login.php">
-            <div id="email">EMAIL</div>
-            <input type="text" id="Email" name="Email">
+            <div id="email_login">EMAIL</div>
+            <input type="text" id="box_text" name="Email" required>
             <br>
             <div id="password">PASSWORD</div>
-            <input type="password" id="box_password" name="Password">
+            <input type="password" id="box_password" name="Password" required>
             <br>
-            <input type="submit" value="Sign-in">
+            <input type="submit" id="box_submit" value="Sign-in" name="Signin">
         </form>
 
         <a id="forgotpassword" href="#">forgot your password?</a>
-        
+
         <div id="Not_have_account">No_account_yet?</div>
 
         <form>
-            <button id="rectangle_create_account" type="submit" formaction="http://localhost/UHotel/LOGIN/Create_account.html">
+            <button id="rectangle_create_account" type="submit"
+                formaction="http://localhost/UHotel/LOGIN/Create_account.html">
                 Create Account
             </button>
         </form>

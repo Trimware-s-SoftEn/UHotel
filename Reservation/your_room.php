@@ -111,7 +111,7 @@
 	          <p>Check out: <?php echo $_SESSION["CHECKOUT"] ?></p>
 	        </div>
 	        <div class="stayColumnRoom">
-	          <p>Guests: <?php echo "{$_SESSION["GUEST"]}" ?></p>
+	          <p>Room: <?php echo "{$_SESSION["ROOM"]}" ?></p>
 	        </div>
 	      </div>
 	    </div>
