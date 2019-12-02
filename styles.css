@@ -2050,14 +2050,13 @@ img.roomIcon {
 
 .content_topic {
   color: #B0A073;
-  display: flex ;
 }
 
-.content_top .content_topic h1{
+.content_top .content_topic {
   position: absolute;
   color: #B0A073;
   top: 5%;
-  left: 15%;
+  left: 30%;
 }
 
 .content_top .content_topic h2{
@@ -2089,23 +2088,22 @@ img.roomIcon {
 }
 
 .top_addPosition {
-  background-color: lightyellow;
+  background-color: paleturquoise;
   width: 100%;
   height: 150px;
   display: flex;
 }
 
-.top_addPosition .content_topic h1 {
+.top_addPosition h1 {
   position: absolute;
   left: 10%;
-  color: #444444;
+  color: black;
 }
 
-.top_addPosition .content_topic h2 {
+.top_addPosition h2 {
   position: absolute;
   left: 23%;
-  top: 12.2%;
-  color: #444444;
+  top: 12%;
 }
 
 .top_addPosition .content_description {
@@ -2115,93 +2113,9 @@ img.roomIcon {
 }
 
 .content_addPosition {
-  position: absolute;
-  background-color: rgb(255, 210, 128);
-  width: 100%;
-  height: 400px;
+  background-color: orange;
 }
 
-.content_addPosition h1 {
-  position: absolute;
-  left: 15%;
-  width: 100%;
-  height: 100%;;
-}
 
-.content_addPosition .content_addPosition_form{
-  background-color: ;
-  position: absolute;
-  width: 100%;
-  height: 70%;
-  left: 20%;
-  top: 30%;
-}
-
-#departmentSelect{
-  position: absolute;
-  width: 240px;
-  height: 30px;
-  border-radius: 4px ;
-  color: black;
-  left: 190px;
-  top: 8%;
-}
-
-#h2_select_position {
-  position: absolute;
-  top: 17%;
-}
-
-#positionSelect {
-  position: absolute;
-  width: 290px;
-  height: 30px;
-  border-radius: 4px ;
-  color: black;
-  left: 140px;
-  top: 25%;
-}
-
-#h2_select_em {
-  position: absolute;
-  top: 33%;
-}
-
-#employmentSelect {
-  position: absolute;
-  width: 160px;
-  height: 30px;
-  border-radius: 4px ;
-  color: black;
-  left: 270px;
-  top: 41%;
-}
-
-#h2_select_close{
-    position: absolute;
-    top: 50%;
-}
-
-#select_close_date {
-  position: absolute;
-  width: 245px;
-  height: 28px;
-  border-radius: 4px ;
-  color: black;
-  top: 58%;
-  left: 180px;
-  font-size: larger;
-}
-
-#select_btn {
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  border-radius: 4px ;
-  color: black;
-  top: 80%;
-  left: 180px;
-  font-size: larger;
-}
 
 /* ____________END CAREER_________________________________________________*/
