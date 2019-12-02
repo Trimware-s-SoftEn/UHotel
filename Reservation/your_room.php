@@ -7,6 +7,7 @@
 
   $con = new mysqli($servername, $username, $password, $dbname);
   $id = $_SESSION["ID"];
+  $paymentId = $_SESSION["PAYMENTID"];
 
 	// Check connection
 	if (mysqli_connect_errno())
@@ -15,14 +16,28 @@
 	}
 
   $result = mysqli_query($con,"SELECT *
-                              FROM user
-                              WHERE userID LIKE $id");
+    FROM user
+    WHERE userID LIKE $id");
+
   $rowNav = mysqli_fetch_array($result);
 
+  $checkIn = $_SESSION["CHECKIN"];
+  $checkOut = $_SESSION["CHECKOUT"];
+
   $result = mysqli_query($con,"SELECT *
-                              FROM roomtype");
-  $result = mysqli_query($con,"SELECT *
-                              FROM roomtype");
+    FROM roomtype INNER JOIN
+    (SELECT roomTypeName, COUNT(roomNo) AS countRoom
+    FROM room
+    WHERE roomNo NOT IN
+    (SELECT roomNo
+    FROM reservation
+    WHERE (startDate <= '$checkIn' AND endDate >= '$checkIn')
+    OR (startDate <= '$checkOut' AND endDate >= '$checkOut')
+    OR (startDate >= '$checkIn' AND endDate <= '$checkOut'))
+    GROUP BY roomTypeName) AS temp
+    ON temp.roomTypeName = roomtype.roomTypeName"
+  );
+
 
 //  $sql = "SELECT branchName FROM branch";
 //  $result = mysqli_query($con,$sql);
@@ -102,31 +117,89 @@
 	    </div>
 	    <!-- End Stay Table -->
 
-      <!-- Start Room Table -->
-      <div class="roomTable">
-        <div class="roomRow">
-          <?php
-            while($row = mysqli_fetch_array($result)) {
-               $roomTypeName = $row['roomTypeName'];
-               $price = $row['price'];
-               $description = $row['description'];
-               $pictureID = $row['pictureID'];
-               $numberofBed = $row['numberofBed'];
+      <!-- list of room -->
+      <div class="roomList">
+        <h4>Your Room</h4>
+        <div class="roomListRow">
+            <?php
+              $result2 = mysqli_query($con,"SELECT *
+                FROM reservation
+                INNER JOIN room
+                ON room.roomNo = reservation.roomNo
+                INNER JOIN roomtype
+                ON roomtype.roomTypeName = room.roomTypeName
+                WHERE paymentID LIKE $paymentId"
+              );
 
-               $resultPic = mysqli_query($con,"SELECT *
-                                           FROM picturegallery
-                                           WHERE pictureID LIKE $pictureID");
-               $rowPic = mysqli_fetch_array($resultPic);
-               echo "
-                 <div class=\"roomColumn\">
-                   <p>Check in: ".$row["roomTypeName"]."</p>
-                 </div>
-               ";
-            }
-          ?>
+              while($row = mysqli_fetch_array($result2)) {
+                 $roomTypeName = $row['roomTypeName'];
+                 $price = $row['price'];
+                 $numberofGuest = $row['customerAmount'];
 
+                 echo "
+                 <form action='reservationController.php' method='post' id='roomForm'>
+                   <div class='roomListColumn'>
+                     <p class='head'>".$roomTypeName."</p>
+                     <p> Number of Guest: ".$numberofGuest."</p>
+                     <p> -".$price."฿</p>
+                   </div>
+                  </form>
+                 ";
+              }
+            ?>
+	        </div>
 	      </div>
       </div>
+
+      <!-- Start Room Table -->
+        <div class="roomTable">
+          <div class="roomRow">
+            <?php
+              while($row = mysqli_fetch_array($result)) {
+                 $roomTypeName = $row['roomTypeName'];
+                 $price = $row['price'];
+                 $description = $row['description'];
+                 $pictureID = $row['pictureID'];
+                 $numberofBed = $row['numberofBed'];
+                 $numberofGuest = $numberofBed*2;
+
+                 $resultPic = mysqli_query($con,"SELECT *
+                                             FROM picturegallery
+                                             WHERE pictureID LIKE $pictureID");
+                 $rowPic = mysqli_fetch_array($resultPic);
+
+                 $resultScore = mysqli_query($con,"SELECT
+                   AVG(reviewScore) AS Average
+                   FROM review
+                   WHERE roomTypeName LIKE '$roomTypeName'");
+
+                 $rowScore = mysqli_fetch_array($resultScore);
+
+                 echo "
+                 <form action='reservationController.php' method='post' id='roomForm'>
+                   <div class=\"roomColumn\" style='font-size: 12px;'>
+                     <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
+                     <p class='first'>".$roomTypeName."</p>
+                     <p style='margin-top: -15px;'> Average Score: ".$rowScore["Average"]."</p>
+                     <img src='../picture/bed_icon.png' class='roomIcon'>
+                     <p> Number of Bed: ".$numberofBed."</p>
+                     <img src='../picture/guest_icon.png' class='roomIcon'>
+                     <p> Max People: ".$numberofGuest."</p>
+                     <p> Room Available: ".$row['countRoom']."</p>
+                     <p> Guest Number: </p>
+                     <input style='margin-left: 24px; margin-top: -10px;'
+                      type='number' name='guest' id='guest' min='1' max='".$numberofGuest."'>
+                     <p class='cost'> -".$price."฿</p>
+                     <div class='roomFrameButton'>
+                      <button type='submit' name='reserve1Room' value='".$roomTypeName."'>Add</button>
+                     </div>
+                   </div>
+                  </form>
+                 ";
+              }
+            ?>
+  	      </div>
+        </div>
       <!-- End Room Table -->
 	  </div>
 	</form>
