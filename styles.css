@@ -2026,7 +2026,8 @@ img.roomIcon {
 
 .content_search_engine .content_filter{
   background-color: darkorchid;
-  flex-basis: 20%;
+  flex-basis: 18%;
+  margin-left: 2%;
 }
 
 .content_search_engine .content_list{
@@ -2034,6 +2035,13 @@ img.roomIcon {
   flex-basis: 80%;
 }
 
+.content_search_engine .content_filter .content_filter_checkbox {
+  position: absolute;
+  width:20px;
+  height:50px;
+  border: none;
+  box-shadow: none;
+}
 
 
 .top_addPosition {
@@ -2064,7 +2072,7 @@ img.roomIcon {
 
 .content_addPosition {
   position: absolute;
-  background-color: rgb(255, 210, 128);
+  background-color: #CFBF6C;
   width: 100%;
   height: 400px;
 }
@@ -2139,6 +2147,7 @@ img.roomIcon {
   top: 58%;
   left: 180px;
   font-size: larger;
+  border: none;
 }
 
 #select_btn {
@@ -2146,10 +2155,11 @@ img.roomIcon {
   width: 100px;
   height: 30px;
   border-radius: 4px ;
-  color: black;
+  color:blacks;
   top: 80%;
   left: 180px;
   font-size: larger;
+  border: 1px solid grey;
 }
 
 /* ____________END CAREER_________________________________________________*/

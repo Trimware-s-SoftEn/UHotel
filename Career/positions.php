@@ -142,7 +142,12 @@
         </div>
         <div class="content_search_engine">
             <div class="content_filter">
-                filter
+                <div>
+                    Employment Type
+                </div>
+                <div>
+                <input type="checkbox" name="department[]" value="Account">
+                </div>
             </div>
             <div class="content_list">
                 list
