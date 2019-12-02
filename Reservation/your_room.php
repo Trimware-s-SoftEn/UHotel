@@ -141,7 +141,7 @@
                    <div class='roomListColumn'>
                      <p class='head'>".$roomTypeName."</p>
                      <p> Number of Guest: ".$numberofGuest."</p>
-                     <p> -".$price."฿</p>
+                     <p class='cost'> -".$price."฿</p>
                    </div>
                   </form>
                  ";
