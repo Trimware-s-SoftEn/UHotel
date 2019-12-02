@@ -1760,6 +1760,64 @@ img.roomIcon {
   clear: both;
 }
 
+/* ____________________________ Start Your detail _______________________________ */
+.yourDetailBreak {
+  margin-top: 10px;
+}
+
+.reserveInfoBox {
+  margin-top: 50px;
+  margin-left: -3%;
+  width: 600px;
+  border-style: hidden;
+  border-radius:10px;
+  background-color: hidden;
+}
+
+.reserveInfoBox h3 {
+  margin-top: 10px;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.reserveInfoBoxUnderline {
+  margin-top: -14px;
+  margin-left: 10px;
+  width: 45px;
+  height: 12px;
+  background-color: black;
+}
+
+.reserveInfoRoomList {
+  width: 100%;
+}
+
+.reserveInfoRoomListColumn {
+  float: left;
+  color: black;
+  padding: 10px 20px;
+  margin-top: -20px;
+  box-shadow: 0px 3px 3px #bbbbbb;
+}
+
+.reserveInfoRoomRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.guestDetailBox {
+  width: 280px;
+  float: right;
+  position: absolute;
+  margin-left: 620px;
+  margin-top: 30px;
+  background-color: hidden;
+}
+
+
+/* ____________________________ End Your detail _______________________________ */
+
 
 /* ________________________________________ End Reservation CSS ___________________________________ */
 
