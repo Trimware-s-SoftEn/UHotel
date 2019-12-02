@@ -49,20 +49,20 @@
   <div id="rectangle_1161"></div>
   <!-- <div id="rectangle_1191"></div> -->
   <div id="group_538"></div>
-  <div id="meeting">Meeting</div>
-
+  <div id="meeting">Add meeting</div>
+  <a href="events.html" id="icon_ionic_ios_arrow_back"></a>
   <div id="icon icon_material_add_circle_outline"></div>
 
   <div class="form">
   <form method="POST" action="addnew.php">
     Topic:<br>
-    <input type="text" name="topic">
+    <input type="text" name="topic" placeholder="Topic of event">
     <br>
-    <textarea id="subject" name="description" placeholder="Description" style="height:200px"></textarea>
-    <div id="select_images">Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
+    <textarea id="subject" name="description" placeholder="Description" style="height:50px; width: 400px;"></textarea>
+    <input type="text" name="pictureID" placeholder="pictureID" >
+    <input type="text" name="roomID" placeholder="roomID" >
+    <input type="submit" value="Done" >
   </div>
-    <input type="submit" value="Done" formaction="http://localhost/UHotel/events/addnew.html">
   </form>
   </div>
 </body>

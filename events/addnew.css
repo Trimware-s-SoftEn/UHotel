@@ -1,3 +1,13 @@
+#icon_ionic_ios_arrow_back {
+	top: 128.00004577637px !important;
+	position: absolute !important;
+	left: 43.00048828125px;
+	width: 18px;
+	height: 31px;
+	background:url(../picture/addnew/icon_ionic_ios_arrow_back.png);
+	background-size:cover;
+}
+
 #rectangle_1161 {
 	opacity:0.59813302755356;
 	top: 222px;
@@ -44,7 +54,7 @@
 #meeting {
 	top: -200px;
 	left: 300px;
-	width: 125px;
+	width: 200px;
 	height: 49px;
 	font-family: Poppins;
 	font-size: 30px;
@@ -285,13 +295,12 @@
 }
 
 input[type=text]:focus {
-    
   outline: none;
     background-color: rgb(242, 247, 221);
   }
 
 
-#select_images{
+/*select_images{
     top: -100px;
 	left: 300px;
 	width: 125px;
@@ -301,7 +310,7 @@ input[type=text]:focus {
 	text-align: center;
     color:#1e1e1e;
     position: relative;
-}
+}*/
 
 textarea:focus{
     outline: none;
