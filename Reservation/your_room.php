@@ -7,6 +7,7 @@
 
   $con = new mysqli($servername, $username, $password, $dbname);
   $id = $_SESSION["ID"];
+  $paymentId = $_SESSION["PAYMENTID"];
 
 	// Check connection
 	if (mysqli_connect_errno())
