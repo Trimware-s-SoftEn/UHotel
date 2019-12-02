@@ -1899,6 +1899,192 @@ img.roomIcon {
   clear: both;
 }
 
+/* ____________________________ Start Your detail _______________________________ */
+.yourDetailBreak {
+  margin-top: 10px;
+}
+
+.reserveInfoBox {
+  margin-top: 50px;
+  margin-left: -3%;
+  width: 600px;
+  border-style: hidden;
+  border-radius:10px;
+  background-color: hidden;
+}
+
+.reserveInfoBox h3 {
+  margin-top: 10px;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.reserveInfoBox h5.Summation {
+  margin-left: 35px;
+  text-align: left;
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #cf3f37;
+  display: inline-block;
+}
+
+.reserveInfoBoxUnderline {
+  margin-top: -14px;
+  margin-left: 10px;
+  width: 45px;
+  height: 12px;
+  background-color: black;
+}
+
+.lineReserve {
+  width: 600px;
+  height: 10px;
+  display: block;
+  position: relative;
+  background-color: grey;
+}
+
+.reserveInfoRoomList {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.reserveInfoRoomListColumn {
+  float: left;
+  width: 520px;
+  height: 100px;
+  color: black;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 3px #bbbbbb;
+}
+
+.reserveInfoRoomListColumn p.head {
+  float: left;
+  color: black;
+  margin-top: 10px;
+  font-size: 14px;
+  margin-right:  70px;
+}
+
+.reserveInfoRoomListColumn p {
+  margin-top: 35px;
+  margin-right:  10px;
+}
+
+.reserveInfoRoomListColumn p.detail {
+  float: left;
+  color: black;
+  margin-top: 10px;
+  margin-right:  70px;
+  font-size: 11px;
+}
+
+.reserveInfoRoomListColumn p.price {
+  float: right;
+  color: #B0A073;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.reserveInfoRoomRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.guestDetailBox {
+  width: 280px;
+  float: right;
+  position: absolute;
+  margin-left: 620px;
+  margin-top: 30px;
+  background-color: hidden;
+}
+
+.guestDetailColumn {
+  float: left;
+  color: black;
+  margin-top: 10px;
+  width: 260px;
+  margin-left: 10px;
+}
+
+.guestDetailRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.guestDetailInput {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.guessDetailButton button {
+  padding: 12px 40px;
+  font-size: 12px;
+  display:inline-block;
+  background-color: #bf9f68;
+  color: white;
+  box-shadow: 3px 3px 3px #bbbbbb;
+}
+
+.guessDetailButton button:hover {
+  background-color: #FFE670;
+  color: #564A22;
+}
+
+/* ____________________________ End Your detail _______________________________ */
+
+/* ______________________________ Start Payment _______________________________*/
+.totalCostBar {
+  margin-top: 40px;
+  background-color: #DEDEDE;
+  width: 600px;
+  height: 70px;
+  padding: 15px 20px;;
+  margin-left: 300px;
+  text-align: center;
+}
+
+.PaymentTableFrame{
+  margin-left: 100px;
+}
+
+.bigPaymentColumn {
+  float: left;
+  margin-top: 10px;
+  width: 500px;
+  margin-left: 10px;
+  background-color: hidden;
+}
+
+.bigPaymentRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.smallPaymentColumn {
+  float: left;
+  color: black;
+  margin-top: 10px;
+  width: 260px;
+  margin-left: 10px;
+}
+
+.smallPaymentRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 
 /* ________________________________________ End Reservation CSS ___________________________________ */
 
@@ -2124,7 +2310,7 @@ img.roomIcon {
 }
 
 .content_category .content_topic_filter{
-  flex-basis: 20%;
+  flex-basis: 15%;
   margin-left: 5%;
 }
 
@@ -2134,40 +2320,39 @@ img.roomIcon {
 }
 
 .content_topic_list .content_list_icon{
-  flex-grow: 1;
+  flex-basis: 19%;
   text-align: center;
   background-color: red;
 }
 
-.content_topic_list .content_list_poisition{
-  flex-grow: 1;
+.content_topic_list .content_list_position{
+  flex-basis: 27%;
   text-align: center;
   background-color: green;
 }
 
 .content_topic_list .content_list_department{
-  flex-grow: 1;
+  flex-basis: 27%;
   text-align: center;
   background-color: yellow;
 }
 
 .content_topic_list .content_list_employment{
-  flex-grow: 1;
+  flex-basis: 27%;
   text-align: center;
   background-color: blue;
 }
 
-.content_topic_list
 
 .content_search_engine{
   background-color: aquamarine;
   display: flex;
-  flex-direction: row;
 }
 
 .content_search_engine .content_filter{
   background-color: darkorchid;
-  flex-basis: 20%;
+  flex-basis: 18%;
+  margin-left: 2%;
 }
 
 .content_search_engine .content_list{
@@ -2175,6 +2360,13 @@ img.roomIcon {
   flex-basis: 80%;
 }
 
+.content_search_engine .content_filter .content_filter_checkbox {
+  position: absolute;
+  width:20px;
+  height:50px;
+  border: none;
+  box-shadow: none;
+}
 
 
 .top_addPosition {
@@ -2205,7 +2397,7 @@ img.roomIcon {
 
 .content_addPosition {
   position: absolute;
-  background-color: rgb(255, 210, 128);
+  background-color: #CFBF6C;
   width: 100%;
   height: 400px;
 }
@@ -2280,6 +2472,7 @@ img.roomIcon {
   top: 58%;
   left: 180px;
   font-size: larger;
+  border: none;
 }
 
 #select_btn {
@@ -2287,10 +2480,11 @@ img.roomIcon {
   width: 100px;
   height: 30px;
   border-radius: 4px ;
-  color: black;
+  color:blacks;
   top: 80%;
   left: 180px;
   font-size: larger;
+  border: 1px solid grey;
 }
 
 /* ____________END CAREER_________________________________________________*/
