@@ -191,7 +191,7 @@
                        <p> Max People: ".$numberofGuest."</p>
                        <p> Room Available: ".$row['countRoom']."</p>
                        <p> Number of guest: </p>
-                       <input type='number' style='margin-left: 30px;margin-bottom: 10px;' name='guest' id='guest' min='1' max='".$numberofGuest."'>
+                       <input type='number' style='margin-left: 30px;margin-bottom: 10px;' name='guest' id='guest' required min='1' max='".$numberofGuest."'>
                        <p class='cost'> -".$price."฿</p>
                        <div class='roomFrameButton'>
                         <button type='submit' name='reserve1Room' value='".$roomTypeName."'>Add</button>
