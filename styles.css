@@ -1685,8 +1685,8 @@ img.roomIcon {
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/positions.png) no-repeat;
-
+  background: url(Career/skins/position.png) no-repeat fixed center;
+  background-size: 100% 80%;
 }
 
 .header_family {
@@ -1695,7 +1695,8 @@ img.roomIcon {
   top: 75px;
   height: 580px;
   width: 100%;
-  background: url(Career/skins/family.png) no-repeat 0 0;
+  background: url(Career/skins/fam.png) no-repeat fixed center;
+  background-size: 100% 80%;
 }
 
 /* head menu */
