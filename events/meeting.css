@@ -27,6 +27,41 @@
   position: relative;
 } */
 
+#meeting {
+	top: 120px;
+	left: 80px;
+	width: 125px;
+	height: 49px;
+	font-family: Poppins;
+	font-size: 30px;
+	text-align: center;
+	color:#1e1e1e;
+}
+
+#line_18 {
+	top: 145px !important;
+	position: absolute !important;
+	left: 220px;
+	width: 850px;
+	height: 4px;
+	background:url(../picture/line_18.png);
+	background-size:cover;
+	position: relative;
+}
+
+
+#line_19 {
+	top: 22px !important;
+	position: absolute !important;
+	left: 193px;
+	width: 850px;
+	height: 4px;
+	background:url(../picture/line_19.png);
+	background-size:cover;
+	position: relative;
+} 
+
+
 #contactM {
   top: 530px;
 	left: 60px;

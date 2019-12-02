@@ -1,3 +1,12 @@
+.try{
+	top: 20px;
+	left: 70px;
+	width: 320px;
+	height: 49px;
+	position: relative;
+}
+
+
 #icon_ionic_ios_arrow_back {
 	top: 128.00004577637px !important;
 	position: absolute !important;
@@ -11,7 +20,7 @@
 #events_events {
 	top: 120px;
 	left: 70px;
-	width: 125px;
+	width: 320px;
 	height: 49px;
 	font-family: Poppins;
 	font-size: 30px;
@@ -33,7 +42,7 @@
 	background:rgba(0,0,0,255);
 } */
 
-#rectangle_10991 {
+#rectangle_101010 {
 	top: 140px;
 	left: 60px;
 	width: 215px;
@@ -49,7 +58,7 @@
   position: relative;
 }
 
-#add_new_meeting {
+#add_new_event {
 	top: 110px;
 	left: 100px;
 	width: 149px;
@@ -61,6 +70,65 @@
   cursor: pointer;
   position: relative;
 }
+
+#rectangle_101011 {
+	top: 140px;
+	left: 60px;
+	width: 215px;
+	height: 33px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1.5px solid #bfa168;
+  background:rgba(127,127,127,0);
+  cursor: pointer;
+  position: relative;
+}
+
+#edit_new_event {
+	top: 110px;
+	left: 100px;
+	width: 149px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#bfa168;
+  cursor: pointer;
+  position: relative;
+}
+
+#rectangle_101012 {
+	top: 140px;
+	left: 60px;
+	width: 215px;
+	height: 33px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1.5px solid #bfa168;
+  background:rgba(127,127,127,0);
+  cursor: pointer;
+  position: relative;
+}
+
+#delete_new_event {
+	top: 110px;
+	left: 100px;
+	width: 149px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#bfa168;
+  cursor: pointer;
+  position: relative;
+}
+
 #contact_events_specialist6 {
 	top: 600px;
 	left: 80px;
@@ -108,7 +176,7 @@
 	background-size:cover;
 }
 
-/* #delete_photo {
+ #delete_photo {
 	top: 60px;
 	left: 350px;
 	width: 100px;
@@ -134,10 +202,10 @@
 
 #rectangle_12161 {
 	opacity:0.59813302755356;
-	top: 50px;
-	left: 520px;
-	width: 510px;
-	height: 414px;
+	top:  30x;
+	left:400px;
+	width: 700px;
+	height: 400px;
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -152,7 +220,7 @@
   position: relative;
 }
 
-/* #rectangle_13191 {
+ #rectangle_13191 {
 	top: 350px;
 	left: 473px;
 	width: 480px;
@@ -165,7 +233,7 @@
 	border: 1px solid #aeaeae;
   background:rgba(255,255,255,255);
   position: relative;
-} */
+} 
 
 #rectangle_285 {
 	top: 0px;
