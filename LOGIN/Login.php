@@ -15,12 +15,11 @@ if(isset($_POST['Signin']))
     $email = mysqli_real_escape_string($con,$_POST['Email']);
     $password = mysqli_real_escape_string($con,$_POST['Password']);
     $query = mysqli_query($con, "select * from user where email= '$email' && password = '$password'");
-    
     $rowcount=mysqli_num_rows($query);
     if($rowcount == true)
     {   
         $rowcolumn = mysqli_fetch_assoc($query);
-        if($email != $rowcolumn['email' || $password != $rowcolumn['password']])
+        if($email != $rowcolumn['email'] || $password != $rowcolumn['password'])
         {
             mysqli_close($con);
             header("Location: http://localhost/UHotel/LOGIN/Login.html?");
