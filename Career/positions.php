@@ -131,18 +131,23 @@
     <div class="content_content">
         <div class="content_category">
             <div class="content_topic_filter">
-                <h3>Filter</h3>
+                <h4>Filter</h4>
             </div>
             <div class="content_topic_list">
-                <div class="content_list_icon"><h3>Picture</h3></div>
-                <div class="content_list_poisition"><h3>Positions</h3></div>
-                <div class="content_list_department"><h3>Department</h3></div>
-                <div class="content_list_employment"><h3>Employment Type</h3></div>
+                <div class="content_list_icon"><h4>Picture</h4></div>
+                <div class="content_list_position"><h3>Positions</h4></div>
+                <div class="content_list_department"><h4>Department</h4></div>
+                <div class="content_list_employment"><h4>Employment Type</h4></div>
             </div>
         </div>
         <div class="content_search_engine">
-        <div class="content_filter">
-                filter
+            <div class="content_filter">
+                <div>
+                    Employment Type
+                </div>
+                <div>
+                <input type="checkbox" name="department[]" value="Account">
+                </div>
             </div>
             <div class="content_list">
                 list

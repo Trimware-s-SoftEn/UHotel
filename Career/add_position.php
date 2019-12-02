@@ -99,7 +99,7 @@ require 'db_conn.php';
 
   <div class="main">
 
-    <div class="top_addPosition">
+    <div class="top_addPosition"  style="background-color: #B0A073;;";>
       <div class="content_topic"><a href="positions.php"><h1>Positions ></h1></a><h2>Add New Require Position</h2></div>
       <div class="content_description">Please re-check the information before submit (Staff Only)</div>
     </div>

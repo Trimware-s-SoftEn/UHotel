@@ -12,9 +12,148 @@ footer{
   margin-top:auto;
   top: 892px;
   left: 0px;
-  width: 1035px;
+  width: 1500px;
   height: 198px;
 }
+
+#footer_ek1 {
+	top: 00px;
+	left: 2px;
+	width: 1024px;
+	height: 150px;
+  background:rgba(255,255,255,255);
+  position: relative;
+}
+
+
+#logo_ek2 {
+	top: 740px;
+	left: 100px;
+	width: 136px;
+  height: 125px;
+  position: relative;
+}
+
+
+#path_line {
+	top: 600px;
+	left: 10px;
+	width: 1500px;
+  height: 1px;
+  position: relative;
+}
+
+
+#contact_us__mail__433_132_someroad_rd___10999_bankok__thailand_email__uhotel_reservation_abc_com_tel___66__0__2_231_4421 {
+	top: 630px;
+	left: 300px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+  color:#666666;
+  position: relative;
+}
+
+
+#follow_us {
+	top: 450px;
+	left: 700px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+  color:#666666;
+  position: relative;
+}
+
+
+#subscribe {
+	top: 270px;
+	left: 1100px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+  color:#666666;
+  position: relative;
+}
+
+
+#facebook {
+	top: 130px;
+	left: 700px;
+	width: 28px;
+  height: 28px;
+  position: relative;
+}
+
+
+#facebook_ek1 {
+	top: 100px;
+	left: 740px;
+	width: 31px;
+  height: 31px;
+  position: relative;
+}
+
+
+#facebook_ek2 {
+	top: 60px;
+	left: 770px;
+	width: 46px;
+  height: 46px;
+  position: relative;
+}
+
+
+#facebook_ek3 {
+	top: 23px;
+	left: 820px;
+	width: 29px;
+  height: 29px;
+  position: relative;
+}
+
+#rectangle_footer {
+	top: 0px;
+	left: 1100px;
+	width: 299px;
+	height: 38px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #aeaeae;
+  background:rgba(255,255,255,255);
+  position: relative;
+}
+
+
+#enter_your_email {
+	top: 0px;
+	left: 0px;
+	width: 253px;
+	height: 27.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 13px;
+	text-align: left;
+	line-height: 13px;
+  color:#aeaeae;
+  position: relative;
+}
+
 
 /* Image property */
 img{
@@ -1985,7 +2124,7 @@ img.roomIcon {
 }
 
 .content_category .content_topic_filter{
-  flex-basis: 20%;
+  flex-basis: 15%;
   margin-left: 5%;
 }
 
@@ -1995,40 +2134,39 @@ img.roomIcon {
 }
 
 .content_topic_list .content_list_icon{
-  flex-grow: 1;
+  flex-basis: 19%;
   text-align: center;
   background-color: red;
 }
 
-.content_topic_list .content_list_poisition{
-  flex-grow: 1;
+.content_topic_list .content_list_position{
+  flex-basis: 27%;
   text-align: center;
   background-color: green;
 }
 
 .content_topic_list .content_list_department{
-  flex-grow: 1;
+  flex-basis: 27%;
   text-align: center;
   background-color: yellow;
 }
 
 .content_topic_list .content_list_employment{
-  flex-grow: 1;
+  flex-basis: 27%;
   text-align: center;
   background-color: blue;
 }
 
-.content_topic_list
 
 .content_search_engine{
   background-color: aquamarine;
   display: flex;
-  flex-direction: row;
 }
 
 .content_search_engine .content_filter{
   background-color: darkorchid;
-  flex-basis: 20%;
+  flex-basis: 18%;
+  margin-left: 2%;
 }
 
 .content_search_engine .content_list{
@@ -2036,6 +2174,13 @@ img.roomIcon {
   flex-basis: 80%;
 }
 
+.content_search_engine .content_filter .content_filter_checkbox {
+  position: absolute;
+  width:20px;
+  height:50px;
+  border: none;
+  box-shadow: none;
+}
 
 
 .top_addPosition {
@@ -2066,7 +2211,7 @@ img.roomIcon {
 
 .content_addPosition {
   position: absolute;
-  background-color: rgb(255, 210, 128);
+  background-color: #CFBF6C;
   width: 100%;
   height: 400px;
 }
@@ -2141,6 +2286,7 @@ img.roomIcon {
   top: 58%;
   left: 180px;
   font-size: larger;
+  border: none;
 }
 
 #select_btn {
@@ -2148,10 +2294,11 @@ img.roomIcon {
   width: 100px;
   height: 30px;
   border-radius: 4px ;
-  color: black;
+  color:blacks;
   top: 80%;
   left: 180px;
   font-size: larger;
+  border: 1px solid grey;
 }
 
 /* ____________END CAREER_________________________________________________*/
