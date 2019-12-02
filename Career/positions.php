@@ -128,6 +128,27 @@
         $result = mysqli_query($conn, $sql);
     ?>
 
+    <div class="content_content">
+        <div class="content_category">
+            <div class="content_topic_filter">
+                Filter
+            </div>
+            <div class="content_topic_list">
+                
+            </div>
+        </div>
+        <div class="content_search_engine">
+        <div class="content_filter">
+                filter
+            </div>
+            <div class="content_list">
+                list
+            </div>
+        </div>
+        
+
+    </div>
+
 
     <footer>
         <h1>Footer Content</h1>
