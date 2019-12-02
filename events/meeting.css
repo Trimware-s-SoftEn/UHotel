@@ -1,3 +1,13 @@
+#icon_ionic_ios_arrow_back {
+	top: 128.00004577637px !important;
+	position: absolute !important;
+	left: 43.00048828125px;
+	width: 18px;
+	height: 31px;
+	background:url(../picture/addnew/icon_ionic_ios_arrow_back.png);
+	background-size:cover;
+}
+
 #image_70 {
 	top: 220px !important;
 	position: absolute !important;
@@ -16,6 +26,41 @@
   height: 79px;
   position: relative;
 } */
+
+#meeting {
+	top: 120px;
+	left: 80px;
+	width: 125px;
+	height: 49px;
+	font-family: Poppins;
+	font-size: 30px;
+	text-align: center;
+	color:#1e1e1e;
+}
+
+#line_18 {
+	top: 145px !important;
+	position: absolute !important;
+	left: 220px;
+	width: 850px;
+	height: 4px;
+	background:url(../picture/line_18.png);
+	background-size:cover;
+	position: relative;
+}
+
+
+#line_19 {
+	top: 22px !important;
+	position: absolute !important;
+	left: 193px;
+	width: 850px;
+	height: 4px;
+	background:url(../picture/line_19.png);
+	background-size:cover;
+	position: relative;
+} 
+
 
 #contactM {
   top: 530px;
@@ -57,7 +102,7 @@
 
 #rectangle_1161 {
 	opacity:0.59813302755356;
-	top: 145px;
+	top: 75.5px;
 	left: 500px;
 	width: 600px;
 	height: 400px;

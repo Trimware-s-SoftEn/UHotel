@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost','root','','uhotel');
+$con = mysqli_connect('localhost','root','','uhoteldb');
 //check conection
 if(mysqli_connect_errno())
 {
@@ -7,12 +7,17 @@ if(mysqli_connect_errno())
 }
 
 //ecape variable
-$topic = mysqli_real_escape_string($con,$_POST['topic']);
+$eventName = mysqli_real_escape_string($con,$_POST['eventName']);
+$eventID = mysqli_real_escape_string($con,$_POST['eventID']);
 $description = mysqli_real_escape_string($con,$_POST['description']);
-$fileToUpload = mysqli_real_escape_string($con,$_POST['fileToUpload']);
+$pictureID = mysqli_real_escape_string($con,$_POST['pictureID']);
+$roomNo = mysqli_real_escape_string($con,$_POST['roomNo']);
+$startDateTime = mysqli_real_escape_string($con,$_POST['startDateTime']);
+$endDateTime = mysqli_real_escape_string($con,$_POST['endDateTime']);
 
-$sql = "Insert into user(eventName, description)
-VALUES('$topic','$description','$fileToUpload')";
+
+$sql = "Insert into event(eventName,eventID,description,pictureID,roomNo,startDateTime,endDateTime)
+VALUES('$eventName','$eventID','$description','$pictureID','$roomNo','$startDateTime','$endDateTime')";
 if(!mysqli_query($con,$sql))
 {
     die('Error: '.mysqli_error($con));
@@ -20,5 +25,5 @@ if(!mysqli_query($con,$sql))
 echo " successful";
 mysqli_close($con);
 
-header("Location: http://localhost:8080/Trimware/UHotel/events/events.html");
+header("Location: http://localhost:8080/Trimware2/UHotel/events/events_staff.html");
 ?>

@@ -28,7 +28,7 @@
       </div>
     </div>
     <!--<a class="menu" href="#services">Services</a>-->
-    <a class="menu" href="#events">Events</a>
+    <a class="menu" href="../events/events_staff.html">Events</a>
     <a class="menu" href="#offers">Offers</a>
     <a class="menu" href="#reviews">Reviews</a>
     <a class="menu" href="#gallery">Gallery</a>
@@ -49,22 +49,26 @@
   <div id="rectangle_1161"></div>
   <!-- <div id="rectangle_1191"></div> -->
   <div id="group_538"></div>
-  <div id="meeting">Add meeting</div>
-  <a href="events.html" id="icon_ionic_ios_arrow_back"></a>
+  <div id="meeting">Add event</div>
+  <a href="../events/editevents.html" id="icon_ionic_ios_arrow_back"></a>
   <div id="icon icon_material_add_circle_outline"></div>
 
+  <!-- PHP coding -->
   <div class="form">
   <form method="POST" action="addnew.php">
-    Topic:<br>
-    <input type="text" name="topic" placeholder="Topic of event">
-    <br>
+    <input type="text" name="eventName" placeholder="Topic of event">
+    <input type="number" name="eventID" placeholder="eventID">
     <textarea id="subject" name="description" placeholder="Description" style="height:50px; width: 400px;"></textarea>
-    <input type="text" name="pictureID" placeholder="pictureID" >
-    <input type="text" name="roomID" placeholder="roomID" >
+    <input type="number" name="pictureID" placeholder="pictureID" >
+    <input type="number" name="roomID" placeholder="roomID" >
+    <input type="datetime-local" name="startDateTime" placeholder="startDateTime" >
+    <input type="datetime-local" name="endDateTime" placeholder="endDateTime" >
     <input type="submit" value="Done" >
   </div>
   </form>
   </div>
+
+  <<i class="fas fa-rectangle-landscape    "></i>>
 
 </body>
 
