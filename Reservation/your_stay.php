@@ -91,13 +91,13 @@ session_start();
 	      </div>
 	      <div class="stayRow">
 	        <div class="stayColumn">
-	          <input type="Date" name="checkIn" id="checkIn">
+	          <input type="Date" name="checkIn" id="checkIn" required>
 	        </div>
 	        <div class="stayColumn">
-	          <input type="Date" name="checkOut" id="checkOut">
+	          <input type="Date" name="checkOut" id="checkOut" required>
 	        </div>
 	        <div class="stayColumn">
-	          <input type="number" name="guest" id="guest" min="1" max="10">
+	          <input type="number" name="guest" id="guest" min="1" max="10" required>
 	        </div>
 	      </div>
 	    </div>
