@@ -5,6 +5,8 @@
 	height: 400px;
   background:rgba(129,129,129,255);
   position: relative;
+  opacity: 0.9;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 #events {
@@ -109,7 +111,7 @@
 
 #edit_events {
 	top: -30px;
-	left: 51px;
+	left: 65px;
 	width: 107px;
 	height: 26px;
 	font-family: Poppins;
