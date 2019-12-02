@@ -193,7 +193,7 @@ cursor: pointer;
   position: relative;
 }
 
-#email_login {
+#email {
 	top: 100px;
 	left: 50px;
 	width: 39px;
@@ -654,58 +654,6 @@ cursor: pointer;
 
 /*______________________END LOGIN_________________________*/
 
-/*______________________START Homepage____________________*/
-#a_stunning_hotel {
-	top: 270px;
-	left: 500px;
-	width: 528px;
-	height: 88px;
-	font-family: Poppins;
-	font-size: 55px;
-	text-align: left;
-  color:#ffffff;
-  position: relative;
-}
-
-
-#welcome_to_uhotel {
-	top: 110px;
-	left: 570px;
-	width: 400px;
-	height: 100px;
-	font-family: Poppins;
-	font-size: 40px;
-	text-align: left;
-  color:#d8b845;
-  position: relative;
-}
-
-
-#rectangle_1098 {
-	top: 200px;
-	left: 590px;
-	width: 338px;
-	height: 2px;
-	border: 1px solid #707070;
-  background:rgba(255,255,255,255);
-  position: relative;
-}
-
-
-#uhotel_comes_with_a_collection_of_six_astounding_and_filly_customizable_homepage_layouts_suitable_for_various_purposes_ {
-	top: 250px;
-	left: 400px;
-	width: 709px;
-	height: 62px;
-	font-family: Poppins;
-	font-size: 20px;
-	text-align: center;
-  color:#ffffff;
-  position: relative;
-}
-
-/*______________________End HOMPAGE_______________________*/
-
 /*______________________START EVENTS________________________*/
 
 #rectangle_main {
@@ -742,8 +690,8 @@ cursor: pointer;
 }
 
 #enjoy {
-	top: 20px;
-	left: 420px;
+	top: -60px;
+	left: 350px;
 	width: 456px;
 	height: 86px;
 	font-family: Poppins;
@@ -767,8 +715,8 @@ cursor: pointer;
   position: relative;
 }
 
-#weddingF {
-	top: -105px;
+#wedding {
+	top: -110px;
 	left: 100px;
 	width: 79px;
 	height: 51px;
@@ -781,7 +729,7 @@ cursor: pointer;
 }
 
 #meeting {
-	top: -55px;
+	top: -50px;
 	left: 100px;
 	width: 71px;
 	height: 26px;
@@ -799,11 +747,11 @@ cursor: pointer;
 	left: 45.5px;
 	width: 909px;
   height: 48px;
-  position: absolute;
+  position: relative;
 }
 
 #wedding {
-	top: 0px;
+	top: 30px;
 	left: 41px;
 	width: 141px;
 	height: 49px;
@@ -816,8 +764,8 @@ cursor: pointer;
 
 
 #rectangle_13 {
-	top: 0px;
-	left: 90px;
+	top: 43px;
+	left: 98px;
 	width: 33px;
 	height: 5px;
 	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
@@ -825,8 +773,7 @@ cursor: pointer;
 	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
 	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
 	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
-  background:rgba(0,0,0,255);
-  position: relative;
+	background:rgba(0,0,0,255);
 }
 
 
@@ -845,7 +792,7 @@ cursor: pointer;
 	top: 22px !important;
 	position: absolute !important;
 	left: 594px;
-	width: 750px;
+	width: 315px;
 	height: 4px;
 	background:url(../UHotel/picture/line_18.png);
 	background-size:cover;
@@ -860,120 +807,6 @@ cursor: pointer;
 	height: 4px;
 	background:url(../UHotel/picture/line_19.png);
 	background-size:cover;
-}
-
-#image_68 {
-	top: 230px !important;
-	position: absolute !important;
-	left: 60px;
-	width: 383px;
-	height: 281px;
-	background:url(../UHotel/picture/image_68.png);
-	background-size:cover;
-}
-
-.group_5423 {
-	top: 40px;
-	left: -10px;
-	width: 226px;
-  height: 79px;
-  position: relative;
-}
-
-#contact {
-	top: 200px;
-	left: 550px;
-	width: 214px;
-	height: 26px;
-	font-family: Poppins;
-	font-size: 16px;
-	text-align: left;
-  color:#1e1e1e;
-  position: relative;
-}
-
-
-#call {
-	top: 200px;
-	left: 550px;
-	width: 133px;
-	height: 26px;
-	font-family: Poppins;
-	font-size: 16px;
-	text-align: left;
-  color:#1e1e1e;
-  position: relative;
-}
-
-
-#email {
-	top: 200px;
-	left: 550px;
-	width: 231px;
-	height: 26px;
-	font-family: Poppins;
-	font-size: 16px;
-	text-align: left;
-  color:#1e1e1e;
-  position: relative;
-}
-
-#let_our_team {
-	top: 220px;
-	left: 550px;
-	width: 482px;
-	height: 126px;
-	font-family: Poppins;
-	font-size: 14px;
-	text-align: left;
-  color:#1e1e1e;
-  position: relative;
-}
-
-/* #button_pack {
-	top: 472px;
-	left: 764px;
-	width: 180px;
-	height: 30px;
-} */
-
-#rectangle_1091 {
-	top: 370px;
-	left: 1100px;
-	width: 177px;
-	height: 27px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-	border: 1.5px solid #bfa168;
-  background:rgba(127,127,127,0);
-  position: relative;
-}
-
-#view_package {
-	top: 343px;
-	left: 1070px;
-	width: 250px;
-	height: 30px;
-	font-family: Poppins;
-	font-size: 14px;
-	text-align: center;
-  color:#bfa168;
-  position: relative;
-  cursor: pointer;
-}
-
-#mask_group_8 {
-	top: 100px !important;
-	/* position: absolute !important; */
-	left: -1000px;
-	width: 1300px;
-	height: 382px;
-	background:url(../UHotel/picture/weddingPic/mask_group_8.png);
-  background-size:cover;
-  position: relative;
 }
 
 /*meeting*/
@@ -1397,6 +1230,60 @@ cursor: pointer;
   position: relative;
 } */
 
+#rectangle_285 {
+	top: 0px;
+	left: 86px;
+	width: 80px;
+	height: 25px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(193,173,138,255);
+}
+
+
+#done {
+	top: 4px;
+	left: 110px;
+	width: 33px;
+	height: 13px;
+	font-family: Arial;
+	font-size: 10px;
+	text-align: center;
+	color:#ffffff;
+}
+
+
+#path_86 {
+	top: -6px !important;
+	position: absolute !important;
+	left: -9px;
+	width: 98px;
+	height: 43px;
+	background:url(skins/path_86.png);
+	background-size:cover;
+}
+
+
+#cancel_ek2 {
+
+	top: 4px;
+	left: 17px;
+	width: 47px;
+	height: 13px;
+	font-family: Arial;
+	font-size: 10px;
+	text-align: center;
+	color:#b2b2b2;
+}
+
 
 /*addnew*/
 
@@ -1533,7 +1420,6 @@ cursor: pointer;
   background-color: inherit;
   font-family: Poppins;
   margin: 0;
-  cursor: pointer;
 }
 
 .dropdownL:hover .dropbtn {
@@ -1544,7 +1430,6 @@ cursor: pointer;
 .dropdownR:hover .dropbtn {
   background-color: #inherit;
   color: #C9A52E;
-  cursor: pointer;
 }
 
 .dropdown-content {
@@ -1831,8 +1716,9 @@ img.roomIcon {
 }
 
 .roomList {
-  width: 280px;
+  width: 200px;
   padding: 20px 20px;
+  float: right;
   position: absolute;
   margin-left: 620px;
   margin-top: 50px;
@@ -1899,6 +1785,7 @@ img.roomIcon {
   width: 100%;
   background: url(Career/skins/position.png) no-repeat fixed center;
   background-size: 100% 80%;
+
 }
 
 .header_family {
@@ -2052,11 +1939,11 @@ img.roomIcon {
   color: #B0A073;
 }
 
-.content_top .content_topic {
+.content_top .content_topic h1{
   position: absolute;
   color: #B0A073;
   top: 5%;
-  left: 30%;
+  left: 15%;
 }
 
 .content_top .content_topic h2{
@@ -2088,22 +1975,23 @@ img.roomIcon {
 }
 
 .top_addPosition {
-  background-color: paleturquoise;
+  background-color: lightyellow;
   width: 100%;
   height: 150px;
   display: flex;
 }
 
-.top_addPosition h1 {
+.top_addPosition .content_topic h1 {
   position: absolute;
   left: 10%;
-  color: black;
+  color: #444444;
 }
 
-.top_addPosition h2 {
+.top_addPosition .content_topic h2 {
   position: absolute;
   left: 23%;
-  top: 12%;
+  top: 12.2%;
+  color: #444444;
 }
 
 .top_addPosition .content_description {
@@ -2113,9 +2001,93 @@ img.roomIcon {
 }
 
 .content_addPosition {
-  background-color: orange;
+  position: absolute;
+  background-color: rgb(255, 210, 128);
+  width: 100%;
+  height: 400px;
 }
 
+.content_addPosition h1 {
+  position: absolute;
+  left: 15%;
+  width: 100%;
+  height: 100%;;
+}
 
+.content_addPosition .content_addPosition_form{
+  background-color: ;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  left: 20%;
+  top: 30%;
+}
+
+#departmentSelect{
+  position: absolute;
+  width: 240px;
+  height: 30px;
+  border-radius: 4px ;
+  color: black;
+  left: 190px;
+  top: 8%;
+}
+
+#h2_select_position {
+  position: absolute;
+  top: 17%;
+}
+
+#positionSelect {
+  position: absolute;
+  width: 290px;
+  height: 30px;
+  border-radius: 4px ;
+  color: black;
+  left: 140px;
+  top: 25%;
+}
+
+#h2_select_em {
+  position: absolute;
+  top: 33%;
+}
+
+#employmentSelect {
+  position: absolute;
+  width: 160px;
+  height: 30px;
+  border-radius: 4px ;
+  color: black;
+  left: 270px;
+  top: 41%;
+}
+
+#h2_select_close{
+    position: absolute;
+    top: 50%;
+}
+
+#select_close_date {
+  position: absolute;
+  width: 245px;
+  height: 28px;
+  border-radius: 4px ;
+  color: black;
+  top: 58%;
+  left: 180px;
+  font-size: larger;
+}
+
+#select_btn {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px ;
+  color: black;
+  top: 80%;
+  left: 180px;
+  font-size: larger;
+}
 
 /* ____________END CAREER_________________________________________________*/
