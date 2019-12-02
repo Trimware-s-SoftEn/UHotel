@@ -5,6 +5,54 @@
 <link rel="stylesheet" href="../styles.css">
 </head>
 
+<script>
+    function getPosition() {
+        var departmentSelect = document.getElementById("departmentSelect");
+        var departmentID = departmentSelect.options[departmentSelect.selectedIndex].value;
+        console.log('departmentID=' + departmentID);
+
+        // new xml request
+        var xhr = new XMLHttpRequest();
+        var url = 'get_position_from_DB.php?departmentID=' + departmentID;
+        // open
+        xhr.open('GET', url, true);
+        console.log(xhr.readyState);
+        // check response to display position
+        xhr.onreadystatechange = function() {
+            console.log(xhr.readyState);
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var text = xhr.responseText;
+                var positionSelect = document.getElementById("positionSelect");
+                positionSelect.innerHTML = text;
+            }
+        }
+        xhr.send();
+    }
+
+    function getEmploymentType() {
+        var positionSelect = document.getElementById("positionSelect");
+        var positionID = positionSelect.options[positionSelect.selectedIndex].value;
+        console.log('positionID=' + positionID);
+
+        // new xml request
+        var xhr = new XMLHttpRequest();
+        var url = 'get_employment_from_DB.php?positionID=' + positionID;
+        // open
+        xhr.open('GET', url, true);
+        console.log(xhr.readyState);
+        // check response to display position
+        xhr.onreadystatechange = function() {
+            console.log(xhr.readyState);
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var text = xhr.responseText;
+                var employmentSelect = document.getElementById("employmentSelect");
+                employmentSelect.innerHTML = text;
+            }
+        }
+        xhr.send();
+    }
+</script>
+
 <body>
 
 <div class="topnav">
@@ -29,8 +77,8 @@
   <div class="main">
 
     <div class="top_addPosition">
-      <div class="content_topic"><a href="positions.php"><h1>Positions ></h1></a><h2 class="">Add New Positions</h2></div>
-      <div class="content_description">Please re-check the information before submit</div>
+      <div class="content_topic"><a href="positions.php"><h1>Positions ></h1></a><h2>Add New Require Position</h2></div>
+      <div class="content_description">Please re-check the information before submit (Staff Only)</div>
     </div>
   </div>
   <img src="../picture/UserIcon.png"; id="userIcon">
@@ -39,54 +87,40 @@
 </div>
 
     <div class="content_addPosition">
-        <form action="insert_position_to_DB.php" method="POST">
-
-          Position :
-          <input name="positionName"><br>
-
-          Department :
-          <select name="positionDepartment">
+        <h1>Enter Information</h1>
+        <form action="insert_position_to_DB.php" method="POST" class="content_addPosition_form">
+                  
+          <h2>Department :</h2>
+          <select name="positionDepartment" id="departmentSelect">
           <option style="color: rgb(50, 50, 50)" ; disabled selected>Select Department</option>
-          <option value="1">Accounting</option>
-          <option value="2">Administration</option>
-          <option value="3">Banquet</option>
-          <option value="4">Catering Sales</option>
-          <option value="5">Engineering</option>
-          <option value="6">Executive Office</option>
-          <option value="7">Finance</option>
-          <option value="8">Food & Beverage</option>
-          <option value="9">Front Office</option>
-          <option value="10">Housekeeping</option>
-          <option value="11">Human resources</option>
-          <option value="12">Information Technology</option>
-          <option value="13">In-Room Dining</option>
-          <option value="14">Laundry</option>
-          <option value="15">Marketing</option>
-          <option value="16">Public Relations</option>
-          <option value="17">Reservations</option>
-          <option value="18">Residences</option>
-          <option value="19">Rooms</option>
-          <option value="20">Security</option>
+          <?php
+              $sql = "SELECT * FROM department";
+              $result = mysqli_query($conn, $sql);
+              while ($row = mysqli_fetch_assoc($result)) {
+                ?>
+                <option value="<?php echo $row['departmentID'] ?>"><?php echo $row['departmentName'] ?></option>
+            <?php } ?>
           </select><br>
+          <script>
+              var departmentSelect = document.getElementById("departmentSelect");
+              departmentSelect.addEventListener("change", getPosition);
+          </script>
+          
+          <h2 id="h2_select_position">Position :</h2>
+          <select name="positionPosition" id="positionSelect" >
 
-          Employment Type :
-          <select name="positionEmployment">
-            <option style="color: rgb(50, 50, 50)" ; disabled selected>Select Employment Type</option>
-            <option value="Full time">Full time</option>
-            <option value="">Temporary / Seasonal</option>
-            <option value="Part time">Part time</option>
-            <option value="Casual / On-call">Casual / On-call</option>
-            <option value="Graduate programme">Graduate programme</option>
-            <option value="Internship">Internship</option>
           </select><br>
+          <script>
+              var positionSelect = document.getElementById("positionSelect");
+              positionSelect.addEventListener("change", getEmploymentType);
+          </script>
 
-          Description :
-          <input name="positionDescription">
-
-          Resuipement :
-
-
-        
+          <h2 id="h2_select_em">Employment Type :</h2>
+          <select class="content_addPosition_selectPosition" name="content_addPosition_selectEmployment" id="employmentSelect">
+          </select><br>
+          <h2 id="h2_select_close">Close Date :</h2>
+          <input type="date" name="closeDate" id="select_close_date" value="yyyy-mm-dd" min="2018-01-01" max="2100-12-31"><br>              
+          <input type="submit" name="submit" id="select_btn" value="Add">
 
 </div>
 
@@ -96,7 +130,6 @@
 
 </body>
 
-<<<<<<< HEAD
 </html>
 
 <?php
@@ -114,6 +147,3 @@ if (strpos($fullUrl, "failed") == TRUE) {
 	printPop("Successfully add new require position");
 }
 ?>
-=======
-</html>
->>>>>>> parent of 835a822... wowwww
