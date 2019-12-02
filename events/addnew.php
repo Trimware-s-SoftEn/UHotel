@@ -20,5 +20,5 @@ if(!mysqli_query($con,$sql))
 echo " successful";
 mysqli_close($con);
 
-header("Location: http://localhost/UHotel/events/addnew.html?");
+header("Location: http://localhost:8080/Trimware/UHotel/events/events.html");
 ?>

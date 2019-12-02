@@ -4,8 +4,19 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="../events/addnew.css"
+  <link rel="stylesheet" href="../events/events.css">
 </head>
+
+<style>
+    body{
+        background-image: url("../picture/image_20.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* image-resolution: 1024px;
+        image-resolution: 1024px; */
+
+    }
+</style>
 
 <body>
 
@@ -46,25 +57,18 @@
     <a class="book" href="../Reservation/your_stay.html">BOOK NOW</a>
   </div>
 
-  <div id="rectangle_1161"></div>
-  <!-- <div id="rectangle_1191"></div> -->
-  <div id="group_538"></div>
-  <div id="meeting">Add meeting</div>
-  <a href="events.html" id="icon_ionic_ios_arrow_back"></a>
-  <div id="icon icon_material_add_circle_outline"></div>
+  <div id="rectangle_main">
+    <div id="events">Events</div>
+    <div id="let_our_journey_begin">“Let our journey begin!”</div>
+    <div id="enjoy">Enjoy by the variety of quality events that we offer. 
+            We can provide you from the memorable wedding ceremony 
+            to the professional meeting session. We also hold the event from 
+            outside here too.</div>
+    <div id="rectangle_circle"></div>
+        <a href="wedding.html" id ="wedding">Wedding</a>
+        <a href="meeting.html" id="meeting">meeting</a>
+  </div>
 
-  <div class="form">
-  <form method="POST" action="addnew.php">
-    Topic:<br>
-    <input type="text" name="topic" placeholder="Topic of event">
-    <br>
-    <textarea id="subject" name="description" placeholder="Description" style="height:50px; width: 400px;"></textarea>
-    <input type="text" name="pictureID" placeholder="pictureID" >
-    <input type="text" name="roomID" placeholder="roomID" >
-    <input type="submit" value="Done" >
-  </div>
-  </form>
-  </div>
 </body>
 
 </html>
