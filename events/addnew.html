@@ -191,35 +191,34 @@
 
   <<i class="fas fa-rectangle-landscape    "></i>> -->
 
-  <!-- PHP coding -->
   <form method="POST" action="addnew.php">
     <h1>Add new event</h1>
-    <div class="question">
-      <input type="number" required/>
+    <!-- <div class="question">
+      <input type="number" />
       <label>eventID</label>
-    </div>
+    </div> -->
     <div class="question">
-      <input type="text" required/>
+      <input type="text" name="eventName" required/>
       <label>eventName</label>
     </div>
     <div class="question">
-      <input type="text" required/>
+      <input type="text" name="description" required/>
       <label>description</label>
     </div>
     <div class="question">
-      <input type="number" required/>
+      <input type="number" name="pictureID" required/>
       <label>pictureID</label>
     </div>
     <div class="question">
-      <input type="number" required/>
+      <input type="number" name="roomNo" required/>
       <label>roomNo</label>
     </div>
     <div class="question">
-      <input type="date" required/>
+      <input type="date" name="startDateTime" required/>
       <label>startDateTime</label>
     </div>
     <div class="question">
-      <input type="date" required/>
+      <input type="date" name="endDateTime" required/>
       <label>endDateTime</label>
     </div>
     <button>Submit</button>

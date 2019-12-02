@@ -387,7 +387,7 @@ textarea:focus{
   form .question input[type="text"]:valid {
 	margin-top: 30px;
   }
-  form .question input[type="text"]:focus ~ label {
+  form .question input[type="number"]:focus ~ label {
 	-moz-transform: translate(0, -35px);
 	-ms-transform: translate(0, -35px);
 	-webkit-transform: translate(0, -35px);
