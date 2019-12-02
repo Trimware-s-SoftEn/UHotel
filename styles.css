@@ -12,9 +12,148 @@ footer{
   margin-top:auto;
   top: 892px;
   left: 0px;
-  width: 1035px;
+  width: 1500px;
   height: 198px;
 }
+
+#footer_ek1 {
+	top: 00px;
+	left: 2px;
+	width: 1024px;
+	height: 150px;
+  background:rgba(255,255,255,255);
+  position: relative;
+}
+
+
+#logo_ek2 {
+	top: 740px;
+	left: 100px;
+	width: 136px;
+  height: 125px;
+  position: relative;
+}
+
+
+#path_line {
+	top: 600px;
+	left: 10px;
+	width: 1500px;
+  height: 1px;
+  position: relative;
+}
+
+
+#contact_us__mail__433_132_someroad_rd___10999_bankok__thailand_email__uhotel_reservation_abc_com_tel___66__0__2_231_4421 {
+	top: 630px;
+	left: 300px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+  color:#666666;
+  position: relative;
+}
+
+
+#follow_us {
+	top: 450px;
+	left: 700px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+  color:#666666;
+  position: relative;
+}
+
+
+#subscribe {
+	top: 270px;
+	left: 1100px;
+	width: 340px;
+	height: 176.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17px;
+	text-align: left;
+	line-height: 17px;
+  color:#666666;
+  position: relative;
+}
+
+
+#facebook {
+	top: 130px;
+	left: 700px;
+	width: 28px;
+  height: 28px;
+  position: relative;
+}
+
+
+#facebook_ek1 {
+	top: 100px;
+	left: 740px;
+	width: 31px;
+  height: 31px;
+  position: relative;
+}
+
+
+#facebook_ek2 {
+	top: 60px;
+	left: 770px;
+	width: 46px;
+  height: 46px;
+  position: relative;
+}
+
+
+#facebook_ek3 {
+	top: 23px;
+	left: 820px;
+	width: 29px;
+  height: 29px;
+  position: relative;
+}
+
+#rectangle_footer {
+	top: 0px;
+	left: 1100px;
+	width: 299px;
+	height: 38px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #aeaeae;
+  background:rgba(255,255,255,255);
+  position: relative;
+}
+
+
+#enter_your_email {
+	top: 0px;
+	left: 0px;
+	width: 253px;
+	height: 27.5px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 13px;
+	text-align: left;
+	line-height: 13px;
+  color:#aeaeae;
+  position: relative;
+}
+
 
 /* Image property */
 img{
