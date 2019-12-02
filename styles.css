@@ -1984,7 +1984,7 @@ img.roomIcon {
 }
 
 .content_category .content_topic_filter{
-  flex-basis: 20%;
+  flex-basis: 15%;
   margin-left: 5%;
 }
 
@@ -1994,35 +1994,33 @@ img.roomIcon {
 }
 
 .content_topic_list .content_list_icon{
-  flex-grow: 1;
+  flex-basis: 19%;
   text-align: center;
   background-color: red;
 }
 
-.content_topic_list .content_list_poisition{
-  flex-grow: 1;
+.content_topic_list .content_list_position{
+  flex-basis: 27%;
   text-align: center;
   background-color: green;
 }
 
 .content_topic_list .content_list_department{
-  flex-grow: 1;
+  flex-basis: 27%;
   text-align: center;
   background-color: yellow;
 }
 
 .content_topic_list .content_list_employment{
-  flex-grow: 1;
+  flex-basis: 27%;
   text-align: center;
   background-color: blue;
 }
 
-.content_topic_list
 
 .content_search_engine{
   background-color: aquamarine;
   display: flex;
-  flex-direction: row;
 }
 
 .content_search_engine .content_filter{
