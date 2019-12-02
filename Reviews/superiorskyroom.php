@@ -9,20 +9,20 @@
 			<div id="line_18"  ></div>
 			<div id="line_19"  ></div>
 			<div id="superior_room" >
-				<a id="atag" href="Index.php">
+				<a id="atag" class="atag" href="Index.php">
 				Superior Room
 				</a>
 			</div>
-			<div id="superior_sky_room" >
+			<div id="superior_sky_room">
 				Superior Sky Room
 			</div>
-			<div id="executive_deluxe__with_lounge_access" >
+			<div id="executive_deluxe__with_lounge_access" class="atag" >
 				Executive Deluxe <br/>with Lounge Access
 			</div>
-			<div id="executive_superior_sky__with_lounge_access" >
+			<div id="executive_superior_sky__with_lounge_access" class="atag" >
 				Executive Superior Sky <br/>with Lounge Access
 			</div>
-			<div id="list_of_rooms" >
+			<div id="list_of_rooms">
 				List of rooms
 			</div>
 
@@ -50,10 +50,10 @@
 				</div>
 
 			</div>
-			<div id="premium_deluxe__with_lounge_access" >
+			<div id="premium_deluxe__with_lounge_access" class="atag" >
 				Premium Deluxe <br/>with Lounge Access
 			</div>
-			<div id="junior_suite__with_lounge_access" >
+			<div id="junior_suite__with_lounge_access" class="atag" >
 				Junior Suite <br/>with Lounge Access
 			</div>
 
@@ -348,29 +348,34 @@
 			</div>
 
 			<div id="group_561"  >
-				<div id="_1" >
+			<a id="atag" class="atag" href="Index.php">
+				<div id="_1" class="navi" >
+				
 					1
 				</div>
+				</a>
 
-				<div id="symbol_24___1"  >
+				<div id="symbol_24___1" class="navi"  >
 					<div id="path_10"  ></div>
 
 				</div>
-				<div id="_2" >
+				<div id="_2" class="navi" >
 					2
 				</div>
-				<div id="_3" >
+				<div id="_3" class="navi" >
 					3
 				</div>
-				<div id="_4" >
+				<div id="_4" class="navi" >
 					4
 				</div>
-				<div id="_5" >
+				<div id="_5" class="navi" >
 					5
 				</div>
 
 				<div id="symbol_44___1"  >
+				<a id="atag" class="atag" href="Index.php">
 					<div id="path_10_ek1"  ></div>
+				</a>
 
 				</div>
 
