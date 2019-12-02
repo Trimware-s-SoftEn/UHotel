@@ -1930,11 +1930,40 @@ img.roomIcon {
 
 .content_content {
   position: absolute;
+  background-color: rgb(238, 149, 149);
   top: 800px;
-  width: 75%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  width: 100%;
 }
+
+.content_category{
+  background-color: rgb(255, 97, 255);
+  display: flex;
+}
+
+.content_category .content_topic_filter{
+  flex-basis: 20%;
+}
+
+.content_category .content_topic_list{
+  flex-basis: 80%;
+}
+
+.content_search_engine{
+  background-color: aquamarine;
+  display: flex;
+}
+
+.content_search_engine .content_filter{
+  background-color: darkorchid;
+  flex-basis: 20%;
+}
+
+.content_search_engine .content_list{
+  background-color: lightsteelblue;
+  flex-basis: 80%;
+}
+
+
 
 .top_addPosition {
   background-color: lightyellow;
