@@ -47,28 +47,24 @@
   </div>
 
   <div id="rectangle_1161"></div>
-  <div id="rectangle_1191"></div>
+  <!-- <div id="rectangle_1191"></div> -->
   <div id="group_538"></div>
   <div id="meeting">Meeting</div>
 
   <div id="icon icon_material_add_circle_outline"></div>
 
   <div class="form">
-  <form>
+  <form method="POST" action="addnew.php">
     Topic:<br>
-    <input type="text" name="Topic of event">
+    <input type="text" name="topic">
     <br>
-    Description:<br>
-    <input type="text" name="Description of event">
-    <input type="submit" value="Done">
+    <textarea id="subject" name="description" placeholder="Description" style="height:200px"></textarea>
+    <div id="select_images">Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+  </div>
+    <input type="submit" value="Done" formaction="http://localhost/UHotel/events/addnew.html">
   </form>
   </div>
-
-  <div id="group_550"></div>
-  <div id="add_more_photo"></div>
-  <div id="icon_material_add_circle_outline"></div>
-  <a href="#" id="add_more_photo">Add more photo</a>
-
 </body>
 
 </html>
