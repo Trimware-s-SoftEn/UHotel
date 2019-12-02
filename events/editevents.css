@@ -1,0 +1,222 @@
+#icon_ionic_ios_arrow_back {
+	top: 128.00004577637px !important;
+	position: absolute !important;
+	left: 43.00048828125px;
+	width: 18px;
+	height: 31px;
+	background:url(../picture/addnew/icon_ionic_ios_arrow_back.png);
+	background-size:cover;
+}
+
+#events_events {
+	top: 120px;
+	left: 70px;
+	width: 125px;
+	height: 49px;
+	font-family: Poppins;
+	font-size: 30px;
+	text-align: center;
+  color:#1e1e1e;
+  position: relative;
+}
+
+/* #rectangle_9999 {
+	top: 500px;
+	left: 80px;
+	width: 33px;
+	height: 5px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(0,0,0,255);
+} */
+
+#rectangle_10991 {
+	top: 140px;
+	left: 60px;
+	width: 215px;
+	height: 33px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1.5px solid #bfa168;
+  background:rgba(127,127,127,0);
+  cursor: pointer;
+  position: relative;
+}
+
+#add_new_meeting {
+	top: 110px;
+	left: 100px;
+	width: 149px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: center;
+  color:#bfa168;
+  cursor: pointer;
+  position: relative;
+}
+#contact_events_specialist6 {
+	top: 600px;
+	left: 80px;
+	width: 214px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+
+#callS6 {
+	top: 600px;
+	left: 80px;
+	width: 154px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+#emailS6 {
+	top: 600px;
+	left: 80px;
+	width: 212px;
+	height: 26px;
+	font-family: Poppins;
+	font-size: 16px;
+	text-align: left;
+  color:#1e1e1e;
+  position: relative;
+}
+
+#image_170 {
+	top: 273px !important;
+	position: absolute !important;
+	left: 56px;
+	width: 381px;
+	height: 286px;
+	background:url(../UHotel/picture/editevents/image_70.png);
+	background-size:cover;
+}
+
+/* #delete_photo {
+	top: 60px;
+	left: 350px;
+	width: 100px;
+	height: 17px;
+	font-family: Poppins;
+	font-size: 10px;
+	text-align: center;
+  color:#976b51;
+  position: relative;
+}
+
+#add_photo {
+	top: 45px;
+	left: 270px;
+	width: 100px;
+	height: 17px;
+	font-family: Poppins;
+	font-size: 10px;
+	text-align: center;
+  color:#976b51;
+  position: relative;
+}
+
+#rectangle_12161 {
+	opacity:0.59813302755356;
+	top: 50px;
+	left: 520px;
+	width: 510px;
+	height: 414px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+  background:rgba(245,245,239,255);
+  position: relative;
+}
+
+/* #rectangle_13191 {
+	top: 350px;
+	left: 473px;
+	width: 480px;
+	height: 207px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #aeaeae;
+  background:rgba(255,255,255,255);
+  position: relative;
+} */
+
+#rectangle_285 {
+	top: 0px;
+	left: 86px;
+	width: 80px;
+	height: 25px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-ms-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-o-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-webkit-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	box-shadow:0px 3px 5px 1px rgba(0,0,0,0.41);
+	background:rgba(193,173,138,255);
+}
+
+
+#done {
+	top: 4px;
+	left: 110px;
+	width: 33px;
+	height: 13px;
+	font-family: Arial;
+	font-size: 10px;
+	text-align: center;
+	color:#ffffff;
+}
+
+
+#path_86 {
+	top: -6px !important;
+	position: absolute !important;
+	left: -9px;
+	width: 98px;
+	height: 43px;
+	background:url(skins/path_86.png);
+	background-size:cover;
+}
+
+
+#cancel_ek2 {
+
+	top: 4px;
+	left: 17px;
+	width: 47px;
+	height: 13px;
+	font-family: Arial;
+	font-size: 10px;
+	text-align: center;
+	color:#b2b2b2;
+} */
