@@ -42,18 +42,27 @@ else if (isset($_POST['reserve1Room'])) {
   $roomTypeName = $_POST["reserve1Room"];
   $paymentId = $_SESSION["PAYMENTID"];
 
-  $result = mysqli_query($conn,"SELECT *
-    FROM room
-    WHERE roomTypeName LIKE '$roomTypeName'
-    LIMIT 1");
 
-  $row = mysqli_fetch_array($result);
-  $roomNo = $row['roomNo'];
   $checkIn = $_SESSION["CHECKIN"];
   $checkOut = $_SESSION["CHECKOUT"];
   $id = $_SESSION["ID"];
   $guest = $_POST['guest'];
   $reservationDesk = 0;
+
+  $result = mysqli_query($conn,"SELECT *
+    FROM room
+    WHERE roomNo NOT IN
+    (SELECT roomNo
+    FROM reservation
+    WHERE (startDate <= '$checkIn' AND endDate >= '$checkIn')
+    OR (startDate <= '$checkOut' AND endDate >= '$checkOut')
+    OR (startDate >= '$checkIn' AND endDate <= '$checkOut'))
+    AND roomTypeName LIKE '$roomTypeName'
+    LIMIT 1"
+  );
+
+  $row = mysqli_fetch_array($result);
+  $roomNo = $row['roomNo'];
 
   $sql = "INSERT INTO `reservation`
     (`roomNo`, `reserveDateTime`, `startDate`, `endDate`
