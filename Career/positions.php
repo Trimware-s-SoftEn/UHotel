@@ -67,7 +67,7 @@
                     <h2 id="positions_menu" style ="text-decoration: underline;";>Positions</h2>
                 </a>
                 <a href="family.html">
-                    <h2 id="family_menu"erline;">Become our family</h2>
+                    <h2 id="family_menu" style="text-decoration: underline;" ;>Become our family</h2>
                 </a>
 
             </div>
