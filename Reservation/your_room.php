@@ -8,6 +8,8 @@
   $con = new mysqli($servername, $username, $password, $dbname);
   $id = $_SESSION["ID"];
   $paymentId = $_SESSION["PAYMENTID"];
+  $checkIn = $_SESSION["CHECKIN"];
+  $checkOut = $_SESSION["CHECKOUT"];
 
 	// Check connection
 	if (mysqli_connect_errno())
@@ -21,7 +23,18 @@
   $rowNav = mysqli_fetch_array($result);
 
   $result = mysqli_query($con,"SELECT *
-                              FROM roomtype");
+    FROM roomtype INNER JOIN
+    (SELECT roomTypeName, COUNT(roomNo) AS countRoom
+    FROM room
+    WHERE roomNo NOT IN
+    (SELECT roomNo
+    FROM reservation
+    WHERE (startDate <= '$checkIn' AND endDate >= '$checkIn')
+    OR (startDate <= '$checkOut' AND endDate >= '$checkOut')
+    OR (startDate >= '$checkIn' AND endDate <= '$checkOut'))
+    GROUP BY roomTypeName) AS temp
+    ON temp.roomTypeName = roomtype.roomTypeName"
+  );
 
 //  $sql = "SELECT branchName FROM branch";
 //  $result = mysqli_query($con,$sql);
@@ -166,13 +179,6 @@
 
                  $rowScore = mysqli_fetch_array($resultScore);
 
-                 $resultRoom = mysqli_query($con,"SELECT
-                   COUNT(roomNo) AS countRoom
-                   FROM room
-                   WHERE roomTypeName LIKE '$roomTypeName'");
-
-                 $rowRoom = mysqli_fetch_array($resultRoom);
-
                  echo "
                    <div class=\"roomColumn\" style='font-size: 12px;'>
                     <form action='reservationController.php' method='post' id='roomForm'>
@@ -183,7 +189,7 @@
                        <p> Number of Bed: ".$numberofBed."</p>
                        <img src='../picture/guest_icon.png' class='roomIcon'>
                        <p> Max People: ".$numberofGuest."</p>
-                       <p> Room Available: ".$rowRoom['countRoom']."</p>
+                       <p> Room Available: ".$row['countRoom']."</p>
                        <p> Number of guest: </p>
                        <input type='number' style='margin-left: 30px;margin-bottom: 10px;' name='guest' id='guest' min='1' max='".$numberofGuest."'>
                        <p class='cost'> -".$price."฿</p>
