@@ -1973,6 +1973,11 @@ img.roomIcon {
   width: 100%;
 }
 
+.content_family{
+  position: absolute;
+  left: 25%;
+}
+
 .content_category{
   background-color: rgb(255, 97, 255);
   display: flex;
