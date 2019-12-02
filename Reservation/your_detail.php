@@ -19,6 +19,11 @@
   $checkOut = $_SESSION["CHECKOUT"];
   $paymentId = $_SESSION["PAYMENTID"];
 
+  $result = mysqli_query($con,"SELECT *
+                              FROM user
+                              WHERE userID LIKE $id");
+  $rowNav = mysqli_fetch_array($result);
+
 //  $sql = "SELECT branchName FROM branch";
 //  $result = mysqli_query($con,$sql);
 ?>
