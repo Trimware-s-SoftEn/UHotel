@@ -1985,15 +1985,44 @@ img.roomIcon {
 
 .content_category .content_topic_filter{
   flex-basis: 20%;
+  margin-left: 5%;
 }
 
 .content_category .content_topic_list{
   flex-basis: 80%;
+  display: flex;
 }
+
+.content_topic_list .content_list_icon{
+  flex-grow: 1;
+  text-align: center;
+  background-color: red;
+}
+
+.content_topic_list .content_list_poisition{
+  flex-grow: 1;
+  text-align: center;
+  background-color: green;
+}
+
+.content_topic_list .content_list_department{
+  flex-grow: 1;
+  text-align: center;
+  background-color: yellow;
+}
+
+.content_topic_list .content_list_employment{
+  flex-grow: 1;
+  text-align: center;
+  background-color: blue;
+}
+
+.content_topic_list
 
 .content_search_engine{
   background-color: aquamarine;
   display: flex;
+  flex-direction: row;
 }
 
 .content_search_engine .content_filter{
