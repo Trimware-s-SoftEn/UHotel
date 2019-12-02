@@ -145,9 +145,7 @@ require 'db_conn.php';
 
   </div>
 
-  <footer>
-    <h1>Footer Content</h1>
-  </footer>
+ 
 
 </body>
 
