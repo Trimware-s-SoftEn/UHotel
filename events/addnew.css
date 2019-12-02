@@ -1,8 +1,8 @@
 #rectangle_1161 {
 	opacity:0.59813302755356;
 	top: 222px;
-	left: 600px;
-	width: 510px;
+	left: 200px;
+	width: 700px;
 	height: 414px;
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
@@ -42,8 +42,8 @@
 } */
 
 #meeting {
-	top: -500px;
-	left: 100px;
+	top: -200px;
+	left: 300px;
 	width: 125px;
 	height: 49px;
 	font-family: Poppins;
@@ -131,7 +131,7 @@
 }
 
 #add_more_photo {
-	top: -300px;
+	top: -50px;
 	left: 400px;
 	width: 111px;
 	height: 22px;
@@ -277,19 +277,33 @@
 }
 
 .form{
-    top: -400px;
-	left: 700px;
+    top: -180px;
+	left: 400px;
 	width: 47px;
     height: 13px;
     position: relative;
 }
 
 input[type=text]:focus {
-    width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #555;
+    
   outline: none;
     background-color: rgb(242, 247, 221);
   }
+
+
+#select_images{
+    top: -100px;
+	left: 300px;
+	width: 125px;
+	height: 49px;
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: center;
+    color:#1e1e1e;
+    position: relative;
+}
+
+textarea:focus{
+    outline: none;
+    background-color: rgb(242, 247, 221);
+}
