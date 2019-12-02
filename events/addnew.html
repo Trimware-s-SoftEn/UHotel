@@ -5,9 +5,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../events/addnew.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  <style>
+    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+    .transition, form button, form .question label, form .question input[type="date"] {
+    -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    }
+
+    * {
+    font-family: Helvetica, Poppins;
+    font-weight: light;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+    background-color: #ecece9;
+    }
+
+    form {
+    top: 40px;
+    position: relative;
+    display: inline-block;
+    max-width: 700px;
+    min-width: 500px;
+    box-sizing: border-box;
+    padding: 30px 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40\px;
+    margin: 40px 0;
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    }
+    form h1 {
+    color: #cec656;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    margin-left: 15px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    form button {
+    margin-top: 35px;
+    background-color: white;
+    border: 1px solid #cec656;
+    line-height: 0;
+    font-size: 17px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    border-radius: 60px;
+    color: #cec656;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    }
+    form button:hover, form button:focus {
+    color: white;
+    background-color: #cec656;
+    }
+    form .question {
+    position: relative;
+    padding: 10px 0;
+    }
+    form .question:first-of-type {
+    padding-top: 0;
+    }
+    form .question:last-of-type {
+    padding-bottom: 0;
+    }
+    form .question label {
+    transform-origin: left center;
+    color: #cec656;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    z-index: 2;
+    pointer-events: none;
+    }
+    form .question input[type="number"] {
+    appearance: none;
+    background-color: none;
+    border: 1px solid #cec656;
+    line-height: 0;
+    font-size: 17px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 60px;
+    color: #cec656;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    }
+    form .question input[type="text"]:focus {
+    outline: none;
+    background: #cec656;
+    color: white;
+    margin-top: 30px;
+    }
+    form .question input[type="text"]:valid {
+    margin-top: 30px;
+    }
+    form .question input[type="text"]:focus ~ label {
+    -moz-transform: translate(0, -35px);
+    -ms-transform: translate(0, -35px);
+    -webkit-transform: translate(0, -35px);
+    transform: translate(0, -35px);
+    }
+    form .question input[type="text"]:valid ~ label {
+    text-transform: uppercase;
+    font-style: italic;
+    -moz-transform: translate(5px, -35px) scale(0.6);
+    -ms-transform: translate(5px, -35px) scale(0.6);
+    -webkit-transform: translate(5px, -35px) scale(0.6);
+    transform: translate(5px, -35px) scale(0.6);
+    }
+
+  </style>
 </head>
 
-<body>
+
 
   <div class="topnav">
     <a class="icon" href="#home"><img src="../picture/Logo_Transparent.png" ; id="icon"></a>
@@ -46,29 +180,50 @@
     <a class="book" href="../Reservation/your_stay.html">BOOK NOW</a>
   </div>
 
-  <div id="rectangle_1161"></div>
+  <!-- <div id="rectangle_1161"></div> -->
   <!-- <div id="rectangle_1191"></div> -->
   <div id="group_538"></div>
-  <div id="meeting">Add event</div>
+  <!-- <div id="meeting">Add event</div> -->
   <a href="../events/editevents.html" id="icon_ionic_ios_arrow_back"></a>
   <div id="icon icon_material_add_circle_outline"></div>
+ 
+  <body>
 
-  <!-- PHP coding -->
-  <div class="form">
+  <<i class="fas fa-rectangle-landscape    "></i>> -->
+
   <form method="POST" action="addnew.php">
-    <input type="text" name="eventName" placeholder="Topic of event">
-    <input type="number" name="eventID" placeholder="eventID">
-    <textarea id="subject" name="description" placeholder="Description" style="height:50px; width: 400px;"></textarea>
-    <input type="number" name="pictureID" placeholder="pictureID" >
-    <input type="number" name="roomID" placeholder="roomID" >
-    <input type="datetime-local" name="startDateTime" placeholder="startDateTime" >
-    <input type="datetime-local" name="endDateTime" placeholder="endDateTime" >
-    <input type="submit" value="Done" >
-  </div>
+    <h1>Add new event</h1>
+    <!-- <div class="question">
+      <input type="number" />
+      <label>eventID</label>
+    </div> -->
+    <div class="question">
+      <input type="text" name="eventName" required/>
+      <label>eventName</label>
+    </div>
+    <div class="question">
+      <input type="text" name="description" required/>
+      <label>description</label>
+    </div>
+    <div class="question">
+      <input type="number" name="pictureID" required/>
+      <label>pictureID</label>
+    </div>
+    <div class="question">
+      <input type="number" name="roomNo" required/>
+      <label>roomNo</label>
+    </div>
+    <div class="question">
+      <input type="date" name="startDateTime" required/>
+      <label>startDateTime</label>
+    </div>
+    <div class="question">
+      <input type="date" name="endDateTime" required/>
+      <label>endDateTime</label>
+    </div>
+    <button>Submit</button>
   </form>
-  </div>
 
-  <<i class="fas fa-rectangle-landscape    "></i>>
 
 </body>
 
