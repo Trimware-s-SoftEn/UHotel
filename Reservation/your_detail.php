@@ -6,8 +6,7 @@
   $dbname = "uhoteldb";
 
   $con = new mysqli($servername, $username, $password, $dbname);
-  $id = $_SESSION["ID"];
-  $paymentId = $_SESSION["PAYMENTID"];
+
 
 	// Check connection
 	if (mysqli_connect_errno())
@@ -15,13 +14,10 @@
 	echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
 
-  $result = mysqli_query($con,"SELECT *
-                              FROM user
-                              WHERE userID LIKE $id");
-  $rowNav = mysqli_fetch_array($result);
-
-  $result = mysqli_query($con,"SELECT *
-                              FROM roomtype");
+  $id = $_SESSION["ID"];
+  $checkIn = $_SESSION["CHECKIN"];
+  $checkOut = $_SESSION["CHECKOUT"];
+  $paymentId = $_SESSION["PAYMENTID"];
 
 //  $sql = "SELECT branchName FROM branch";
 //  $result = mysqli_query($con,$sql);
@@ -80,129 +76,62 @@
     <a>4.Payment</a>
   </div>
 
-	<form action="reservationController.php" method="post" id="roomForm">
-	  <div class="reserveHead">
-	    <h1>Choose your room</h1>
-	    <div class="reserveBlockUnderline"></div>
+  <div class="reserveHead">
+    <h1>Your Detail</h1>
+    <div class="reserveBlockUnderline"></div>
 
-	    <!-- Start Stay Table -->
-	    <div class="stayTableRoom">
-	      <div class="stayRowHead">
-	        <div class="stayColumnRoom">
-	          <p>Check in: <?php echo $_SESSION["CHECKIN"] ?></p>
-	        </div>
-	        <div class="stayColumnRoom">
-	          <p>Check out: <?php echo $_SESSION["CHECKOUT"] ?></p>
-	        </div>
-	        <div class="stayColumnRoom">
-	          <p>Guests: <?php echo "{$_SESSION["GUEST"]}" ?></p>
-	        </div>
-	      </div>
-	    </div>
-	    <!-- End Stay Table -->
 
-      <!-- list of room -->
-      <div class="roomList">
-        <h4>Your Room</h4>
-        <form action='reservationController.php' method='post' id='alreadyReserveForm'>
-          <div class="roomListRow">
-              <?php
-                $result2 = mysqli_query($con,"SELECT *
-                  FROM reservation
-                  INNER JOIN room
-                  ON room.roomNo = reservation.roomNo
-                  INNER JOIN roomtype
-                  ON roomtype.roomTypeName = room.roomTypeName
-                  WHERE paymentID LIKE $paymentId"
-                );
+    <div class="yourDetailBreak"></div>
 
-                while($row = mysqli_fetch_array($result2)) {
-                   $roomTypeName = $row['roomTypeName'];
-                   $price = $row['price'];
-                   $numberofGuest = $row['customerAmount'];
-                   $roomNo = $row['roomNo'];
 
-                   echo "
-                     <div class='roomListColumn'>
-                       <p class='head'>".$roomTypeName."</p>
-                       <p class='detail'> Number of Guest: ".$numberofGuest."</p>
-                       <p class='detail'> -".$price."฿</p>
-                       <div class='roomFrameButton'>
-                        <button type='submit' name='remove1Room' style='margin-top: -15px; margin-left: 60px; padding:10px 20px;' value='".$roomNo."'>Remove</button>
-                       </div>
-                     </div>
-                   ";
-                }
-              ?>
-            </div>
-            <div class='roomFrameButton'>
-             <button type='submit' name='reserveRoom' value='reserveRoom'>confirm</button>
-            </div>
-           </form>
-	        </div>
-	      </div>
+    <!-- Start Guest Detail -->
+    <div class="guestDetailBox">
+      <h3>Contact Information</h3>
+      <div class="reserveInfoBoxUnderline"></div>
+    </div>
+      <!-- End  -->
 
-      <!-- Start Room Table -->
-      <form action="reservationController.php" method="post" id="stayForm">
-        <div class="roomTable">
-          <div class="roomRow">
-            <?php
-              while($row = mysqli_fetch_array($result)) {
-                 $roomTypeName = $row['roomTypeName'];
-                 $price = $row['price'];
-                 $description = $row['description'];
-                 $pictureID = $row['pictureID'];
-                 $numberofBed = $row['numberofBed'];
-                 $numberofGuest = $numberofBed*2;
+    <!-- list of room -->
+    <div class="reserveInfoBox">
+      <h3>Booking Details</h3>
+      <div class="reserveInfoBoxUnderline"></div>
 
-                 $resultPic = mysqli_query($con,"SELECT *
-                                             FROM picturegallery
-                                             WHERE pictureID LIKE $pictureID");
-                 $rowPic = mysqli_fetch_array($resultPic);
 
-                 $resultScore = mysqli_query($con,"SELECT
-                   AVG(reviewScore) AS Average
-                   FROM review
-                   WHERE roomTypeName LIKE '$roomTypeName'");
+      <?php echo "<p> Check-in Date: ".$checkIn."</p>" ?>
+      <?php echo "<p> Check-out Date: ".$checkOut."</p>" ?>
+      <?php
+        $result2 = mysqli_query($con,"SELECT *
+          FROM reservation
+          INNER JOIN room
+          ON room.roomNo = reservation.roomNo
+          INNER JOIN roomtype
+          ON roomtype.roomTypeName = room.roomTypeName
+          WHERE paymentID LIKE $paymentId"
+        );
 
-                 $rowScore = mysqli_fetch_array($resultScore);
+        while($row = mysqli_fetch_array($result2)) {
+           $roomTypeName = $row['roomTypeName'];
+           $price = $row['price'];
+           $numberofGuest = $row['customerAmount'];
+           $roomNo = $row['roomNo'];
 
-                 $resultRoom = mysqli_query($con,"SELECT
-                   COUNT(roomNo) AS countRoom
-                   FROM room
-                   WHERE roomTypeName LIKE '$roomTypeName'");
-
-                 $rowRoom = mysqli_fetch_array($resultRoom);
-
-                 echo "
-                   <div class=\"roomColumn\" style='font-size: 12px;'>
-                     <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
-                     <p class='first'>".$roomTypeName."</p>
-                     <p style='margin-top: -15px;'> Average Score: ".$rowScore["Average"]."</p>
-                     <img src='../picture/bed_icon.png' class='roomIcon'>
-                     <p> Number of Bed: ".$numberofBed."</p>
-                     <img src='../picture/guest_icon.png' class='roomIcon'>
-                     <p> Max People: ".$numberofGuest."</p>
-                     <p> Room Available: ".$rowRoom['countRoom']."</p>
-                     <p class='cost'> -".$price."฿</p>
-                     <div class='roomFrameButton'>
-                      <button type='submit' name='reserve1Room' value='".$roomTypeName."'>Add</button>
-                     </div>
-                   </div>
-                 ";
-              }
-            ?>
-  	      </div>
-        </div>
-      </form>
+           echo "
+             <div class='roomListColumn'>
+               <p class='head'>".$roomTypeName."</p>
+               <p class='detail'> Number of Guest: ".$numberofGuest."</p>
+               <p class='detail'> -".$price."฿</p>
+               <div class='roomFrameButton'>
+                <button type='submit' name='remove1Room' style='margin-top: -15px; margin-left: 60px; padding:10px 20px;' value='".$roomNo."'>Remove</button>
+               </div>
+             </div>
+           ";
+        }
+      ?>
+    </div>
       <!-- End Room Table -->
+  </div>
 
-      <!-- list of room -->
-      <div class="">
-
-      </div>
-	  </div>
-	</form>
+  <div class="yourDetailBreak"></div>
 
   <footer>
       <h1>Footer Content</h1>
