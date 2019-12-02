@@ -2039,13 +2039,14 @@ img.roomIcon {
 
 .content_topic {
   color: #B0A073;
+  display: flex ;
 }
 
-.content_top .content_topic {
+.content_top .content_topic h1{
   position: absolute;
   color: #B0A073;
   top: 5%;
-  left: 30%;
+  left: 15%;
 }
 
 .content_top .content_topic h2{
