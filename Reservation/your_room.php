@@ -143,7 +143,6 @@
 	      </div>
 
       <!-- Start Room Table -->
-      <form action="reservationController.php" method="post" id="stayForm">
         <div class="roomTable">
           <div class="roomRow">
             <?php
@@ -176,25 +175,29 @@
 
                  echo "
                    <div class=\"roomColumn\" style='font-size: 12px;'>
-                     <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
-                     <p class='first'>".$roomTypeName."</p>
-                     <p style='margin-top: -15px;'> Average Score: ".$rowScore["Average"]."</p>
-                     <img src='../picture/bed_icon.png' class='roomIcon'>
-                     <p> Number of Bed: ".$numberofBed."</p>
-                     <img src='../picture/guest_icon.png' class='roomIcon'>
-                     <p> Max People: ".$numberofGuest."</p>
-                     <p> Room Available: ".$rowRoom['countRoom']."</p>
-                     <p class='cost'> -".$price."฿</p>
-                     <div class='roomFrameButton'>
-                      <button type='submit' name='reserve1Room' value='".$roomTypeName."'>Add</button>
-                     </div>
+                    <form action='reservationController.php' method='post' id='roomForm'>
+                       <img src='../picture/".$rowPic["picture"]."' class='roomPic'>
+                       <p class='first'>".$roomTypeName."</p>
+                       <p style='margin-top: -15px;'> Average Score: ".$rowScore["Average"]."</p>
+                       <img src='../picture/bed_icon.png' class='roomIcon'>
+                       <p> Number of Bed: ".$numberofBed."</p>
+                       <img src='../picture/guest_icon.png' class='roomIcon'>
+                       <p> Max People: ".$numberofGuest."</p>
+                       <p> Room Available: ".$rowRoom['countRoom']."</p>
+                       <p> Number of guest: </p>
+                       <input type='number' style='margin-left: 30px;margin-bottom: 10px;' name='guest' id='guest' min='1' max='".$numberofGuest."'>
+                       <p class='cost'> -".$price."฿</p>
+                       <div class='roomFrameButton'>
+                        <button type='submit' name='reserve1Room' value='".$roomTypeName."'>Add</button>
+                       </div>
+                     </form>
                    </div>
                  ";
               }
             ?>
   	      </div>
         </div>
-      </form>
+
       <!-- End Room Table -->
 
       <!-- list of room -->
