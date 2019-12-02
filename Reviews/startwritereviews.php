@@ -1,7 +1,7 @@
 <script>
 $(document ).ready(function() {		
 	$("#cancel").on( "click", function() {		
-		location.reload();
+		$('.exampleModal').modal('hide')
 	});
 });
 </script>
@@ -42,9 +42,7 @@ $(document ).ready(function() {
 					CANCEL
 				</div>
 				<div id="post" style="cursor: pointer;" >
-				<a href="postreviews.php" style="color: #bfa168;">
 					POST
-				</a>
 				</div>
 
 			</div>

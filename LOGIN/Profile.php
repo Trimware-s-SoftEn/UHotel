@@ -6,7 +6,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +16,7 @@
 
 <body>
     <div class="topnav">
-        <a class="icon" href="#home"><img src="../picture/Logo_Transparent.png" ; id="icon"></a>
+        <a class="icon" href="http://localhost/UHotel/homepage2.php"><img src="../picture/Logo_Transparent.png" ; id="icon"></a>
         <div class="dropdownL">
             <button class="dropbtn">About</button>
             <div class="dropdown-content">

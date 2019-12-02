@@ -19,32 +19,37 @@ if(isset($_POST['Signin']))
     if($rowcount == true)
     {   
         $rowcolumn = mysqli_fetch_assoc($query);
-        if($rowcolumn['isAdmin'] == -1)
+        if($email != $rowcolumn['email'] || $password != $rowcolumn['password'])
         {
-            $isAdmin == FALSE;
+            mysqli_close($con);
+            header("Location: http://localhost/UHotel/LOGIN/Login.html?");
+        }
+        else
+        {
+            if($rowcolumn['isAdmin'] == -1)
+            {
+                $isAdmin == FALSE;
+                if($isAdmin == FALSE)
+                {
+                    $_SESSION['User'] = $rowcolumn['userID'];
+                    $_SESSION['Email'] = $rowcolumn['email'];
+                    $_SESSION['Password'] = $rowcolumn['password'];
+                    $_SESSION['fName'] = $rowcolumn['fName'];
+                    $_SESSION['lName'] = $rowcolumn['lName'];
+                    $_SESSION['Phone'] = $rowcolumn['phoneNo'];
+                    mysqli_close($con);
+                    header("Location: http://localhost/UHotel/LOGIN/Profile.php");
+                }
+            }
         }
     }
     else
     {
         echo "False";
-        header("Location: http://localhost/UHotel/LOGIN/Login.html");
-    }
-
-
-    if($isAdmin == FALSE)
-    {
-        $_SESSION['User'] = $rowcolumn['userID'];
-        $_SESSION['Email'] = $rowcolumn['email'];
-        $_SESSION['Password'] = $rowcolumn['password'];
-        $_SESSION['fName'] = $rowcolumn['fName'];
-        $_SESSION['lName'] = $rowcolumn['lName'];
-        $_SESSION['Phone'] = $rowcolumn['phoneNo'];
-        header("Location: http://localhost/UHotel/LOGIN/Profile.php");
+        mysqli_close($con);
+        header("Location: http://localhost/UHotel/LOGIN/Login.html?");
     }
 }
-else
-{
-    echo "3";
-}
+
 
 ?>
